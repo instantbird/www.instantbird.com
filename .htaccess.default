@@ -12,3 +12,6 @@ RewriteRule ^downloads/(.*)$ ftp://download.instantbird.com/queze_f/$1
 # Handle IE specific files
 RewriteCond %{HTTP_USER_AGENT} ^Mozilla/4\.0\ \(compatible;\ MSIE\ 6\.0;
 RewriteRule ^(images|css)/(.*)$ $1_ie/$2
+
+# Handle access to the download.html file
+RewriteRule ^download.html$ download-0.1.2.html

@@ -1,0 +1,321 @@
+------------------------------------------------------------------------
+r179 | florian | 2008-03-07 19:38:01 +0100 (Fri, 07 Mar 2008) | 1 line
+
+Do not do the linkification on chat messages if libpurple has set the noLinkification flag on the message.
+------------------------------------------------------------------------
+r180 | florian | 2008-03-07 22:05:03 +0100 (Fri, 07 Mar 2008) | 1 line
+
+Bug 41 - add accesskeys in the menus of the buddy list. patch from Bryce Verdier <bryceverdier@gmail.com>
+------------------------------------------------------------------------
+r181 | florian | 2008-03-07 22:20:03 +0100 (Fri, 07 Mar 2008) | 1 line
+
+Bug 43 - Make sure the instantbird launch script can be used from any directory. patch by goulagman
+------------------------------------------------------------------------
+r182 | florian | 2008-03-07 22:29:43 +0100 (Fri, 07 Mar 2008) | 1 line
+
+Bug 42 - Starting a new conversation should be keyboard accessible. p=goulagman, r=me
+------------------------------------------------------------------------
+r183 | florian | 2008-03-07 22:47:17 +0100 (Fri, 07 Mar 2008) | 1 line
+
+Bug 44 - Crash [@ purple_accounts_delete] when exiting and duplicated accounts exist
+------------------------------------------------------------------------
+r184 | florian | 2008-03-08 02:33:31 +0100 (Sat, 08 Mar 2008) | 1 line
+
+Bug 47 - Add double click functionality in the account manager. Patch from Bryce Verdier <bryceverdier@gmail.com>, r=me
+------------------------------------------------------------------------
+r185 | florian | 2008-06-02 01:29:05 +0200 (Mon, 02 Jun 2008) | 1 line
+
+Move current code to a branch
+------------------------------------------------------------------------
+r186 | florian | 2008-06-02 01:33:54 +0200 (Mon, 02 Jun 2008) | 1 line
+
+Add libpurple 2.4.0 in the repository and a part of the build system
+------------------------------------------------------------------------
+r187 | florian | 2008-06-02 01:44:22 +0200 (Mon, 02 Jun 2008) | 1 line
+
+Add the Instantbird application in the repository.
+------------------------------------------------------------------------
+r188 | florian | 2008-06-02 01:52:16 +0200 (Mon, 02 Jun 2008) | 1 line
+
+Move everything to a 'mozilla' directory to make the build system happy
+------------------------------------------------------------------------
+r189 | florian | 2008-06-02 17:48:44 +0200 (Mon, 02 Jun 2008) | 1 line
+
+Build libxml2 as part of our build system
+------------------------------------------------------------------------
+r190 | florian | 2008-06-02 22:45:50 +0200 (Mon, 02 Jun 2008) | 1 line
+
+Fix linux build breakage due to half removed thunderbird gtk icons.
+------------------------------------------------------------------------
+r191 | florian | 2008-06-05 13:07:01 +0200 (Thu, 05 Jun 2008) | 1 line
+
+Remove .svn directories from the .app bundle
+------------------------------------------------------------------------
+r192 | florian | 2008-06-05 14:05:19 +0200 (Thu, 05 Jun 2008) | 1 line
+
+Add glib in the build system.
+------------------------------------------------------------------------
+r193 | florian | 2008-06-05 15:54:47 +0200 (Thu, 05 Jun 2008) | 1 line
+
+Fix starting errors (libraries loading errors) on Mac OS X
+------------------------------------------------------------------------
+r194 | florian | 2008-06-05 18:40:01 +0200 (Thu, 05 Jun 2008) | 1 line
+
+Add Netsoul in the build system.
+------------------------------------------------------------------------
+r195 | florian | 2008-06-05 18:45:52 +0200 (Thu, 05 Jun 2008) | 1 line
+
+Change the standard netsoul message to include the name 'Instantbird'
+------------------------------------------------------------------------
+r196 | florian | 2008-06-06 00:46:20 +0200 (Fri, 06 Jun 2008) | 1 line
+
+Init nss only once from libpurple
+------------------------------------------------------------------------
+r197 | florian | 2008-06-07 23:00:04 +0200 (Sat, 07 Jun 2008) | 1 line
+
+Disable glib asserts even for debug builds
+------------------------------------------------------------------------
+r198 | florian | 2008-06-07 23:10:49 +0200 (Sat, 07 Jun 2008) | 1 line
+
+Upgrade libpurple from version 2.4.0 to 2.4.2
+------------------------------------------------------------------------
+r199 | florian | 2008-06-07 23:13:10 +0200 (Sat, 07 Jun 2008) | 1 line
+
+Add the script used to produce the patches to upgrade libpurple
+------------------------------------------------------------------------
+r200 | florian | 2008-06-08 00:03:04 +0200 (Sun, 08 Jun 2008) | 1 line
+
+Bug 32: possible crash with cancelled DNS resolutions.
+------------------------------------------------------------------------
+r201 | florian | 2008-06-08 00:34:02 +0200 (Sun, 08 Jun 2008) | 1 line
+
+bug 55 Crash [@ purpleMessage::GetConversation]
+------------------------------------------------------------------------
+r202 | florian | 2008-06-08 02:11:22 +0200 (Sun, 08 Jun 2008) | 1 line
+
+Bug 68: valgrind error [@ netsoul_close]
+------------------------------------------------------------------------
+r203 | florian | 2008-06-08 02:38:59 +0200 (Sun, 08 Jun 2008) | 1 line
+
+Bug 69: Valgrind error [@ netsoul_login_connect (ns_connection.c:133)]
+------------------------------------------------------------------------
+r204 | florian | 2008-06-14 00:00:23 +0200 (Sat, 14 Jun 2008) | 1 line
+
+Changes needed to compile with MSVC on Windows.
+------------------------------------------------------------------------
+r205 | florian | 2008-06-14 18:35:11 +0200 (Sat, 14 Jun 2008) | 1 line
+
+Handle netsoul messages that can't be received atomically
+------------------------------------------------------------------------
+r206 | florian | 2008-06-14 19:33:57 +0200 (Sat, 14 Jun 2008) | 1 line
+
+Oops fix previous commit
+------------------------------------------------------------------------
+r207 | florian | 2008-06-15 11:57:02 +0200 (Sun, 15 Jun 2008) | 1 line
+
+Workaround stylesheet loading issue caused by bug 397791
+------------------------------------------------------------------------
+r208 | florian | 2008-06-21 18:16:43 +0200 (Sat, 21 Jun 2008) | 1 line
+
+Fix gtalk connexion issue (SSL Handshake failed)
+------------------------------------------------------------------------
+r209 | florian | 2008-06-21 20:14:25 +0200 (Sat, 21 Jun 2008) | 1 line
+
+Use NSS to check certificates. Remove or ifdef out the purple_certificate_* stuff
+------------------------------------------------------------------------
+r210 | florian | 2008-06-22 01:15:46 +0200 (Sun, 22 Jun 2008) | 1 line
+
+Fix version info ressources (on Windows)
+------------------------------------------------------------------------
+r211 | florian | 2008-06-22 19:40:50 +0200 (Sun, 22 Jun 2008) | 1 line
+
+Implement netsoul_normalize (and fix a compilation warning in netsoul.c)
+------------------------------------------------------------------------
+r212 | florian | 2008-06-22 20:22:10 +0200 (Sun, 22 Jun 2008) | 1 line
+
+Bug 59 - After closing a tab, the tab on the left is selected
+------------------------------------------------------------------------
+r213 | florian | 2008-06-22 20:58:23 +0200 (Sun, 22 Jun 2008) | 1 line
+
+Bug 49 - Exception and crash when starting two Instantbirds. Fix for the crash.
+------------------------------------------------------------------------
+r214 | florian | 2008-06-22 22:07:47 +0200 (Sun, 22 Jun 2008) | 1 line
+
+Bug 49 - Exception and crash when starting two Instantbirds. focus the previous buddy list
+------------------------------------------------------------------------
+r215 | florian | 2008-06-23 00:47:56 +0200 (Mon, 23 Jun 2008) | 1 line
+
+Bug 41 - Fix account manager accesskey (follow up patch)
+------------------------------------------------------------------------
+r216 | florian | 2008-06-25 20:07:05 +0200 (Wed, 25 Jun 2008) | 1 line
+
+Fix warnings when exiting. Previous fix for bug 49 broke account-disconnecting and account-disconnected notifications, fix it.
+------------------------------------------------------------------------
+r217 | florian | 2008-06-25 20:40:09 +0200 (Wed, 25 Jun 2008) | 1 line
+
+Bug 52 - 64 bit support. Stop casting pointers to PRInt32 values used as unique ids or hashtable keys.
+------------------------------------------------------------------------
+r218 | florian | 2008-06-26 23:43:19 +0200 (Thu, 26 Jun 2008) | 1 line
+
+Bug 71 - XPCOM objects created/destroyed from static ctor/dtor
+------------------------------------------------------------------------
+r219 | florian | 2008-06-27 00:18:12 +0200 (Fri, 27 Jun 2008) | 1 line
+
+stop using NS_NEWXPCOM. Use MOZ_COUNT_CTOR/MOZ_COUNT_DTOR when appropriate.
+------------------------------------------------------------------------
+r220 | florian | 2008-06-28 16:22:58 +0200 (Sat, 28 Jun 2008) | 1 line
+
+Bug 40 - Need to call GetConnectionReady after OpenDatabase (mozStorage)
+------------------------------------------------------------------------
+r221 | florian | 2008-06-28 20:57:06 +0200 (Sat, 28 Jun 2008) | 1 line
+
+Bug 33 - Crash [@ purpleBuddy::GetAccount]
+------------------------------------------------------------------------
+r222 | florian | 2008-07-06 02:41:07 +0200 (Sun, 06 Jul 2008) | 1 line
+
+Nicer tooltips in the buddy list. Initial patch by Oliver <ohardt@gmail.com>
+------------------------------------------------------------------------
+r223 | florian | 2008-07-06 20:30:02 +0200 (Sun, 06 Jul 2008) | 1 line
+
+Display detailed information in buddy tooltips. Original patches by Vincent Ordy and goulagman.
+------------------------------------------------------------------------
+r224 | florian | 2008-07-06 23:51:23 +0200 (Sun, 06 Jul 2008) | 1 line
+
+Fix crash on Windows with ugly casts between long int (32bits) and time_t (64bits) pointers. Use time_t everywhere for timestamps. Display the elapsed time instead of the date in tooltip info.
+------------------------------------------------------------------------
+r225 | florian | 2008-07-06 23:54:02 +0200 (Sun, 06 Jul 2008) | 1 line
+
+Fix build error on Windows around purpleGListEnumerator::Init
+------------------------------------------------------------------------
+r226 | florian | 2008-07-07 00:42:12 +0200 (Mon, 07 Jul 2008) | 1 line
+
+Upgrade from libpurple 2.4.2 to libpurple 2.4.3
+------------------------------------------------------------------------
+r227 | florian | 2008-07-07 01:08:14 +0200 (Mon, 07 Jul 2008) | 1 line
+
+Fix dependencies of module.ver files of protocol plugins
+------------------------------------------------------------------------
+r228 | florian | 2008-07-08 13:19:52 +0200 (Tue, 08 Jul 2008) | 1 line
+
+Fix JS error when getTooltipInfo returns null (happens at least with the IRC prpl)
+------------------------------------------------------------------------
+r229 | florian | 2008-07-08 23:43:32 +0200 (Tue, 08 Jul 2008) | 1 line
+
+Bug 74 - Crash [@ aim_locate_finduserinfo]. Fix the crash by adding a null check in the oscar prpl. Call getTooltipInfo on the right purpleAccountBuddy instance. Update the content of the tooltip only when needed.
+------------------------------------------------------------------------
+r230 | florian | 2008-07-13 00:55:34 +0200 (Sun, 13 Jul 2008) | 1 line
+
+Fix the build on FreeBSD 7.0
+------------------------------------------------------------------------
+r231 | florian | 2008-07-17 00:55:02 +0200 (Thu, 17 Jul 2008) | 1 line
+
+Enable application updates. Fix the general.useragent.locale pref. Do not hardcode the version number in the default pref file
+------------------------------------------------------------------------
+r232 | florian | 2008-07-21 17:57:14 +0200 (Mon, 21 Jul 2008) | 1 line
+
+Removing useless configure.in modifications to prevent conflicts when upgrading Mozilla.
+------------------------------------------------------------------------
+r233 | florian | 2008-07-21 21:12:12 +0200 (Mon, 21 Jul 2008) | 1 line
+
+Include arpa/nameser_compat.h on all non-windows OSes
+------------------------------------------------------------------------
+r234 | florian | 2008-07-23 02:52:04 +0200 (Wed, 23 Jul 2008) | 1 line
+
+Fix makefiles.sh (files containing the add_makefiles calls)
+------------------------------------------------------------------------
+r235 | florian | 2008-07-23 19:28:02 +0200 (Wed, 23 Jul 2008) | 1 line
+
+Bug 58 - Profile folder migration. Add a JS XPCOM component to create a new profiles.ini based on the content of the old one.
+------------------------------------------------------------------------
+r236 | florian | 2008-07-23 19:36:59 +0200 (Wed, 23 Jul 2008) | 1 line
+
+Undo unwanted commit :-(
+------------------------------------------------------------------------
+r237 | florian | 2008-07-23 21:46:10 +0200 (Wed, 23 Jul 2008) | 1 line
+
+Bug 58 - Profile folder migration. Fix for Windows where there is a 'Profiles' intermediate subdirectory.
+------------------------------------------------------------------------
+r238 | florian | 2008-07-23 22:20:27 +0200 (Wed, 23 Jul 2008) | 1 line
+
+Move nsMailApp.cpp to nsMain.cpp, this has nothing to do with a Mail Application :)
+------------------------------------------------------------------------
+r239 | florian | 2008-07-23 23:34:55 +0200 (Wed, 23 Jul 2008) | 1 line
+
+Bug 46 - Make sure the account wizard won't try to create duplicate accounts
+------------------------------------------------------------------------
+r240 | florian | 2008-07-24 01:10:59 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Close the account manager when receiving the purple-quit signal, even if a modal subdialog is opened. Close the modal subdialogs (new account wizard and account properties dialog) of the account manager when the signal purple-quit is received.
+------------------------------------------------------------------------
+r241 | florian | 2008-07-24 19:14:02 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Make the license link clickable in the about dialog.
+------------------------------------------------------------------------
+r242 | florian | 2008-07-24 21:59:44 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Fix license headers and the generated license.html file
+------------------------------------------------------------------------
+r243 | florian | 2008-07-24 22:08:23 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Adding Copyrigh file for libxml2
+------------------------------------------------------------------------
+r244 | florian | 2008-07-24 22:15:12 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Fix contributors link
+------------------------------------------------------------------------
+r245 | florian | 2008-07-24 22:51:04 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Set the correct url for crash reports in application.ini
+------------------------------------------------------------------------
+r246 | florian | 2008-07-24 23:29:09 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Moving Mozilla to the FIREFOX_3_0_1_RELEASE branch
+------------------------------------------------------------------------
+r247 | florian | 2008-07-24 23:31:43 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Setting the version number to 0.1.2 final
+------------------------------------------------------------------------
+r248 | florian | 2008-07-24 23:32:09 +0200 (Thu, 24 Jul 2008) | 1 line
+
+Adding a vendor string in the application.ini file for breakpad.
+------------------------------------------------------------------------
+r249 | florian | 2008-07-25 01:06:24 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Set the Vendor string for breakpad. Do it for real this time ;-)
+------------------------------------------------------------------------
+r250 | florian | 2008-07-25 01:16:12 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Fix the format of the file CVS/Root
+------------------------------------------------------------------------
+r251 | florian | 2008-07-25 02:33:23 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Put the real instantbird.ico file
+------------------------------------------------------------------------
+r252 | florian | 2008-07-25 03:07:44 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Fix 0.1.2pre --> 0.1.2 in two more places
+------------------------------------------------------------------------
+r253 | florian | 2008-07-25 05:06:23 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Use instantbird icons for the 2 mozicon*.xpm files.
+------------------------------------------------------------------------
+r254 | florian | 2008-07-25 07:29:42 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Comment out the packages-static thing (Windows only) for now...
+------------------------------------------------------------------------
+r255 | florian | 2008-07-25 07:32:58 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Fix dmg file for Mac OS X (use artwork).
+------------------------------------------------------------------------
+r256 | florian | 2008-07-25 11:01:23 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Don't block the initialization of libpurple if setting the vendor info for breakpad fails
+------------------------------------------------------------------------
+r257 | florian | 2008-07-25 21:43:19 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Fix the breakpad submit url
+------------------------------------------------------------------------
+r258 | florian | 2008-07-25 23:02:44 +0200 (Fri, 25 Jul 2008) | 1 line
+
+Wallpaper fix for exception on Windows when trying to disconnect a jabber account that failed to connect
+------------------------------------------------------------------------
