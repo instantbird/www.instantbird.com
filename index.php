@@ -13,7 +13,7 @@
   {
     if (++cpt == imgs.length)
       cpt = 0;
-    document.getElementById("crossplatform").src = "http://img.instantbird.com/images/" + imgs[cpt] + ".jpg";
+    document.getElementById("crossplatform").src = "images/" + imgs[cpt] + ".jpg";
     setTimeout(changeImages, delays[cpt]);
   }
   </script>
@@ -37,27 +37,28 @@
 <p>Add-ons can be written easily and shared for everyone</p>
 
 <?php
-$user_agent = getenv("HTTP_USER_AGENT");
+$user_agent = getenv('HTTP_USER_AGENT');
+$version='0.1.3.1';
 
-if (strpos($user_agent, "Win") !== FALSE)
+if (strpos($user_agent, 'Win') !== FALSE)
 {
-    $link = "downloads/0.1.3/instantbird-0.1.3.en-US.win32.zip";
-    $message = "Click to start downloading Instantbird 0.1.3 for Windows";
+    $link = 'downloads/'.$version.'/instantbird-'.$version.'.en-US.win32.zip';
+    $message = 'Click to start downloading Instantbird '.$version.' for Windows';
 }
-elseif ((strpos($user_agent, "Mac") !== FALSE) || (strpos($user_agent, "PPC") !== FALSE))
+elseif ((strpos($user_agent, 'Mac') !== FALSE) || (strpos($user_agent, 'PPC') !== FALSE))
 {
-    $link = "downloads/0.1.3/instantbird-0.1.3.en-US.mac.dmg";
-    $message = "Click to start downloading Instantbird 0.1.3 for Mac";
+    $link = 'downloads/'.$version.'/instantbird-'.$version.'.en-US.mac.dmg';
+    $message = 'Click to start downloading Instantbird '.$version.' for Mac';
 }
-elseif (strpos($user_agent, "Linux") !== FALSE)
+elseif (strpos($user_agent, 'Linux') !== FALSE)
 {
-    $link = "downloads/0.1.3/instantbird-0.1.3.en-US.linux-i686.tar.bz2";
-    $message = "Click to start downloading Instantbird 0.1.3 for Linux";
+    $link = 'downloads/'.$version.'/instantbird-'.$version.'.en-US.linux-i686.tar.bz2';
+    $message = 'Click to start downloading Instantbird '.$version.' for Linux';
 }
 else
 {
-    $link = "download.html#links";
-    $message = "Click here to access the download page";
+    $link = 'download.html#links';
+    $message = 'Click here to access the download page';
 }
 
 echo '<a href="', $link, '" id="directdownload"><img alt="Download" src="images/button.png" /><h1>Download Instantbird Now!</h1><p>', $message, '</p></a>';
