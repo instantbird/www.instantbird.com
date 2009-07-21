@@ -1,8 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
  <head>
-
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
   <title>Instantbird</title>
   <link rel="stylesheet" type="text/css" href="css/home.css" />
   <link rel="shortcurt icon" href="favicon.ico" />
@@ -14,7 +13,7 @@
   {
     if (++cpt == imgs.length)
       cpt = 0;
-    document.getElementById("crossplatform").src = "images/" + imgs[cpt] + ".png";
+    document.getElementById("crossplatform").src = "http://img.instantbird.com/images/" + imgs[cpt] + ".jpg";
     setTimeout(changeImages, delays[cpt]);
   }
   </script>
@@ -25,6 +24,7 @@
 <a href="index.html"><img alt="Instantbird" src="images/logo-top.png" id="titre" /></a>
 
 <div id="nav">
+ <a href="http://blog.instantbird.org/">Blog</a>
  <a href="http://addons.instantbird.org/">Add-ons</a>
  <a href="support.html">Support</a>
  <a href="http://www.instantbird.org/">Developers</a>
@@ -35,9 +35,12 @@
 
 <a href="download.html" id="download"><img alt="Download" src="images/button.png" />
 <span id="button">Try Instantbird now!</span><br/>
-<span id="number">version 0.1</span></a>
+<span id="number">version 0.1.1</span></a>
 
 <p id="slogan">Instantbird, the powerful instant messenger based on Mozilla technologies and Pidgin!</p>
+
+<p class="release">Instantbird 0.1.1 released<br/>
+<span class="date">March 2nd 2008</span></p>
 
 <ul class="protocols">
 <li>AIM</li>
@@ -46,7 +49,7 @@
 <li>Google Talk</li>
 <!--<li>Groupwise</li>-->
 <li>ICQ</li>
-<!--<li>IRC</li>-->
+<li>IRC</li>
 </ul>
 <ul class="protocols">
 <li>MSN</li>
@@ -62,7 +65,8 @@
 </div>
 
 <div id="page">
-<img alt="Instantbird runs on Windows, Mac&nbsp;OS&nbsp;X and Linux" src="images/cross-platform.png" height="230" width="307" class="imgfloat" id="crossplatform"/>
+<img alt="Instantbird runs on Windows, Mac&nbsp;OS&nbsp;X and Linux" src="images/cross-platform.jpg" height="230" width="307" class="imgfloat" id="crossplatform"/>
+
 <h3>Cross Platform</h3>
 <p><a href="screenshots-windows.html" class="greylink">Windows</a>, <a href="screenshots-macosx.html" class="greylink">Mac&nbsp;OS&nbsp;X</a>, <a href="screenshots-linux.html" class="greylink">Linux</a></p>
 
@@ -84,7 +88,6 @@
 
 </div>
 
-<p id="footer">&copy; 2007 - <a href="http://blog.queze.net/">Florian Qu&egrave;ze</a> and <a href="http://mesidechix.info/">Quentin Castier</a>.</p>
+<p id="footer">&copy; 2007-2008 - <a href="http://blog.queze.net/">Florian Qu&egrave;ze</a> and Quentin Castier.</p>
 </body>
-
 </html>
