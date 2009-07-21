@@ -1,0 +1,1186 @@
+changeset:   486:f3a98ac67856
+branch:      0.1.3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 26 17:20:22 2008 +0100
+summary:     Modify client.py to update to specific revisions. Use the FIREFOX_3_1b2_RELEASE tag for mozilla-central.
+
+changeset:   485:fb27d88c081b
+branch:      0.1.3
+parent:      483:446a38e3df99
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 26 17:19:08 2008 +0100
+summary:     When changing the away message, the notification in the buddy list should be updated.
+
+changeset:   483:446a38e3df99
+branch:      0.1.3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 23 20:52:14 2008 +0100
+summary:     Send a NOT_TYPING signal after a command has been executed from a conversation.
+
+changeset:   482:c063a8d05b4f
+branch:      0.1.3
+parent:      479:a7273485ef66
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 23 20:52:10 2008 +0100
+summary:     Fix infinite loop in account creation with a corrupted profile.
+
+changeset:   479:a7273485ef66
+branch:      0.1.3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Nov 21 01:16:05 2008 +0100
+summary:     Make sure authorization prompts for new contacts are always modal relative to the buddy list (so the buddy list can not be closed, and libpurple uninitialized, before closing the notification). This prevents a crash.
+
+changeset:   478:c31ad051aef3
+branch:      0.1.3
+parent:      475:22da0ebb14cd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Nov 21 01:15:58 2008 +0100
+summary:     Prevent a crash when writing in already freed memory in purple_account_request_authorization (libpurple/account.c)
+
+changeset:   475:22da0ebb14cd
+branch:      0.1.3
+parent:      472:2bf56310703c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Nov 20 15:15:47 2008 +0100
+summary:     Fix crash in purple_accounts_delete
+
+changeset:   472:2bf56310703c
+branch:      0.1.3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 19 22:54:16 2008 +0100
+summary:     Bump version number from 0.1.3pre to 0.1.3 for the release.
+
+changeset:   471:fa9813a637a7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 19 17:44:27 2008 +0100
+summary:     Adding mozconfig files for releases.
+
+changeset:   470:d1e08bd74cf0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 18 23:03:17 2008 +0100
+summary:     Prevent a JS error about history in the browser binding (noise reduction in the error console :-)).
+
+changeset:   469:11c3568b7c07
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 18 19:21:15 2008 +0100
+summary:     Fix the usage of PR_Now(): PRTime is a 64 bits data type containing the time in micro seconds.
+
+changeset:   468:9c6a6c115ee1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 18 17:24:19 2008 +0100
+summary:     Fix typo in the name of a non packaged file.
+
+changeset:   467:27ce9de27f6d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 18 17:23:56 2008 +0100
+summary:     Do not attempt to send null messages. This removes a JS error and noise on stderr for debug builds.
+
+changeset:   466:6278fdcf421a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 17 21:53:25 2008 +0100
+summary:     Change the upgrade-libpurple.sh script to ignore msnp9 instead of msn.
+
+changeset:   465:a72081993245
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 17 21:47:11 2008 +0100
+summary:     Do not package useless files (js.exe, ...)
+
+changeset:   464:39c1d4b3b390
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 17 18:36:53 2008 +0100
+summary:     Fix symbol creation on Mac Universal builds. This patch is a port of http://hg.mozilla.org/comm-central/rev/5709136d4b9c
+
+changeset:   463:eb7488a600f1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 17 17:26:26 2008 +0100
+summary:     Update the credits for Instantbird 0.1.3
+
+changeset:   462:cf48590ea16c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 17 11:53:29 2008 +0100
+summary:     Work around libpurple's crashiness when we disable an account in the report_disconnect_reason uiop.
+
+changeset:   461:e9ca2652dd51
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 17 01:49:15 2008 +0100
+summary:     Add /away and /back commands to change the status directly from the conversation window.
+
+changeset:   460:69672dc2b95b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 16 03:15:02 2008 +0100
+summary:     Remove the warning that was displayed (debug builds only) when a server-side buddy list contains a group that is not yet in mozStorage.
+
+changeset:   459:3df82e1e9525
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Nov 15 23:11:23 2008 +0100
+summary:     Do not let libpurple reconnect automatically all accounts when the status is changed.
+
+changeset:   458:c7562f2cd18d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Nov 15 00:37:30 2008 +0100
+summary:     Crop the end of display names in order to prevent an horizontal scrollbar from appearing in the buddy list.
+
+changeset:   457:f5abca77459a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Nov 14 23:22:00 2008 +0100
+summary:     Bustage fix for Linux. (remove trailing ;)
+
+changeset:   456:ce10d7324557
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Nov 14 22:44:10 2008 +0100
+summary:     Ignore connection failure at the end of the new account wizard (so that the wizard closes even when we are in offline mode)
+
+changeset:   455:115c5345ac9a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Nov 14 22:42:49 2008 +0100
+summary:     Bug 78 - Crash when entering offline mode.
+
+changeset:   454:12b025d57175
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Nov 13 21:50:46 2008 +0100
+summary:     Make sure we reset the mozStorageStatement used for checking if an account id is free after usage. This bug prevented account creation when at least two accounts were left in mozStorage but removed from the preferences.
+
+changeset:   453:52aa4d01a22d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Nov 13 20:40:51 2008 +0100
+summary:     When breakpad is enabled, assume that a FILE NOT FOUND error on the 'LastCrash' file means that there was no crash.
+
+changeset:   452:1153cefb69ec
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Nov 13 20:39:38 2008 +0100
+summary:     Remove pending autologin when destructing an account.
+
+changeset:   451:c3debfcb2754
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Nov 13 20:27:28 2008 +0100
+summary:     Include nsICrashReporter.h in purpleCoreService.cpp only if we built with crash reporter enabled.
+
+changeset:   450:9b4a4ec9ed00
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Nov 13 20:26:26 2008 +0100
+summary:     Define MOZ_CRASHREPORTER properly with the configure script.
+
+changeset:   449:955621a7118b
+user:        Florian Queze <florian@instantbird.org>
+date:        Sat Nov 08 01:25:18 2008 +0100
+summary:     Bug 139 - Do no disable autologin if the previous autologin attempt was interrupted but not by a crash (use breakpad metadata to do this).
+
+changeset:   448:4bce275f2b29
+user:        Florian Queze <florian@instantbird.org>
+date:        Fri Nov 07 15:25:45 2008 +0100
+summary:     Add logging for the reset of mReconnectAttemps in purpleAccount in order to try to understand the auto reconnect loop that sometimes happen with 1s automatic reconnection attempts.
+
+changeset:   447:f0916a3d0cd2
+user:        Florian Queze <florian@instantbird.org>
+date:        Fri Nov 07 15:21:13 2008 +0100
+summary:     Remove useless parameter in purpleISocket::notifyLibPurple
+
+changeset:   446:f998702a9b5a
+user:        Florian Queze <florian@instantbird.org>
+date:        Fri Nov 07 01:01:59 2008 +0100
+summary:     Change the brandMotto of nightly builds. After all, geeks can also do magic!
+
+changeset:   445:7616d36a7a14
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Nov 06 03:27:55 2008 +0100
+summary:     Do not auto-hide tooltips of the buddy list after a few secondes.
+
+changeset:   444:cf9be248e818
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Nov 06 03:24:25 2008 +0100
+summary:     Bug 92 - Double clicking on a group in buddy list should hide / display it
+
+changeset:   443:546bf6e6c112
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Nov 05 14:21:49 2008 +0100
+summary:     Bug 137 - Prevent autologin if the last run exited unexpectedly during connection.
+
+changeset:   442:ecf39586223e
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Nov 04 23:59:28 2008 +0100
+summary:     Port the patch from Bug 462730 - Building fails with -j19 option enabled
+
+changeset:   441:d2ec0e01124b
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Nov 04 17:14:03 2008 +0100
+summary:     Add a preference during autologin so that we can detect at the next startup if the application exited unexpectedly during autologin.
+
+changeset:   440:d6497ba6a468
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Nov 04 12:34:44 2008 +0100
+summary:     Save account preferences with a timer (5s).
+
+changeset:   439:5f95249edf80
+user:        Florian Queze <florian@instantbird.org>
+date:        Sun Nov 02 15:18:20 2008 +0100
+summary:     Initialize the connection error reason to NO_ERROR in purpleAccount.
+
+changeset:   438:65691d994349
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 02 00:06:24 2008 +0100
+summary:     Remove the halloween branding from the buildbot mozconfig files.
+
+changeset:   437:06b265107e63
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 31 15:36:42 2008 +0100
+summary:     Move the brandMotto string to brand.dtd which is inside the branding folders.
+
+changeset:   436:a1156ba68e00
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 31 15:35:42 2008 +0100
+summary:     Fix Makefiles of locales branding folders so that the files in them are actually used.
+
+changeset:   435:3cf865538fc5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 31 15:31:51 2008 +0100
+summary:     Land the images of the halloween branding for the About dialog.
+
+changeset:   434:1c3c51eaccde
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 31 02:03:39 2008 +0100
+summary:     Use the halloween branding for today's nightlies.
+
+changeset:   433:0fa6ea9b96a5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 31 02:00:40 2008 +0100
+summary:     Adding the halloween special branding
+
+changeset:   432:c72d55291c91
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 30 23:09:45 2008 +0100
+summary:     Parallelize the build in purple/libraries/ and purple/libpurple/protocols/.
+
+changeset:   431:0d0e60f1591a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 30 23:09:06 2008 +0100
+summary:     Port the patch from bug 461395 -  add support for PARALLEL_DIRS to build system
+
+changeset:   430:f9946b154046
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 30 22:26:47 2008 +0100
+summary:     Remove transparent-plain-readonly-textbox.patch from our set of patches, it was upstreamed in bug 456595.
+
+changeset:   429:8721fe3d0814
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Oct 30 22:02:38 2008 +0100
+summary:     Bug 63 - Add automatic-reconnection of accounts that were disconnected with a non-fatal error.
+
+changeset:   428:2405d96a6232
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Oct 29 22:26:37 2008 +0100
+summary:     Sync with comm-central: Port the patch from bug 97954 and part of the patches from bug 452504.
+
+changeset:   427:997d789adbf3
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Oct 29 12:15:51 2008 +0100
+summary:     Use .textContent instead of the setText function.
+
+changeset:   426:23608c155e3b
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Oct 29 12:08:53 2008 +0100
+summary:     Observe account related notifications (except account-added and account-remove) from account.xml instead of accounts.js. Separate the code displaying connection errors from the code displaying connection progress in account.xml.
+
+changeset:   425:3b34e015de07
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Oct 28 12:25:56 2008 +0100
+summary:     Upgrade prpl.properties for libpurple 2.5.2. p=Morian.
+
+changeset:   424:817ee2752508
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Oct 28 12:20:07 2008 +0100
+summary:     Prevent the crash in purpleAccount::SetProxyInfo when aProxyInfo is null.
+
+changeset:   423:3da537391d62
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Oct 28 12:19:15 2008 +0100
+summary:     Avoid bogus purple_input_remove calls from netsoul_close.
+
+changeset:   422:5a5454fc8634
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Oct 28 12:08:04 2008 +0100
+summary:     Expose connection error reason from purpleIAccount and separate connection error messages from connection progress messages.
+
+changeset:   421:16969e159dc0
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Oct 21 19:17:47 2008 +0200
+summary:     Get rid of the getAccountByPurpleAccount method of purpleICoreService
+
+changeset:   420:152bda9241d2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Oct 20 22:55:59 2008 +0200
+summary:     Bustage fix for Windows.
+
+changeset:   419:73723a88b429
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Oct 20 20:29:32 2008 +0200
+summary:     Upgrade from libpurple 2.5.1 to libpurple 2.5.2
+
+changeset:   418:a878698abe61
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 17 03:13:51 2008 +0200
+summary:     Bug 147 - Disable auto-login when the 'Work Offline' checkbox of the Profile Manager is checked. Also make sure we won't try to connect accounts, watch sockets or do DNS resolutions while we are in offline mode.
+
+changeset:   417:516b1c3e7ae0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 17 02:31:40 2008 +0200
+summary:     Bug 140 - Sort nicklist in chat conversations. p=goulagman, r=me.
+
+changeset:   416:9bbe37ed7d53
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 17 00:38:56 2008 +0200
+summary:     Bug 60 - Follow up patch to fix a typo that broke the scrollbar.
+
+changeset:   415:36df505c3f87
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 14 01:26:52 2008 +0200
+summary:     Add a comment in purpleICoreService.idl to specify that it's possible to use values other than the AUTOLOGIN_something constants for the autoLoginStatus attribute and that in this case a generic message will be displayed in the Account Manager.
+
+changeset:   414:1b54c26b8ac1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 14 01:20:39 2008 +0200
+summary:     Make sure the JS code computing the color associated with a nick doesn't throw an exception when there is no alphanumerical character in the nick.
+
+changeset:   413:c860284475e5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 14 01:07:33 2008 +0200
+summary:     Bug 60 and 64. Scrollbars move around when the conversation area is resized. Auto-scroll is not reliable (when displaying large messages in the conversation area). Add a tolerance of 10 pixels for the detection that the scrollbar is at the bottom and that auto-scroll should be enabled.
+
+changeset:   412:eb0e14059222
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Oct 11 23:16:56 2008 +0200
+summary:     New disk icons for Mac OS X (work by idechix)
+
+changeset:   411:2208a3797a71
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Oct 11 23:05:34 2008 +0200
+summary:     Remove 'define _USE_32BIT_TIME_T' (Windows Only). Hopefully, this will fix bogus auto-idle.
+
+changeset:   410:04a09cf39297
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Oct 11 23:04:40 2008 +0200
+summary:     Make purpleTimeout have a thread safe nsISupport implementation.
+
+changeset:   409:91c03c0738bd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Oct 11 20:10:30 2008 +0200
+summary:     Write <Auto-Reply> after the pseudo when the message is an auto response.
+
+changeset:   408:f81ceb329946
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 09 20:42:24 2008 +0200
+summary:     Cut the name of the buddy after '@' when displaying the typing message in the status bar.
+
+changeset:   407:926cba57c44a
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Oct 09 18:49:46 2008 +0200
+summary:     Fix margins in the account manager around the notification bar
+
+changeset:   406:072e9487d4b2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 09 14:58:43 2008 +0200
+summary:     Add back the class='conv-nicklist' on the listbox of the nicklist. (Fix a regression from bug 133)
+
+changeset:   405:3d712278bb27
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 09 03:57:12 2008 +0200
+summary:     Bug 145 - Add a notification box in the account manager. p=Morian, r=me.
+
+changeset:   404:ffc3d731e045
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 09 03:50:41 2008 +0200
+summary:     Display typing notifications (with colors in the conversation tabs, and in the status bar of the conversation window)
+
+changeset:   403:d8f35282c225
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Oct 08 23:41:11 2008 +0200
+summary:     Send typing information to the server.
+
+changeset:   402:110dbcf976ad
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Oct 08 23:36:18 2008 +0200
+summary:     Add the NO_LINKIFY flag to status change messages written in conversations.
+
+changeset:   401:e2ebac586fa2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Oct 08 22:15:26 2008 +0200
+summary:     Remove useless variable in autoLoginHandler.js
+
+changeset:   400:347ada91717b
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Oct 08 15:41:21 2008 +0200
+summary:     Bug 133 - Handle double click on chat buddies in the nicklist of chat conversations. p=goulagman, r=me
+
+changeset:   399:8fde50ae4663
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Oct 08 13:21:40 2008 +0200
+summary:     Send a notification when auto login is processed, so that potential messages stating that auto login is disabled can be removed.
+
+changeset:   398:a65d2a8689f2
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Oct 08 13:15:53 2008 +0200
+summary:     Ensure that we don't try to create a conversation with an empty string as the recipient
+
+changeset:   397:860848d976e0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 07 23:10:18 2008 +0200
+summary:     Set the autoLoginStatus back to enabled once it has been processed.
+
+changeset:   396:87b847da7f58
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 07 23:05:21 2008 +0200
+summary:     Bug 144 - Provide more information about why autologin is disabled. p=Morian, r=me.
+
+changeset:   395:5b50eb62da88
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 07 22:57:31 2008 +0200
+summary:     When a keypress event is sent to the browser of a conversation, focus the editor and resend the event instead of messing up with the editor directly.
+
+changeset:   394:817461fcd00c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 07 00:40:33 2008 +0200
+summary:     Update the patch making the background of plain readonly textboxes transparent so that it is now applied on the themes of all 3 OSes.
+
+changeset:   393:a6cea682bc5d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 07 00:37:25 2008 +0200
+summary:     Remove all borders and margins around the buddy list.
+
+changeset:   392:4fdcf8f6b038
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 07 00:36:51 2008 +0200
+summary:     Code cleanup. Do the assignment of the result of XPCOM methods inside the NS_ADDREF macro 'call'.
+
+changeset:   391:b8914528cc51
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Oct 07 00:04:47 2008 +0200
+summary:     Code cleanup. Replace some return NS_ERROR_<something> by NS_ENSURE_<something>
+
+changeset:   390:5feee4db4a0d
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Oct 06 18:32:15 2008 +0200
+summary:     Bug 142 - Disable autologin when Instantbird is in safe-mode.
+
+changeset:   389:203825db221d
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Oct 06 18:31:06 2008 +0200
+summary:     Bug 136 - Add a command line option to prevent autoLogin. p=Morian, r=me
+
+changeset:   388:aebe86fbc713
+user:        Florian Queze <florian@instantbird.org>
+date:        Sun Oct 05 21:29:19 2008 +0200
+summary:     Fix update packaging on Mac universal builds
+
+changeset:   387:a58c054df795
+user:        Florian Queze <florian@instantbird.org>
+date:        Sun Oct 05 21:28:44 2008 +0200
+summary:     Remove code only used for the ldap c-sdk from the configure script
+
+changeset:   386:b53fae22b478
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Oct 05 13:20:48 2008 +0200
+summary:     Port the patch from bug 457859, remove calendar related things, and make --enable-official-branding work for Instantbird.
+
+changeset:   385:a5b3344a7bfe
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Oct 05 13:18:52 2008 +0200
+summary:     Use 'Instantbird' and not 'Instantbird Nightly' as MOZ_APP_DISPLAYNAME for nightlies.
+
+changeset:   384:310fd0ed232e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Oct 05 12:06:22 2008 +0200
+summary:     Fix build error on Windows.
+
+changeset:   383:ff0fb0c508fe
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Oct 05 02:08:00 2008 +0200
+summary:     Move the various files of the branding to instantbird/branding/release (this is mostly a port of bug 443351). Add a nightly branding, which is enabled by default.
+
+changeset:   382:db740f02caeb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Oct 05 01:05:57 2008 +0200
+summary:     Removing useless files in instantbird/installer
+
+changeset:   381:05f3128cc031
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 03 22:39:18 2008 +0200
+summary:     Plug memory leaks.
+
+changeset:   380:4a81ade86c93
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Oct 03 00:11:02 2008 +0200
+summary:     Add an autoLoginEnabled attribute to the purpleICoreService interface so that an XPCOM component executed at startup (typically, a component implementing the nsICommandLine interface) can disable the automatic connection of accounts at startup.
+
+changeset:   379:9622a0a42ccf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 02 16:48:39 2008 +0200
+summary:     Implement the set_idle prpl op in the netsoul plugin.
+
+changeset:   378:956df4b5e643
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 02 15:38:17 2008 +0200
+summary:     Do not call close for PurpleConversation if we are in the process of exiting. This will fix bogus 'left the room' messages that were displayed when someone closed Instantbird.
+
+changeset:   377:78c01c96407b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 02 15:34:59 2008 +0200
+summary:     Display Instantbird version number in the Quit message of IRC when exiting.
+
+changeset:   376:327137437062
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 02 15:33:35 2008 +0200
+summary:     Improve purpleCoreService::RemoveConversation to be a little more efficient and not output warnings when the conversation has already been uninitialized.
+
+changeset:   375:46302402fdd3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 02 15:32:18 2008 +0200
+summary:     Fix the implementation of ui_get_info so that it uses the g_hash_table correctly.
+
+changeset:   374:22924796a4ec
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Oct 01 16:16:25 2008 +0200
+summary:     Prevent duplicate notifications (away/back/signed on/off) in conversations
+
+changeset:   373:977f9d536c1e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 30 21:01:10 2008 +0200
+summary:     Revert a previous change to the jabber prpl that was used to work around an exception that we now prevent directly in libc_interface
+
+changeset:   372:5775a95df145
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 30 21:00:23 2008 +0200
+summary:     Detect negative values for the fd parameter of wpurple_read/write/close and return early with EBADF in errno. Should fix common exceptions on Windows.
+
+changeset:   371:c6b513e1ff37
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 29 00:21:11 2008 +0200
+summary:     Bug 130 - Separate the css rules of the conversation binding and the conversation window. p=Morian, r=me
+
+changeset:   370:6567b7f5f52d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 29 00:19:52 2008 +0200
+summary:     Bug 129 - Shift + Page up / Page down keys should scroll the conversation history. p=Morian, r=me
+
+changeset:   369:ff8644edcd49
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 29 00:14:21 2008 +0200
+summary:     Do not checkout the C ldap SDK, wallet and the typeaheadfind extensions from CVS
+
+changeset:   368:d579fa8aef9c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 29 00:12:46 2008 +0200
+summary:     Disambiguate the '(in)active at several locations' message of the netsoul protocol plugin.
+
+changeset:   367:76b739e38df9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 27 23:54:33 2008 +0200
+summary:     Bug 128 - vertical scrollbar (Mac and Windows) on the Advanced Options step of the new account wizard. Close the 'Proxy settings' groupbox by default. p=Morian, r=me.
+
+changeset:   366:159827188fe2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 27 23:51:29 2008 +0200
+summary:     Theme improvements for the conversation window.
+
+changeset:   365:2c5d7047204a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 27 16:55:52 2008 +0200
+summary:     Handle auto-idle
+
+changeset:   364:5ff9b00690a4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 27 16:54:50 2008 +0200
+summary:     Fix the warning: implicit declaration of function 'purple_statenotify_init'
+
+changeset:   363:995b5f5fdf04
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 27 01:25:48 2008 +0200
+summary:     Set the core ui ops so that libpurple can get info about the UI (name, version, website url, ...)
+
+changeset:   362:ee1822a65f45
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 27 00:43:27 2008 +0200
+summary:     Bug 86 - Add a findbar to the conversation widget. Add a try/catch to remove an harmless exception.
+
+changeset:   361:6c5b6d0234e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Sep 26 23:28:35 2008 +0200
+summary:     Statically link the statenotify purple plugin to libpurple so that we have notifications of (dis)connection and status changes in conversations.
+
+changeset:   360:550e5bb57c9c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Sep 26 22:47:12 2008 +0200
+summary:     Add a default value for the pref extensions.update.url to prevent the Extensions Manager from throwing an exception at startup.
+
+changeset:   359:c8fa984d4956
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Sep 26 22:38:39 2008 +0200
+summary:     Fix the install.rdf file of the default theme: s/Thunderbird/Instantbird/ and set the minVersion and maxVersion numbers (this will prevent the Extension Manager from hitting an assertion in RDF and trying to restart twice).
+
+changeset:   358:253fea34bbfc
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Sep 25 21:00:36 2008 +0200
+summary:     Patch nsTypeAheadFind.cpp even more, so that we can do backward type ahead finding.
+
+changeset:   357:4796d794707f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 25 13:07:48 2008 +0200
+summary:     Bug 115 - Fix typos in en-US locale. p=Morian, r=me
+
+changeset:   356:ab5921554baa
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 25 13:04:53 2008 +0200
+summary:     Bug 124 - When deleting an account, the 'Ok' button should be 'Delete' instead (in the confirmation prompt). p=Morian, r=me
+
+changeset:   355:43b3e5cd830d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Sep 24 23:46:34 2008 +0200
+summary:     Add a findbar in the conversation area. Initial patch by Romain Bezut <romain@bezut.info> in bug 86. Also add a patch to allow reversed find as you type.
+
+changeset:   354:a0daff44a06f
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Sep 24 13:19:52 2008 +0200
+summary:     Bug 83 - Add a 'Check for Updates' menu item.
+
+changeset:   353:d8596c4c155c
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Sep 24 12:56:00 2008 +0200
+summary:     Fix the handling of the /me command of incoming messages. It was broken for incoming messages starting with HTML tags (for exemple google talk messages)
+
+changeset:   352:d172439ff1fc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 23 23:05:48 2008 +0200
+summary:     Add a patch to change the name of the partial updates so that they work well with our current server side update script.
+
+changeset:   351:5c9afd7c55eb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 23 22:22:40 2008 +0200
+summary:     Add a patch to build mbsdiff when the configure flags --enable-update-packaging is set
+
+changeset:   350:b404fd101a39
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Sep 23 20:48:26 2008 +0200
+summary:     Remove the ugly background on mac plain readonly textboxes
+
+changeset:   349:2b67929f642d
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Sep 23 20:44:33 2008 +0200
+summary:     Display chat topic in a notification bar at the top of the conversation. Handle chat topic updates.
+
+changeset:   348:a2ef0a7c5231
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Sep 23 17:08:57 2008 +0200
+summary:     Fix error in the previous change to client.py
+
+changeset:   347:650074a25f73
+user:        Florian Queze <florian@instantbird.org>
+date:        Tue Sep 23 16:43:28 2008 +0200
+summary:     Add a --clean (or -C) option to the client.py script so that the buildfarm can undo the effect of the patches before trying to apply them again.
+
+changeset:   346:e5d16bb040cf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 23 02:46:00 2008 +0200
+summary:     Handle commands for outgoing messages.
+
+changeset:   345:fc7a1a23cfe3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 23 01:11:59 2008 +0200
+summary:     Add the flag slashCommandsNative in purpleIProtocol. Replace the purpleProtocol::GetBoolOpt inline method by a macro.
+
+changeset:   344:5d6ad29689ff
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Sep 22 18:10:28 2008 +0200
+summary:     Bug 90 - When the error message is displayed on several lines, the buttons aren't well displayed. Change the min-height from 2.5em to 2em (this new value looks OK on Mac, will need testing on other OSes)
+
+changeset:   343:184a62c1cc26
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Sep 21 18:44:23 2008 +0200
+summary:     Port part of the changes from bug 453840. Upgrade our patch for the complete mar name, to still work after the changes from this bug.
+
+changeset:   342:b1b4af568935
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Sep 21 17:57:32 2008 +0200
+summary:     Add .mozconfig.out to .hgignore
+
+changeset:   341:4d3013f4d2c6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 16 21:58:29 2008 +0200
+summary:     Fix bustage on Windows. Move glib.dll and libxml2.dll to the application folder, and really (this time) get rid of the libraries folder.
+
+changeset:   340:47a8f5060de9
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Sep 15 18:01:07 2008 +0200
+summary:     Fix typo in accounts.properties
+
+changeset:   339:30bf400f5ce7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Sep 14 20:46:04 2008 +0200
+summary:     Disable purpleloader, move libraries to the application folder, and prpl to a protocols folder. The libraries folder doesn't exist any more.
+
+changeset:   338:1a088e54161d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 13 17:17:22 2008 +0200
+summary:     Make sure purpleTimer won't call any libpurple callback after uninitialization. +Follow up to the two previous patches for null out sRequests and sSockets after uninitialization.
+
+changeset:   337:2dc2640143e9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 13 16:07:12 2008 +0200
+summary:     Bug 76 - Crash [@ purpleDNS::Remove(_PurpleDnsQueryData*) ]
+
+changeset:   336:62228a26016b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 13 16:07:01 2008 +0200
+summary:     Bug 114 - Crash [@ purpleSocketWatcher::CancelWatch (purpleSockets.cpp:404)] at shutdown.
+
+changeset:   335:76fc552e2daf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 13 00:33:12 2008 +0200
+summary:     Disable dbus so that our 32 bit builds also work on Ubuntu 64 bit
+
+changeset:   334:5aa3f8e73595
+user:        Florian Queze <florian@instantbird.org>
+date:        Fri Sep 12 15:33:27 2008 +0200
+summary:     Fix the location of updater.ini on Mac (port the fix from bug 436719)
+
+changeset:   333:cf3845c1709b
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Sep 11 20:36:19 2008 +0200
+summary:     Make universal builds on Mac OS X.
+
+changeset:   332:5487028c1e80
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 11 13:55:18 2008 +0200
+summary:     Enable ccache for linux on buildbot
+
+changeset:   331:d4ea8e9ca592
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 11 13:44:57 2008 +0200
+summary:     Disable Mork (seems to fix build breakage)
+
+changeset:   330:83aeb39434cd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Sep 09 03:02:01 2008 +0200
+summary:     Fix typo in the Windows buildbot mozconfig
+
+changeset:   329:7c24dd167796
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 08 22:27:13 2008 +0200
+summary:     Fix the 32px IRC icon. p=Idechix.
+
+changeset:   328:41a7ce89da4d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 08 20:15:51 2008 +0200
+summary:     Fix name of mar files for complete updates.
+
+changeset:   327:102d8639f0f6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 08 18:39:06 2008 +0200
+summary:     Disable signed/unsigned warnings for C code, to reduce the noise on buildbot logs.
+
+changeset:   326:b727f4bee787
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 08 18:38:12 2008 +0200
+summary:     Upgrading libpurple from 2.5.0 to 2.5.1
+
+changeset:   325:a50382ed2340
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 08 17:11:14 2008 +0200
+summary:     Bump version number to 0.1.3pre
+
+changeset:   324:096bccc56e3f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Sep 08 03:17:55 2008 +0200
+summary:     Ensure NSS is initialized before initializing libpurple. For an unknown reason, sometimes Mozilla initialize it automatically and sometimes it doesn't. This was one of the top crashers.
+
+changeset:   323:6ddf46a7c380
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Sep 07 14:08:04 2008 +0200
+summary:     Removing the old HTML page that was used as a template to display conversations
+
+changeset:   322:d6b83503efed
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Sep 07 03:52:37 2008 +0200
+summary:     Implement nsIContentPolicy to block remote image loading in conversations but allow local images.
+
+changeset:   321:81c478aff0f5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 06 21:36:33 2008 +0200
+summary:     Fix notifications for incoming messages (broken with the nicklist push, because of JS operators priority between ! and instanceof)
+
+changeset:   320:9e50fb070155
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 06 20:57:55 2008 +0200
+summary:     Fix sounds for incoming messages (broken with the previous push, because of JS operators priority between ! and instanceof)
+
+changeset:   319:e35a886aaec4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 06 03:27:22 2008 +0200
+summary:     Bug 70 - Display a list of participants of chat rooms.
+
+changeset:   318:0f8e783a3aa1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Sep 06 01:14:46 2008 +0200
+summary:     Revert part of the patch from http://developer.pidgin.im/ticket/3798 (e7d6a0a271d8fe8435f200e0f1ec123053e57493)
+
+changeset:   317:b177b143760f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 04 18:17:19 2008 +0200
+summary:     Better icon for accout errors in the account manager.
+
+changeset:   316:762c1a564c3d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 04 17:29:32 2008 +0200
+summary:     Add a patch to fix the name of the complete mar file so that it is compatible with our auto-update server-side system. Patch by eventreur.
+
+changeset:   315:c5c5a8e226bf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 04 03:38:13 2008 +0200
+summary:     Cleanup in instantbird/app: recursive make install is deprecated, we won't support OS2 and we won't use CVS or SVN anymore.
+
+changeset:   314:8db88c437523
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 04 03:23:48 2008 +0200
+summary:     Add separate icons for the buddy list and the conversation windows. Fix the Makefile in instantbird/app to handle gtk icon stuff correctly.
+
+changeset:   313:f836543ce1e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Sep 04 00:54:52 2008 +0200
+summary:     Add an overlay error icon above the protocol icon in case of connection error in the account manager.
+
+changeset:   312:d36441c4c902
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Sep 01 12:22:42 2008 +0200
+summary:     Add a --with-macos-sdk line in the macosx mozconfig for buildbot
+
+changeset:   311:dcdc90f4be15
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 30 15:40:06 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf.(purpleMessage, purplePref, purpleProtocol and purpleTimer parts) p=Romain Bezut <romain@bezut.info>, r=me.
+
+changeset:   310:b67e170a58d6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 30 03:30:34 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf. purpleInit part. p=Romain Bezut <romain@bezut.info>, r=me.
+
+changeset:   309:793317311d93
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 30 03:30:24 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf. purpleDNS part. p=Romain Bezut <romain@bezut.info>, r=me.
+
+changeset:   308:f6d6cdb0110b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 30 02:44:52 2008 +0200
+summary:     Do not display VERSION CTCP. This used to open a conversation tab for each freenode connection.
+
+changeset:   307:954bd1e100dd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 30 02:43:43 2008 +0200
+summary:     Minor coding style cleanup. p=Romain Bezut <romain@bezut.info>, r=me.
+
+changeset:   306:32c01eb811d4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 30 02:41:16 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf. purpleBuddy and purpleAccountBuddy parts. p=Romain Bezut <romain@bezut.info>, r=me.
+
+changeset:   305:3e9c2938744d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 30 02:37:44 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf. purpleCoreService part. p=Romain Bezut <romain@bezut.info>, r=me.
+
+changeset:   304:58cd3359fc87
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 28 23:43:09 2008 +0200
+summary:     Be more --with-libxul-sdk friendly :)
+
+changeset:   303:ef07839d2021
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Aug 28 17:34:14 2008 +0200
+summary:     Add a --skip-instantbird switch to client.py so that our buildbot builders can take care of it themselves.
+
+changeset:   302:25b175a8944a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 28 17:03:11 2008 +0200
+summary:     Apply patches to mozilla-central code automatically during checkout. Add patches to make crash reporting work.
+
+changeset:   301:2f90ea91bd53
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 28 16:16:45 2008 +0200
+summary:     Pull from the instantbird repository too when calling 'python client.py checkout'
+
+changeset:   300:dfcee3e73d48
+user:        Florian Queze <florian@instantbird.org>
+date:        Wed Aug 27 23:30:38 2008 +0200
+summary:     Bug 91 - When the user types, focus should be given to message area. Follow up to fix it on Mac.
+
+changeset:   299:54ad45986ffd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Aug 27 23:12:48 2008 +0200
+summary:     Remove warning about missing Thunderbird, Sunbird and Seamonkey version files in the configure script.
+
+changeset:   298:8b6fd2ff1b88
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Aug 27 23:11:59 2008 +0200
+summary:     Port aclocal.m4 change over from mozilla-central, changeset c397279747fa (comm-central changesets 5953f371f842 and bb1e359ce325)
+
+changeset:   297:ad46b60a1c4a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Aug 27 21:10:02 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf. purpleAccount part. Patch by Romain Bezut <romain@bezut.info>
+
+changeset:   296:88c62ea5ad56
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Aug 27 21:09:21 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf. purpleSockets part (follow up patch by Romain Bezut <romain@bezut.info>).
+
+changeset:   295:75fa958c5202
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Aug 27 08:30:10 2008 +0200
+summary:     Add a shell script to generate C++ header files.
+
+changeset:   294:49619e675eab
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Aug 27 00:54:31 2008 +0200
+summary:     Put a pointer to a purpleAccount instance in the ui_data field of PurpleAccount structure
+
+changeset:   293:fa7e09f5e842
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Aug 26 23:14:26 2008 +0200
+summary:     Add mozconfig files for nightly builds
+
+changeset:   292:d0336e643c47
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 21:10:12 2008 +0200
+summary:     Porting the fix from: Bug 434192 - Fails to build after make clean on architectures using .s files
+
+changeset:   291:61f7464bfeab
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 21:04:59 2008 +0200
+summary:     Copy the fix from: Bug 450967 - Check for alternate autoconf-2.13 names in comm-central build system
+
+changeset:   290:e24aa0bc1eb4
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 21:00:19 2008 +0200
+summary:     Better font in conversation window (at least in Mac)
+
+changeset:   289:cc591f5d4884
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 20:44:03 2008 +0200
+summary:     Fix visibility warnings (on Mac this time...)
+
+changeset:   288:6bede10686a3
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 20:32:53 2008 +0200
+summary:     Bug 105 - Use NSPR logging instead of printf. purpleSockets part.
+
+changeset:   287:e353adde4248
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 19:05:27 2008 +0200
+summary:     Disable 'warning C4068: unknown pragma' on Windows.
+
+changeset:   286:60fd0e14b40f
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 15:05:34 2008 +0200
+summary:     Bug 3 - report startup failures in an understandable way. Patch by Romain Bezut <romain@bezut.info>
+
+changeset:   285:ce3e68dcd579
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 07:31:02 2008 +0200
+summary:     Fix (gcc) compilation warnings of the Netsoul protocol plugin
+
+changeset:   284:9c8d46a1c4c2
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 06:36:13 2008 +0200
+summary:     Update prpl.properties for libpurple 2.5.0. Patch by Romain Bezut <romain@bezut.info>
+
+changeset:   283:2c80041e63fc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Aug 25 06:26:42 2008 +0200
+summary:     Fix visibility warnings in purplexpcom on Linux.
+
+changeset:   282:0cd48deb6c1c
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 03:05:14 2008 +0200
+summary:     Add gobject in the build. It became needed with libpurple 2.5.0, the new file smiley.c uses it.
+
+changeset:   281:bae6cd4a1d8a
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 03:02:18 2008 +0200
+summary:     Fix qq build bustage with MSVC
+
+changeset:   280:43e2973b03d0
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 01:59:18 2008 +0200
+summary:     Disable DEBUG_MEMORY in libxml2 for debug builds (it was very noisy)
+
+changeset:   279:d91f19b3eab6
+user:        Florian Queze <florian@instantbird.org>
+date:        Mon Aug 25 01:57:24 2008 +0200
+summary:     Add a debug warning for when purpleCoreService::GetProtoById fails
+
+changeset:   278:a0b97af8b34e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Aug 24 17:03:26 2008 +0200
+summary:     Fix Windows build bustage (caused by the changes to adopt a build system like the one of comm-central). Also do some more s/mail/instantbird/ in the Makefile.in related to Windows packaging.
+
+changeset:   277:5940feb4b98a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Aug 23 02:25:22 2008 +0200
+summary:     Fix build bustage on Linux (trailing comma in libpurple/connection.h)
+
+changeset:   276:f1c2a9d8cea3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 22 05:43:27 2008 +0200
+summary:     Remove the msnp9 protocol plugin.
+
+changeset:   275:b07d0d821e80
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 22 05:36:41 2008 +0200
+summary:     Upgrade libpurple from version 2.4.3 to 2.5.0
+
+changeset:   274:ceafcf9dff33
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 22 04:06:38 2008 +0200
+summary:     Bug 104 - Tabs should be focusable (in conversation window)
+
+changeset:   273:f1cd67ec2477
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 22 03:09:38 2008 +0200
+summary:     Make DOM Inspector and Venkman usable in debug builds (--enable-extensions=venkman,inspector is needed in the mozconfig file)
+
+changeset:   272:b0a901f33e6c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 21 21:57:19 2008 +0200
+summary:     Don't collapse white space in messages (this is useful to keep indentation when copying & pasting source code over IM). Break long words to prevent horizontal scrollbars from appearing in the conversation area.
+
+changeset:   271:85d4200c683b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 21 21:54:00 2008 +0200
+summary:     Do not convert newlines into spaces for incoming xmpp messages. We need this at least until we support correctly the difference between plain text and HTML messages in the Conversation window.
+
+changeset:   270:b93887646ffd
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Aug 21 15:14:59 2008 +0200
+summary:     Bug 95 - updater.ini file missing (update progress window was not displayed, and there was a JS error).
+
+changeset:   269:8898fd7a9802
+user:        Florian Queze <florian@instantbird.org>
+date:        Thu Aug 21 13:58:14 2008 +0200
+summary:     Bug 100 - Proxy support localization. Fix the jar manifest.
+
+changeset:   268:6638610224cb
+parent:      263:3f80781f2e15
+user:        florian
+date:        Wed Aug 20 11:50:28 2008 +0200
+summary:     Renaming trunk branch to default
+
+changeset:   263:3f80781f2e15
+branch:      trunk
+user:        florian
+date:        Tue Aug 19 04:27:17 2008 +0200
+summary:     [svn] Commenting out the code that is unhappy about the lack of hg repo for the project in client.py
+
+changeset:   262:66d5b093e2e1
+branch:      trunk
+user:        florian
+date:        Tue Aug 19 04:09:18 2008 +0200
+summary:     [svn] Build system copied from the one of comm-central to build Mozilla from mozilla-central instead of CVS.
+
+changeset:   261:a765888e56a9
+branch:      trunk
+user:        florian
+date:        Tue Aug 19 04:03:14 2008 +0200
+summary:     [svn] Move things around before switching to hg for Mozilla.
+
+changeset:   260:543a0d9dd84a
+branch:      trunk
+user:        florian
+date:        Mon Aug 18 22:31:45 2008 +0200
+summary:     [svn] Bug 100 - Some of the strings of the proxy UI are not localizable. p=Romain Bezut <romain@bezut.info>,r=me
+
+changeset:   259:c05e7a638ab2
+branch:      trunk
+user:        florian
+date:        Mon Aug 18 22:16:45 2008 +0200
+summary:     [svn] Bug 103 - Use WAI-ARIA live regions while displaying incoming messages. p=Peter Vagner <pvdeejay@gmail.com>, r=me
+
+changeset:   258:f808e88ec78d
+branch:      trunk
+user:        florian
+date:        Fri Aug 15 22:48:28 2008 +0200
+summary:     [svn] Bug 84 - Add Key bindings (and handle mouse wheel event) to zoom in the conversation window. p=Romain Bezut <romain@bezut.info>, r=me
+
+changeset:   257:f72d395a5d46
+branch:      trunk
+user:        florian
+date:        Thu Aug 14 05:05:41 2008 +0200
+summary:     [svn] Bug 97 - DNS SRV Queries broken on Windows. (timeout_add used for thread synchronization)
+
+changeset:   256:d9c37a24a7b4
+branch:      trunk
+user:        florian
+date:        Thu Aug 14 02:18:26 2008 +0200
+summary:     [svn] Remove debug output in the account manager. At this point it is just some noise.
+
+changeset:   255:98ce58e0e21e
+branch:      trunk
+user:        florian
+date:        Thu Aug 14 02:17:11 2008 +0200
+summary:     [svn] Fix account wizard breakage (caused the move of protocol specific options to a collapsable groupbox)
+
+changeset:   254:6faef84d04a2
+branch:      trunk
+user:        florian
+date:        Thu Aug 14 00:14:32 2008 +0200
+summary:     [svn] Bug 87 - User should not be able to double click on connect / disconnect buttons of the account manager. p=Romain Bezut <romain@bezut.info>,r=me
+
+changeset:   252:469bafc69c39
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:54:43 2008 +0200
+summary:     [svn] Bug 94 - conv.css: font-family property is misplaced. p=idechix
+
+changeset:   251:17de3057523c
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:51:32 2008 +0200
+summary:     [svn] Bug 91 - When the user types, focus should be given to message area. p=Romain Bezut <romain@bezut.info>,r=me
+
+changeset:   250:a6077504f190
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:49:10 2008 +0200
+summary:     [svn] Bug 90 - When multiline error messages are displayed in the account manager, the buttons (connect, delete, properties) become too small. p=Romain Bezut <romain@bezut.info>,r=me
+
+changeset:   249:791a64e4d8f3
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:44:58 2008 +0200
+summary:     [svn] Bug 85 - Manage double clic on first step of accountWizzard. p=Romain Bezut <romain@bezut.info>,r=me
+
+changeset:   248:ef663705d145
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:42:43 2008 +0200
+summary:     [svn] Bug 82 - No prompt for confirmation when deleting an account. p=Romain Bezut <romain@bezut.info>,r=me
+
+changeset:   247:37d705501d3c
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:34:58 2008 +0200
+summary:     [svn] Bug 77 - Double-click on Disconnect opens acount properties. p=Romain Bezut <romain@bezut.info>,r=me
+
+changeset:   246:7149d8a99bd2
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:30:11 2008 +0200
+summary:     [svn] Bug 88 - Bogus error displayed when disconnecting from the UI an account that was connecting
+
+changeset:   245:2d1e15e7fc8d
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:06:00 2008 +0200
+summary:     [svn] Bug 13 - Add Proxy Support.
+
+changeset:   244:524962d8bbc3
+branch:      trunk
+user:        florian
+date:        Wed Aug 13 23:03:26 2008 +0200
+summary:     [svn] Use some macros to reduce code duplication in purplePref.

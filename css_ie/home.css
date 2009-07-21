@@ -4,7 +4,7 @@ background: url('../images/top.png') repeat-x top;
 margin: 0;
 padding: 0;
 font-family: sans-serif;
-color:#4d4d4d;
+color: #4d4d4d;
 }
 
 h1
@@ -57,13 +57,13 @@ table
 {
 margin-left: 20px;
 border-collapse:collapse;
-font-size: smaller;
+font-size: small;
 }
 
 td, th
 {
 padding: 5px 8px 5px 8px;
-border-style:solid; 
+border-style: solid; 
 border-width:1px;
 border-color: #cccccc;
 text-align: left;
@@ -85,11 +85,22 @@ z-index: 100;
 
 #nav
 {
-top: 63px;
-right: 10px;
+top: 0px;
+right: 0px;
+left: 0px;
+height: 82px;
 width: 100%;
-text-align: right;
+margin: 0;
 position: absolute;
+}
+
+#nav div
+{
+right: 10px;
+bottom: 0px;
+padding-left: 410px;
+position: absolute;
+text-align: right;
 }
 
 #nav a
@@ -107,60 +118,93 @@ width: 300px;
 position: absolute;
 }
 
+#infos p
+{
+font-size: large;
+margin-left: 0px;
+}
+
 #download
 {
 display: block;
 width: 280px;
 height: 60px;
-padding: 10px 0px 0px 10px;
+padding: 9px 0px 0px 10px;
 margin-bottom: 30px;
 background: url('../images/download.png') no-repeat top left;
-color:#ffffff;
+color: #ffffff;
 text-decoration: none;
 }
 
-#download img
+#download:hover
 {
-border: none;
-float: left;
+background: url('../images/download-hover.png') no-repeat top left;
 }
 
 #download #button
 {
-margin-left: 15px;
-font-size: larger;
+margin-left: 5px;
+font-size: large;
 }
 
-#download #number
+#download #date
 {
-margin-left: 15px;
-font-size: smaller;
+margin-left: 5px;
+font-size: small;
 }
 
-#slogan
+#mainprotocols
 {
-font-size: larger;
 margin-left: 0px;
 margin-bottom: 40px;
-
+padding-left: 0px;
+list-style-type: none;
 }
 
-.release
+#mainprotocols li
 {
-font-size: larger;
-margin-left: 0px;
-margin-bottom: 40px;
-color: #054a88;
+margin-bottom: 20px;
+line-height: 1.0;
 }
 
-.date
+#ico_aim
+{
+background: url('../images/aim.png') no-repeat top left;
+padding-left: 40px;
+}
+
+#ico_msn
+{
+background: url('../images/msn.png') no-repeat top left;
+padding-left: 40px;
+}
+
+#ico_yahoo
+{
+background: url('../images/yahoo.png') no-repeat top left;
+padding-left: 40px;
+}
+
+#ico_gtalk
+{
+background: url('../images/google-talk.png') no-repeat top left;
+padding-left: 40px;
+}
+
+.protocol_name
+{
+font-weight: bold;
+}
+
+.protocol_description
 {
 font-size: small;
+font-style: italic;
 }
 
 ul.protocols
 {
-font-size: smaller;
+font-size: small;
 margin-left: 0px;
 padding-left: 20px;
 width: 130px;
@@ -172,6 +216,7 @@ float: left;
 margin-top: 200px;
 margin-left: 370px;
 margin-right: 20px;
+min-height: 500px;
 }
 
 #page p
@@ -199,11 +244,58 @@ margin-bottom: 40px;
 clear: left;
 }
 
+#directdownload
+{
+clear: left;
+display: block;
+height: 60px;
+padding: 8px 8px 8px 8px;
+margin-left: -20px;
+margin-right: -20px;
+margin-bottom: 40px;
+background: url('../images/ddl-button.png') repeat-x top;
+border-top: 2px solid #b3b3b3;
+color: #4d4d4d;
+text-decoration: none;
+}
+
+#directdownload:hover
+{
+border-top: 2px solid #5e92c0;
+color: #054a88;
+}
+
+#directdownload img
+{
+float: left;
+margin: 4px 15px 0 0;
+}
+
+#directdownload h1
+{
+margin: 0;
+font-size: x-large;
+}
+
+#directdownload p
+{
+margin: 0;
+}
+
+#more_platforms
+{
+background: url('../images/arrow.png') no-repeat top left;
+padding-left: 20px;
+margin-left: -10px;
+}
+
 #imgmain1
 {
 background: url('../images/multi-protocol.png') no-repeat top left;
 padding-left: 40px;
 min-height: 35px;
+height: auto !important;
+height: 35px;
 }
 
 #imgmain2
@@ -211,6 +303,8 @@ min-height: 35px;
 background: url('../images/techno.png') no-repeat top left;
 padding-left: 40px;
 min-height: 35px;
+height: auto !important;
+height: 35px;
 }
 
 #imgmain3
@@ -218,6 +312,8 @@ min-height: 35px;
 background: url('../images/tux.png') no-repeat top left;
 padding-left: 40px;
 min-height: 35px;
+height: auto !important;
+height: 35px;
 margin-bottom: 30px;
 }
 
@@ -247,6 +343,9 @@ margin-left: 0px;
 font-size: 150%;
 background: url('../images/warning.png') no-repeat top left;
 padding-left: 70px;
+margin-top: 40px;
+margin-left: 0px;
+margin-bottom: 100px;
 min-height: 58px;
 }
 
@@ -289,13 +388,34 @@ vertical-align: -3px;
 margin-right: 2px;
 }
 
+.whatsnewbullets li
+{
+margin-bottom: 10px;
+}
+
 #footer
 {
-text-align: center;
-font-size: smaller;
 margin: 0;
-padding-top: 145px;
-padding-bottom: 5px;
+padding-top: 120px;
+padding-bottom: 10px;
 background: url('../images/bottom.png') repeat-x bottom;
 }
 
+#footer img
+{
+text-align: left;
+margin: 0 0 0 7px;
+float: left;
+}
+
+#footer p
+{
+text-align: center;
+font-size: small;
+margin: 0;
+}
+
+#footer .small_text
+{
+font-size: x-small;
+}

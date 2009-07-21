@@ -9,49 +9,7 @@
 
 <body>
 
-<a href="index.html"><img alt="Instantbird" src="images/logo-top.png" id="titre" /></a>
-
-<div id="nav">
- <a href="http://blog.instantbird.org/">Blog</a>
- <a href="http://addons.instantbird.org/">Add-ons</a>
- <a href="support.html">Support</a>
- <a href="http://www.instantbird.org/">Developers</a>
- <a href="contact.html">Contact</a>
-</div>
-
-<div id="infos">
-
-<a href="download.html" id="download"><img alt="Download" src="images/button.png" />
-<span id="button">Try Instantbird now!</span><br/>
-<span id="number">version 0.1.2</span></a>
-
-<p id="slogan">Instantbird, the powerful instant messenger based on Mozilla technologies and Pidgin!</p>
-
-<p class="release">Instantbird 0.1.2 released<br/>
-<span class="date">August 8th 2008</span></p>
-
-
-<ul class="protocols">
-<li>AIM</li>
-<!--<li>Bonjour</li>-->
-<li>Gadu-Gadu</li>
-<li>Google Talk</li>
-<!--<li>Groupwise</li>-->
-<li>ICQ</li>
-<li>IRC</li>
-</ul>
-<ul class="protocols">
-<li>MSN</li>
-<li>QQ</li>
-<!--<li>SILC</li>
-<li>SIMPLE</li>
-<li>Sametime</li>-->
-<li>XMPP</li>
-<li>Yahoo!</li>
-<!--<li>Zephyr</li>-->
-</ul>
-
-</div>
+<!--#include virtual="menus.html" -->
 
 <div id="page">
 
@@ -64,7 +22,7 @@
 <p>Use the Account Editor to add the account of the appropriate messaging service.</p>
 
 <h3>I dont see Google Talk protocol in the list!</h3>
-<p>For Google Talk, use XMPP protocol and fill the username with your Google Mail e-mail address like this: "my.address@gmail.com/instantbird". Then type "talk.google.com" in the entry "Connect server".</p>
+<p>For Google Talk, use XMPP protocol and fill the username with your Google Mail e-mail address like this: "my.address@gmail.com/instantbird".</p>
 
 <h3>Can I keep both Instantbird and my previous messaging client on my computer?</h3>
 <p>Absolutely yes! Instantbird and other clients can coexist without causing any trouble.</p>
@@ -97,11 +55,16 @@
 <h3>What about my old Extensions and Themes?</h3>
 <p>Extensions installed under old versions of Instantbird may be incompatible and/or require updates to work with the new version. Please report any issues to the maintainer of the extension.<!-- When you install Instantbird all of your Extensions and Themes will be disabled until Instantbird determines that either a) they are compatible with the Instantbird release or b) there are newer versions available that are compatible.--></p>
 
+<h2 class="borderbottom"><a name="license">Licensing</a></h2>
+
+<h3>How is Instantbird licensed?</h3>
+
+<p>Instantbird is licensed to you under the terms of the GNU GPL license version 2.0 or later. However, most of the source code is also licensed with the Mozilla tri-license (MPL 1.1/GPL 2.0/LGPL 2.1).</p>
 
 <h2 class="borderbottom">The developers</h2>
 
 <h3>Who makes Instantbird?</h3>
-<p>We are currently 2, but we hope that a lot of people will contribute to this project in order to make it better. See Help->About Instantbird, Credits for a list of some of the people who have contributed to Instantbird.</p>
+<p>We are currently a small team, but we hope that a lot of people will contribute to this project in order to make it better. See <a href="thanks.html">this page</a> for a list of some of the people who have contributed to Instantbird.</p>
 <p>Special <a href="thanks.html">thanks</a> to the <a href="http://developer.pidgin.im">libpurple</a> developers and the <a href="http://www.mozilla.org/credits/">Mozilla</a> contributors. Instantbird would never be possible without their great work.</p>
 
 <h3>What can I do to help?</h3>
@@ -112,10 +75,11 @@
 <p>Please use bugzilla for bug filling, or go to the irc chan if you want to chat with us. We get a lot of email and your email may get lost.</p>
 
 <h3>Where's the Instantbird source code?</h3>
-<p>A tarball of the Instantbird source code is available for <a href="download.html">download</a>. The latest development code can be obtained <a href="">here</a>. Please follow the <a href="http://www.instantbird.org/">build instructions</a>.</p>
+<p>A tarball of the Instantbird source code is available for <a href="download.html">download</a>. The latest development code can be obtained by following <a href="http://wiki.instantbird.org/index.php/Instantbird:Compiling">these instructions</a>. Please follow the <a href="http://www.instantbird.org/">build instructions</a>.</p>
 
 </div>
 
-<p id="footer">&copy; 2007-2008 - <a href="http://blog.queze.net/">Florian Qu&egrave;ze</a> and Quentin Castier.</p>
+<!--#include virtual="footer.html" -->
+
 </body>
 </html>
