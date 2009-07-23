@@ -158,6 +158,13 @@ margin-left: 5px;
 font-size: small;
 }
 
+#previewrelease
+{
+background: no-repeat url('../images/nightly32.png');
+padding-left: 40px;
+min-height: 40px;
+}
+
 #mainprotocols
 {
 margin-left: 0px;
