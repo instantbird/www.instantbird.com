@@ -1580,24 +1580,11 @@ user:        Florian Quèze <florian@instantbird.org>
 date:        Sun Jul 19 18:36:06 2009 +0200
 summary:     Add message style related tools.
 
-changeset:   801:ee675034a13a
-branch:      0.2a1
-user:        Florian Quèze <florian@instantbird.org>
-date:        Sun Jul 19 18:47:32 2009 +0200
-summary:     Set version number to 0.2a1 and change default revisions in client.py.
-
 changeset:   802:11f45709d81f
 parent:      800:42f30be9f646
 user:        Florian Quèze <florian@instantbird.org>
 date:        Sun Jul 19 18:48:48 2009 +0200
 summary:     Bump version number to 0.2b1pre.
-
-changeset:   803:25e571a5999e
-branch:      0.2a1
-parent:      801:ee675034a13a
-user:        Florian Quèze <florian@instantbird.org>
-date:        Wed Jul 22 13:58:57 2009 +0200
-summary:     Use a version of mozilla-central where bug 505120 is fixed.
 
 changeset:   804:3540d5657e21
 parent:      802:11f45709d81f

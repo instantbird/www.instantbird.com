@@ -1,0 +1,941 @@
+changeset:   999:e13900512e7d
+parent:      997:25585701f1af
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 03 18:42:38 2009 +0100
+summary:     Bump version number to 0.2b2pre.
+
+changeset:   1000:f21f6acbf611
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Sun Dec 06 00:24:00 2009 +0100
+summary:     Remove the leftover parts of the 2 separate emoticon themes and message styles dialogs. Merge the strings into a single themes.dtd file.
+
+changeset:   1001:b227f22b3d01
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Sun Dec 06 00:38:20 2009 +0100
+summary:     Change the wording of the caret browsing pref, so that it doesn't talk about 'pages'.
+
+changeset:   1002:35b9bf13b97c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 06 00:47:18 2009 +0100
+summary:     Upgrade libpurple from version 2.6.3 to 2.6.4.
+
+changeset:   1003:d73d3aebdada
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Sun Dec 06 01:15:21 2009 +0100
+summary:     Theme the message style preview area like a listbox so that it looks similar to the emoticon themes preview area.
+
+changeset:   1004:7cc012080be7
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Sun Dec 06 01:26:26 2009 +0100
+summary:     Add 'Get more emoticons' and 'Get more message styles' links on the 'Themes' pane of the prefwindow.
+
+changeset:   1005:d622c6d9f0ca
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 06 01:52:48 2009 +0100
+summary:     Remove useless folder 'instantbird' in 'instantbird/content'.
+
+changeset:   1006:e1976466b0d3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 06 02:04:49 2009 +0100
+summary:     Remove useless folders 'winstripe' and 'winstripe/instantbird' in 'instantbird/themes'.
+
+changeset:   1007:1ac8c4205c2f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 06 02:51:58 2009 +0100
+summary:     Creating the application bundle (mac) should be the last thing done for the libs target in instantbird/app.
+
+changeset:   1008:a5afec5280b5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 06 02:56:38 2009 +0100
+summary:     Move JS components and modules into their own directories.
+
+changeset:   1009:5ed3f548002d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 07 15:19:29 2009 +0100
+summary:     Improve Mac theme of the top of the nicklist.
+
+changeset:   1010:93b38c13469a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 08 13:24:08 2009 +0100
+summary:     Fix netsoul crash when receiving bad greetings from server.
+
+changeset:   1011:bedc995448ed
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 09 19:56:14 2009 +0100
+summary:     Make the 'copy' key binding in conversations less error prone.
+
+changeset:   1012:c0737335cb8d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 10 15:47:29 2009 +0100
+summary:     Replace the hack around the sender color in Chat conversations, so that %senderColor% is no longer replaced in conversation content.
+
+changeset:   1013:3da25942d2a5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 10 22:29:18 2009 +0100
+summary:     Fix some JavaScript strict warnings.
+
+changeset:   1014:0c1fbf17d5d4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Dec 12 00:16:50 2009 +0100
+summary:     Refactoring of the buddy tooltip code so as to use it on conversation tabs too.
+
+changeset:   1015:ed411bf5de49
+user:        Connor Behan <connor.behan@gmail.com>
+date:        Sat Dec 12 00:41:22 2009 +0100
+summary:     Bug 165 - System libpurple takes precedence over instantbird's libpurple while building libpurplexpcom
+
+changeset:   1016:b05f79fc3c8d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Dec 12 01:23:04 2009 +0100
+summary:     Port 'Bug 454449 - client.mk doesn't gracefully fail if it can't locate autoconf'
+
+changeset:   1017:e4390085ed87
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Dec 12 01:36:39 2009 +0100
+summary:     Add an explicit error message when someone runs client.mk without having the Mozilla source code.
+
+changeset:   1018:7eb18cc9bc47
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Dec 12 15:46:50 2009 +0100
+summary:     Change the priority between the 'idle' and 'away' status in buddy.xml so that it matches the behavior of the code in conversation.xml
+
+changeset:   1019:1e468065130e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 13 00:26:31 2009 +0100
+summary:     Add a context menu to the buddy list (usable as a hook for extensions).
+
+changeset:   1020:55d204fbf2db
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Sun Dec 13 15:31:42 2009 +0100
+summary:     Bug 239 - Sizing issues on 'Add buddy' and 'Join Chat' dialogs. r=fqueze
+
+changeset:   1021:928687263d38
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 13 15:40:06 2009 +0100
+summary:     Fix vertical align of labels in 'Join Chat' and 'Add buddy' dialogs.
+
+changeset:   1022:bf81d8353ba8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 14 13:00:11 2009 +0100
+summary:     Stop using the 'idle' attribute on buddy list items.
+
+changeset:   1023:80c5b9748b86
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 14 17:12:40 2009 +0100
+summary:     Bug 284 - Make tab tooltips also work for Chat conversations and for IM conversations with someone not in the buddy list.
+
+changeset:   1024:ca25d159393b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 14 17:24:51 2009 +0100
+summary:     Make the build system support linking some libpurple protocol plugins statically into libpurple (adding the STATIC_PRPLS variable)
+
+changeset:   1025:dfc7dfb0ffa8
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Mon Dec 14 17:54:26 2009 +0100
+summary:     Disable the 'Use separate windows for Multi-User Chats' checkbox when 'Open new conversations in tabs instead of windows' is unchecked. r=fqueze
+
+changeset:   1026:eaeea3cd9e9b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 14 18:36:28 2009 +0100
+summary:     Remove a bunch of unneeded Makefiles.
+
+changeset:   1027:235ff3623921
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 17 19:20:58 2009 +0100
+summary:     Fix JS error in buddy tooltips.
+
+changeset:   1028:71078f5bf78f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 18 00:38:04 2009 +0100
+summary:     Add a basic log viewer.
+
+changeset:   1029:4366f43c2c46
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 18 15:10:59 2009 +0100
+summary:     Revert the sorting order of logs viewed from the buddy list to make it consistent with logs viewed from conversation tabs.
+
+changeset:   1030:b1ac924f8571
+user:        Romain Bezut <romain@bezut.info>
+date:        Fri Dec 18 15:18:10 2009 +0100
+summary:     Bug 289 - Javascript error when resetting the font size to default. r=fqueze
+
+changeset:   1031:42c40ada55ff
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 18 19:48:29 2009 +0100
+summary:     Fix regression from c0737335cb8d. (message theme previews used 'undefined' as senderColor).
+
+changeset:   1032:b28554eca9b0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 18 22:23:23 2009 +0100
+summary:     Use hsl values for senderColor in conversations (back to the behavior before c0737335cb8d).
+
+changeset:   1033:baf7d01a4971
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 21 17:17:55 2009 +0100
+summary:     Optimize purpleCoreService::GetTagFromPurpleBuddy and reduce code duplication.
+
+changeset:   1034:cfd6f0cbe878
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 21 17:23:39 2009 +0100
+summary:     Expose a scriptable way to get the buddies of a group.
+
+changeset:   1035:ad3111f8d3b3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 22 00:49:17 2009 +0100
+summary:     Expose a scriptable way to get the list of tags.
+
+changeset:   1036:6e4685349061
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 22 01:43:11 2009 +0100
+summary:     Expose a scriptable way to list the accounts associated with a buddy.
+
+changeset:   1037:62621138419d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 22 19:08:44 2009 +0100
+summary:     Add a debug function to dump the whole buddy list.
+
+changeset:   1038:918b5a3fae1d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 22 19:45:29 2009 +0100
+summary:     Make purpleTag handle observers, and let group bindings handle changes to their content themselves.
+
+changeset:   1039:32ba0df4f330
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 22 19:52:07 2009 +0100
+summary:     Do not send buddy list notifications while quitting.
+
+changeset:   1040:59deeb593290
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 22 20:28:24 2009 +0100
+summary:     Refresh the UI when libpurple indicates that the alias of a buddy has changed.
+
+changeset:   1041:f0404d3cbd04
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 22 20:31:36 2009 +0100
+summary:     Remove obsolete convtab binding.
+
+changeset:   1042:61a38d68bc89
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 24 01:20:36 2009 +0100
+summary:     Fix textbox sizing weirdness.
+
+changeset:   1043:a866432fb03c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 05 17:36:13 2010 +0100
+summary:     Do not crash when an authorization request is cancelled.
+
+changeset:   1044:0e6917f3cc45
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 06 09:14:17 2010 +0100
+summary:     Make sure an authorization request prompt is never displayed if it has already been cancelled.
+
+changeset:   1045:a7925b5be077
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 06 12:07:02 2010 +0100
+summary:     Add some preference default values for easier debug.
+
+changeset:   1046:d5093a0784d2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 06 17:37:35 2010 +0100
+summary:     Change the account manager shortcut so that it doesn't conflict with 'Select All' (add the shift modifier) and make it close the account manager when it is already focused.
+
+changeset:   1047:c6ccb0795c9f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 06 17:59:03 2010 +0100
+summary:     Add a Command+u keybinding in debug builds to view the selection source in conversations.
+
+changeset:   1048:50beb4500a65
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 06 18:30:04 2010 +0100
+summary:     Save in tools/messagestyles/ the minimal testcases that were used to test and debug the magic copy feature.
+
+changeset:   1049:7b4b24745c7a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 06 19:51:36 2010 +0100
+summary:     Export the getMessagesForRange function of imThemes.jsm so that extension authors can use it.
+
+changeset:   1050:6b62ecdc72b8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 08 16:44:25 2010 +0100
+summary:     Add a preference to disable magic copy in conversation.
+
+changeset:   1051:bbafc9380a9e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 11 10:40:19 2010 +0100
+summary:     Fix regression from 6b62ecdc72b8 (JS error when detaching a tab).
+
+changeset:   1052:886bd202a5d4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 11 10:41:42 2010 +0100
+summary:     Upgrade libpurple from version 2.6.4 to 2.6.5.
+
+changeset:   1053:2f163f5913cb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 11 15:26:44 2010 +0100
+summary:     Better handling of libpurple commands (should cause less HTML special char escaping issues).
+
+changeset:   1054:bc12c9e7de74
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 11 15:35:07 2010 +0100
+summary:     Update copyright year to 2010.
+
+changeset:   1055:1947d09a858c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 11 16:01:19 2010 +0100
+summary:     Make the swipe gesture do something useful even when there's no last selected tab.
+
+changeset:   1056:59ae1c87537d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 12 15:59:19 2010 +0100
+summary:     Oscar: disable clientLogin by default (causes lots of login failures).
+
+changeset:   1057:dfef7738b616
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 12 17:55:27 2010 +0100
+summary:     Remove the duplicated 'Use Instantbird as my default instant messaging client' checkbox and comment out the remaining one (until we can make it do something useful).
+
+changeset:   1058:99f74dcea5aa
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 12 17:56:31 2010 +0100
+summary:     Mozilla should not be listed as the 'Publisher' of Instantbird.
+
+changeset:   1059:a21e457545c0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 12 17:57:37 2010 +0100
+summary:     Fix the uninstaller so that it correctly cleans up the HKLM/Software/Clients/IM/Instantbird registry key.
+
+changeset:   1060:18641fad1624
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 12 19:07:45 2010 +0100
+summary:     Instantbird is not a Trademark of The Mozilla Foundation.
+
+changeset:   1061:19591f1521f4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 14 16:41:02 2010 +0100
+summary:     Fix build warning in purpleInit.cpp: converting to non-pointer type 'nsresult' from NULL.
+
+changeset:   1062:dc8e96216513
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 14 17:28:07 2010 +0100
+summary:     Silence out a warning caused by libpurple calling purple_conversation_autoset_title before the create_conversation uiop.
+
+changeset:   1063:8fd0a058df53
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 14 17:37:46 2010 +0100
+summary:     Set the srv_alias stored in blist.sqlite as server_alias and not as user defined alias when loading the buddy list into libpurple.
+
+changeset:   1064:b71300562dbb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 14 17:46:13 2010 +0100
+summary:     Store only the server alias in the srv_alias column of the buddies table of blist.sqlite.
+
+changeset:   1065:05a7fcfd0bdd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 14 18:39:23 2010 +0100
+summary:     Update displayname correctly on buddy list nodes when the server alias changes.
+
+changeset:   1066:358dd21a27cb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 14 18:41:06 2010 +0100
+summary:     Update the server alias stored in blist.sqlite when libpurple indicates it has changed.
+
+changeset:   1067:f44489057a10
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 14 19:55:41 2010 +0100
+summary:     Handle buddy list keypress events on groups and buddies separately.
+
+changeset:   1068:7d0d6f172c07
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jan 16 23:41:57 2010 +0100
+summary:     Alias buddies.
+
+changeset:   1069:d70ac565c4d1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jan 17 00:26:08 2010 +0100
+summary:     Store aliases on the server for protocols that support it.
+
+changeset:   1070:c9ac9d96fc7c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jan 17 01:21:34 2010 +0100
+summary:     Remove obsolete export makefile rules.
+
+changeset:   1071:8ca4c8a3c5d6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 18 15:52:40 2010 +0100
+summary:     Add a short makefile rule in build.mk to rebuild only Instantbird.
+
+changeset:   1072:ce2d700cc4f1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 18 15:54:58 2010 +0100
+summary:     In client.py, use the 'default' revision instead of 'tip' so that we can't accidentally move to a branch like it happened on January 16th.
+
+changeset:   1073:2dbacf25ec9a
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Mon Jan 18 16:13:23 2010 +0100
+summary:     Add disabled '(no themes installed)' menuitems at the bottom of the emoticon and message theme lists in the Themes prefpane when no themes are installed.
+
+changeset:   1074:e35b6c9861f5
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Mon Jan 18 16:35:03 2010 +0100
+summary:     Add a 'Show log folder' button in the Privacy prefpane.
+
+changeset:   1075:56ab68db2e4d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 19 17:06:20 2010 +0100
+summary:     Leave the alias mode when the selection in the buddy list changes.
+
+changeset:   1076:741f82f51008
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 19 17:35:06 2010 +0100
+summary:     Don't leave the aliasing mode when another window takes focus.
+
+changeset:   1077:a0f9e5524b06
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 20 17:42:57 2010 +0100
+summary:     [Mac] Make sure the selected conversation tab is of the same color as the title bar even on Snow Leopard.
+
+changeset:   1078:1e33ac21b3e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 20 17:43:22 2010 +0100
+summary:     Remove unused duplicateBookmarkMsg string.
+
+changeset:   1079:cb6d5feadbfc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 21 09:51:23 2010 +0100
+summary:     Fix handling of the 'Variant' preference menulist in the Themes prefpane.
+
+changeset:   1080:289027844280
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 21 15:03:43 2010 +0100
+summary:     Fix metadata of the default UI theme.
+
+changeset:   1081:696561de58d4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 22 15:02:01 2010 +0100
+summary:     Allow formatted messages by default.
+
+changeset:   1082:59e22ea5c303
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 22 17:13:51 2010 +0100
+summary:     Remove duplicated strings.
+
+changeset:   1083:b6450d841f8d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 25 12:57:59 2010 +0100
+summary:     Update comment documenting purpleIConvChat notifications.
+
+changeset:   1084:7e8688bd3658
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 25 13:02:33 2010 +0100
+summary:     Remove the old and broken 'new message' notification.
+
+changeset:   1085:72d41af293b7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 25 19:48:33 2010 +0100
+summary:     The 'escape' key should close the log viewer.
+
+changeset:   1086:8b4b821df2cf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 26 19:23:20 2010 +0100
+summary:     Add a way (from the buddy list context menu) to move buddies between groups.
+
+changeset:   1087:a4c7650019e3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 26 19:44:30 2010 +0100
+summary:     Sort the list of tags in the 'Move to...' popup menu.
+
+changeset:   1088:f272be182fcb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 26 23:29:02 2010 +0100
+summary:     Add a 'New Group...' menu item at the end of the list of tags of the 'Move to...' menu.
+
+changeset:   1089:0de08e9a83d0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 29 16:20:19 2010 +0100
+summary:     Do not reset the logs pref at each initialization of libpurple.
+
+changeset:   1090:9ead83b72460
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Fri Jan 29 17:36:21 2010 +0100
+summary:     Fix typo in id of a menuseparator...
+
+changeset:   1091:6f60e7dacb4d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 29 23:35:27 2010 +0100
+summary:     Add a 'Show offline buddies' context menu item on the buddy list.
+
+changeset:   1092:b33f9be8d6b8
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Fri Jan 29 23:38:49 2010 +0100
+summary:     Bug 322 - Add ellipsis for menu items that require further user interaction. r=fqueze
+
+changeset:   1093:6361822acbff
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 29 23:48:13 2010 +0100
+summary:     Bug 323 - Guard the aliasing mode against re-entry.
+
+changeset:   1094:8ef93ea5334a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jan 30 18:36:00 2010 +0100
+summary:     Fix static compilation on Mac of protocol plugins that have subdirectories (for instance: Gadu Gadu).
+
+changeset:   1095:5711b73d25a5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jan 30 19:17:10 2010 +0100
+summary:     Do not take into account the time when regrouping system messages.
+
+changeset:   1096:a9685acdff26
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 01 16:52:34 2010 +0100
+summary:     Simplify the markup used by the default message theme, and make it look exactly like the pretty printed copy/paste.
+
+changeset:   1097:6e1fe599884a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 04 18:24:46 2010 +0100
+summary:     Add a windowtype attribute to the account wizard so that the 'Fake' add-on can close it.
+
+changeset:   1098:fd995c4992c1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 04 18:41:59 2010 +0100
+summary:     Stop using instanceof checks to know if a conversation is a chat (it didn't work for conversation objects implemented in JS).
+
+changeset:   1099:d04e5cc132f6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 04 18:44:20 2010 +0100
+summary:     Include the 'Fake' add-on by default for debug builds (define the environment variable FAKE to turn it on).
+
+changeset:   1100:cc843c5d62f6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 04 19:55:33 2010 +0100
+summary:     Make Accel + Shift + ',' open about:config in debug builds.
+
+changeset:   1101:9dc36bf27383
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Feb 05 23:35:12 2010 +0100
+summary:     Patch Mozilla to add -moz-color and -moz-background-color keywords to the CSS engine.
+
+changeset:   1102:e1c032c3a00e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Feb 07 19:53:03 2010 +0100
+summary:     Ignore oscar server-stored aliases if they are identical to the buddy name (should reduce the freeze when an oscar account is connected for the first time since the application started).
+
+changeset:   1103:b4c2b5c5838e
+user:        Quentin Castier <idechix@instantbird.org>
+date:        Mon Feb 08 14:12:07 2010 +0100
+summary:     Integrate new default emoticon theme.
+
+changeset:   1104:98580df13744
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 08 18:30:01 2010 +0100
+summary:     Integrate default message themes created by Quentin Castier (idechix@instantbird.org).
+
+changeset:   1105:4525482b0dfd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 08 18:35:33 2010 +0100
+summary:     Sort variants in the menupopup of the Themes prefpane.
+
+changeset:   1106:515f8c116432
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 09 07:17:11 2010 +0100
+summary:     Update server aliases asynchronously.
+
+changeset:   1107:a88eed2c27b8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 09 11:50:08 2010 +0100
+summary:     In the Bubbles theme, prevent double clicks on the expander of hidden system messages.
+
+changeset:   1108:0ab16614f034
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 09 18:30:10 2010 +0100
+summary:     Combine consecutive system messages even when libpurple thinks they are both system and incoming messages.
+
+changeset:   1109:149f0d87b0ae
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 11 15:59:34 2010 +0100
+summary:     Add a 'Facebook Chat' item in the list of protocols.
+
+changeset:   1110:d19a102765b9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Feb 13 11:01:29 2010 +0100
+summary:     Package facebookOverrideProtocol.js on Windows.
+
+changeset:   1111:a35b9d81138f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Feb 13 20:07:47 2010 +0100
+summary:     Sizing issues with long account names or connection progress messages.
+
+changeset:   1112:f3caf9c3c86e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 15 17:16:52 2010 +0100
+summary:     Avoid a warning about missing chrome://prpl-null/skin/ in debug builds.
+
+changeset:   1113:60aaea9c09e8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 16 15:57:26 2010 +0100
+summary:     Add a status toolbar at the top of the buddy list.
+
+changeset:   1114:ea3c43faaf30
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 16 16:19:46 2010 +0100
+summary:     Use the standard statusbarpanel appearance on Linux (otherwise the resizer looks odd).
+
+changeset:   1115:b27f321ceded
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 17 09:34:35 2010 +0100
+summary:     Statically link glib and libxml2 into libpurple (Windows and Mac).
+
+changeset:   1116:38370c84e3eb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 17 10:31:05 2010 +0100
+summary:     Link protocol plugins statically by default.
+
+changeset:   1117:3a064e3f8999
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 17 12:17:38 2010 +0100
+summary:     Remove no longer needed patch (same issue fixed by bug 510920).
+
+changeset:   1118:5a365b21f03c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 17 14:21:28 2010 +0100
+summary:     Update the Windows package-static manifest so that it doesn't attempt to package libraries that are now statically linked into purple.dll
+
+changeset:   1119:9bf1c70339e4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 17 15:29:23 2010 +0100
+summary:     Fix the inclusion of the app-license.html override.
+
+changeset:   1120:fb5ed99f3fbd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 17 15:43:06 2010 +0100
+summary:     Bug 333 - Fix the content of the LICENSE.txt file.
+
+changeset:   1121:e80e4127dfd5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 17 23:59:57 2010 +0100
+summary:     Handle 'Offline' status.
+
+changeset:   1122:9f87c7d641ba
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 18 15:48:56 2010 +0100
+summary:     Upgrade libpurple from version 2.6.5 to 2.6.6.
+
+changeset:   1123:7b72ec3dcc73
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 18 17:45:55 2010 +0100
+summary:     Fix the error code returned when attempting to set the status before the initialization of libpurple.
+
+changeset:   1124:9f946b3aa370
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 18 17:54:54 2010 +0100
+summary:     The background of the status type icon in the status toolbar should be transparent (it was visible on Windows 7).
+
+changeset:   1125:5ddfe9d855c6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 18 17:59:23 2010 +0100
+summary:     Remove the savedstatus default preference values (no longer used after e80e4127dfd5).
+
+changeset:   1126:eba58da607ce
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 08:48:20 2010 +0100
+summary:     Rename libxml2 to xml2 in purple/makefiles.sh (follow up to b27f321ceded).
+
+changeset:   1127:8abe90deebe8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 08:49:33 2010 +0100
+summary:     Avoid this warning on Windows: 'debug.h(91) : warning C4068: unknown pragma'
+
+changeset:   1128:6bcb5c974a28
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 08:54:00 2010 +0100
+summary:     Avoid 'PURPLE_STATIC_PRPL redefined' warnings when the Yahoo and Oscar protocol plugins are statically linked into libpurple.
+
+changeset:   1129:8a0b3b27b54f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 09:09:41 2010 +0100
+summary:     Make the '/away' command really set the status to away (not unavailable).
+
+changeset:   1130:3f7526fa9f02
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 09:20:15 2010 +0100
+summary:     Add /busy /dnd and /offline commands.
+
+changeset:   1131:f0fc31b96d42
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 09:47:34 2010 +0100
+summary:     Make the libpurple status 'invisible' usable from addons.
+
+changeset:   1132:dd3223a58d19
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 09:49:55 2010 +0100
+summary:     Add a menuseparator before the 'Offline' menuitem.
+
+changeset:   1133:e523b144f872
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 09:59:37 2010 +0100
+summary:     Fix error when exiting while online (observers mis-removed).
+
+changeset:   1134:420c1e3a0ef2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 11:08:25 2010 +0100
+summary:     In the prefwindow, make sure buttons are not vertically stretched when they are in an hbox containing a long description that needs to wrap.
+
+changeset:   1135:b4cf105fbaf0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 22 11:35:10 2010 +0100
+summary:     Prevent unwanted scrollbars in the account wizard.
+
+changeset:   1136:0d113aa4a1f7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 23 10:50:55 2010 +0100
+summary:     Remove no longer needed (because of the changes from bug 535369) patch.
+
+changeset:   1137:b256d8544bc5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 23 23:43:36 2010 +0100
+summary:     Rework idle and auto-away features.
+
+changeset:   1138:699fadea4d81
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 06:44:21 2010 +0100
+summary:     Bustage fix for MSVC compilation (follow up to b256d8544bc5).
+
+changeset:   1139:224a8b3cac90
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 09:55:49 2010 +0100
+summary:     Set the connect server to talk.google.com by default for the Google Talk protocol.
+
+changeset:   1140:8acf0c20612f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 10:41:23 2010 +0100
+summary:     Avoid displaying 'Your account is disconnected.' in conversations when the account wasn't connected before the disconnection (= it was attempting to connect).
+
+changeset:   1141:cd9a059e2581
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 11:13:50 2010 +0100
+summary:     The Offline status should take precedence over the idleaway status.
+
+changeset:   1142:ca0527f04647
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 15:27:53 2010 +0100
+summary:     Fix Crash [@purpleNetworkObserver::IsNetworkAvailable]
+
+changeset:   1143:f208e38a378c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 18:16:38 2010 +0100
+summary:     Don't display the default variant twice in the list of message themes variant (fix regression from 98580df13744).
+
+changeset:   1144:928a97d3e3e4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 18:20:08 2010 +0100
+summary:     Add id attributes to the statusbar XUL elements, so that add-on authors can use them as hooks.
+
+changeset:   1145:83fa5662591a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 24 19:53:14 2010 +0100
+summary:     Fix Crash [@ idle_reporting_pref_cb in oscar.c] (regression from b256d8544bc5)
+
+changeset:   1146:75dc808807fb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 25 10:02:05 2010 +0100
+summary:     Fix removal of buddies from their original group when moved while offline buddies are displayed.
+
+changeset:   1147:e1082cbfcb4c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 25 11:59:19 2010 +0100
+summary:     When turning off the display of offline buddies, cleanup buddies that are seen online by some accounts and offline by others.
+
+changeset:   1148:c751d4ee6f71
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 01 09:54:32 2010 +0100
+summary:     Avoid a JS error and displaying an empty tooltip when hovering a not yet loaded conversation.
+
+changeset:   1149:e7cbf78eda75
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Mar 03 00:00:24 2010 +0100
+summary:     Add 'Remove' item to the buddy list context menu.
+
+changeset:   1150:12dfda22fc0f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Mar 03 11:20:58 2010 +0100
+summary:     Prepend a localizable text to auto-reply messages displayed in conversations.
+
+changeset:   1151:63fd93d74de8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Mar 03 11:52:57 2010 +0100
+summary:     Keep the last non-offline status message to reuse it in the status selector when going back online.
+
+changeset:   1152:d9e71367bb17
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Wed Mar 03 17:18:13 2010 +0100
+summary:     Add a 'Get More...' link at the bottom of the protocol list in the account wizard. r=fqueze
+
+changeset:   1153:5f03eb9b991e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Mar 03 17:27:01 2010 +0100
+summary:     Add alternative text code for the 'cool' emoticon: 8-)
+
+changeset:   1154:76ed90c96016
+user:        Benedikt P. <leeraccount@yahoo.de>
+date:        Wed Mar 03 17:36:37 2010 +0100
+summary:     Bug 355 -  Change '(no themes installed)'-list item labels to make it obvious that this is about 'extra' themes.
+
+changeset:   1155:98cc007f7a8e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Mar 04 10:53:56 2010 +0100
+summary:     Avoid JS errors when the buddy list receives keypress events just after the selected item has been removed.
+
+changeset:   1156:f718e1d76159
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Mar 04 11:04:39 2010 +0100
+summary:     Add a 'Force Online' debug command.
+
+changeset:   1157:f23f944fff33
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Mar 04 23:52:15 2010 +0100
+summary:     Bug 287 - indicate in the account manager when the password for an account is missing. r=Morian
+
+changeset:   1158:007ec9f69b4f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 05 10:44:22 2010 +0100
+summary:     Bug 272 - Popup a warning when closing a conversation window with unread messages.
+
+changeset:   1159:03d3c1b284b0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 05 11:08:08 2010 +0100
+summary:     Bug 264 - The warning when closing multiple conversations should respect plural rules.
+
+changeset:   1160:5126e2edf1b8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 05 11:24:21 2010 +0100
+summary:     Bug 310 - The 'add buddy' dialog should have a default group.
+
+changeset:   1161:6fba173a912e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 05 14:46:50 2010 +0100
+summary:     Remove leftover from the Firefox application manager.
+
+changeset:   1162:604792606059
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 05 15:42:26 2010 +0100
+summary:     Make 'Search for text when I start typing' pref work in conversations.
+
+changeset:   1163:5cc31f0d1d79
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 07 17:31:12 2010 +0100
+summary:     Bug 295 - No spell check on the first opened Tab.
+
+changeset:   1164:32648bb54c76
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 08 10:25:27 2010 +0100
+summary:     Use the patch from 'Bug 549290 - Title of common dialogs no longer bold on Mac'.
+
+changeset:   1165:ab882069a2ea
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 08 16:55:12 2010 +0100
+summary:     On Windows, add margins so that the checkmark of the currently selected status type doesn't replace the status type icon in status menus.
+
+changeset:   1166:d7fbce4b8ef7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 08 23:55:33 2010 +0100
+summary:     In the buddy list, use transparency on the protocol icon of offline buddies.
+
+changeset:   1167:b9fa74b94617
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 09 09:36:57 2010 +0100
+summary:     Fix regression from 8acf0c20612f: the PURPLE_CONV_ACCOUNT_OFFLINE conversation update should happen only after the account has signed off, not while it is signing off (otherwise, the icons of conversation tabs don't change during the update).
+
+changeset:   1168:b951d47acc59
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 09 09:37:42 2010 +0100
+summary:     Fix dependencies of glib.def and purple.def makefile rules.
+
+changeset:   1169:7ce22522053c
+branch:      0.2b2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 09 11:04:22 2010 +0100
+summary:     Set version number to 0.2b2 and change default revisions in client.py.
+
+changeset:   1177:513a5dd5f6f3
+branch:      0.2b2
+parent:      1169:7ce22522053c
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Wed Mar 10 17:14:47 2010 +0100
+summary:     Fix l10n repackaging (works at least on Mac).
+
+changeset:   1178:04dea033c785
+branch:      0.2b2
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Wed Mar 10 22:32:18 2010 +0100
+summary:     Fix langpack creation.
+
+changeset:   1179:ff4b6e449658
+branch:      0.2b2
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Thu Mar 11 11:48:10 2010 +0100
+summary:     Fix packaging of the custom CRT in Windows installers.
+
+changeset:   1180:f304c991e01c
+branch:      0.2b2
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Thu Mar 11 13:05:55 2010 +0100
+summary:     Bug 368 - Context menu items displaced.
+
+changeset:   1181:d6434d006a0e
+branch:      0.2b2
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Fri Mar 12 10:10:03 2010 +0100
+summary:     Fix packaging of localized files in the Windows installer.
+
+changeset:   1182:963c33b963ca
+branch:      0.2b2
+tag:         tip
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Fri Mar 12 10:42:04 2010 +0100
+summary:     Use a stable (1.9.2.1) revision of Mozilla.
+
+changeset:   1183:d89fa2f91bd7
+branch:      0.2b2
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Sat Mar 13 20:40:38 2010 +0100
+summary:     Bug 368 - Remove check mark on status type menuitems (except in the menu on Mac).
+
+changeset:   1186:156d037f88e9
+branch:      0.2b2
+parent:      1183:d89fa2f91bd7
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Mon Mar 15 21:06:12 2010 +0100
+summary:     Produce Windows installer, and do l10n repackaging during 'make package'.
+
+changeset:   1187:623bb1ed7161
+branch:      0.2b2
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Mon Mar 15 21:09:38 2010 +0100
+summary:     Ship fr, pl and ru locales by default for 0.2b2.
+
+changeset:   1189:39ea06e6da42
+branch:      0.2b2
+parent:      1187:623bb1ed7161
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Mon Mar 15 22:49:21 2010 +0100
+summary:     Stop using the INSTALLER_DIR variable, and build the installer only on Windows NT.
+
+changeset:   1191:5d300f07df71
+branch:      0.2b2
+parent:      1189:39ea06e6da42
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Tue Mar 16 08:54:46 2010 +0100
+summary:     Use '..' as the base l10n dir for releases.
+
+changeset:   1194:db4ee1016871
+branch:      0.2b2
+parent:      1191:5d300f07df71
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Wed Mar 17 16:38:55 2010 +0100
+summary:     Fix l10n repackaging of universal Mac builds.
+
+changeset:   1195:3aba6c530054
+branch:      0.2b2
+tag:         tip
+user:        Florian Qu�ze <florian@instantbird.org>
+date:        Wed Mar 17 16:52:21 2010 +0100
+summary:     Fix the 'time before idle' preference on Windows.
