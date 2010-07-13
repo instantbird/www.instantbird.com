@@ -1,0 +1,65 @@
+<?php
+$title = 'Instantbird 0.1.1';
+include('header.inc.php');
+?>
+
+<div id="page">
+
+<h1>Instantbird 0.1.1</h1>
+
+<h2 class="borderbottom">Download</h2>
+
+<p>Instantbird runs on Windows, Mac OS X and Linux platforms.</p>
+<p>Please see the <a href="system-requirements.html">minimum system requirements</a> needed to run Instantbird.</p>
+
+<table id="table-download">
+<tr>
+  <th>Language</th>
+  <th>Version</th>
+  <th><img alt="" src="images/ico-win.png" />Windows</th>
+  <th><img alt="" src="images/ico-osx.png" />Mac&nbsp;OS&nbsp;X</th>
+  <th><img alt="" src="images/ico-tux.png" />Linux</th>
+</tr>
+<tr>
+  <td>English</td>
+  <td>0.1.1</td>
+  <td><a href="downloads/0.1.1/instantbird-0.1.1.zip"><img alt="" src="images/ico-win.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.1.1/instantbird-0.1.1.dmg"><img alt="" src="images/ico-osx.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.1.1/instantbird-0.1.1.tar.gz"><img alt="" src="images/ico-tux.png" /><span>Download</span></a></td>
+</tr>
+</table>
+
+<p style="margin-top: 30px;">You can download some <a href="http://addons.instantbird.org/">dictionaries</a> for the spell-checking feature in Instantbird.</p>
+
+<p>As Instantbird is an open source project, you can freely <a href="downloads/0.1.1/instantbird-0.1.1-src.tar.gz">download the source code</a> and modify it.</p>
+
+<p style="margin-top: 60px;">Support for many languages will come in the next releases. Want to <a href="http://www.instantbird.org/about_translations.html">help</a>?</p>
+
+
+<h2 class="borderbottom">What's new?</h2>
+
+<ul>
+ <li style="margin-bottom: 10px;"><strong>Improved stability</strong>: we fixed the outstanding bugs that resulted in crashed.</li>
+ <li style="margin-bottom: 10px;">Proper handling of non-ASCII characters. Instantbird now uses UTF-8 for all strings.</li>
+ <li style="margin-bottom: 10px;"><strong>Usability improvements</strong>. We fixed bugs that didn't require much of our time and will significantly improve the user experience. For examples: aliases in the buddy list, linkification in the chat window... We also <strong>removed some common annoyances</strong> in the UI.</li>
+ <li style="margin-bottom: 10px;"><strong>IRC Chats</strong>. In order to build a community, we thought it was critical to provide some way for users and testers to talk in a public place and not only send us private messages. There is now in the "File" menu a "Join Chat" item which will allow users and future contributors to join us in <strong>irc.mozilla.org#instantbird</strong>.</li>
+</ul>
+
+<p>Read the full <a href="ChangeLog-0.1.1">ChangeLog</a>.</p>
+
+
+<h2 class="borderbottom">Known issues</h2>
+
+<h3>Mac OS X 10.5 (Leopard)</h3>
+<p>A warning may appear while opening the dmg file. Don't worry about it.</p>
+
+<h3>Windows Vista</h3>
+<p>An error message will appear the first time you launch Instantbird. Just click on the OK button and launch Instantbird again. This is a <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=386826" title="Bug 386826 - First run of XULRunner fails on Windows Vista, showing the Usage dialog instead">known XULRunner bug</a>.</p>
+
+
+<h2 class="borderbottom">Older versions</h2>
+<p>You can access the <a href="download-archive.html">archives</a> to download the older versions of Instantbird.</p>
+
+</div>
+
+<?php readfile('footer.inc.php'); ?>

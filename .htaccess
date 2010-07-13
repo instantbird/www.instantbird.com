@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteRule ^([a-z0-9.-]+)\.html?$ $1.php [L]
+
+# Rewrite urls from the old site
+RewriteRule contact.php about.html [R]
+RewriteRule download.php features.html [R]
+RewriteRule screenshots(-(windows|macosx|linux))?.php features.html [R]
+RewriteRule support.php faq.html [R]
+RewriteRule about_translations.html http://wiki.instantbird.org/Instantbird:Translation
+
+RewriteRule ^downloads/(0\.1(\.(1|2)(\.1)?)?/.*)$ http://ftp.instantbird.com/instantbird/$1 [L,R]
+RewriteRule ^downloads/(.*)$ http://ftp.instantbird.com/instantbird/releases/$1 [L,R]
