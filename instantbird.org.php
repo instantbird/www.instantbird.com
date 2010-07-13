@@ -58,10 +58,6 @@
 <p>If you hang around in our IRC chatroom, you may see questions from other users who need help. Don't hesitate to help them even though you may feel other people have more knowledge. If you start helping someone and discover you don't know the solution, don't worry! Others will help out!</p>
 </li>
 
-<li>
-</li>
-
-
 <li>Translate:<p>To help us offer Instantbird to a broader audience, you can <a href="http://wiki.instantbird.org/Instantbird:Translation">translate Instantbird</a> into your own language.</p></li>
 
 <li>Add-on development:<p><a href="http://wiki.instantbird.org/Instantbird:Extension">Create</a>, <a href="https://addons.instantbird.org/">review</a> and edit add-ons and thus give others the possibility of feeling that their Instantbird fits them even more, thanks to you.</p></li>
