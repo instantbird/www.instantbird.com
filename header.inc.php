@@ -100,7 +100,7 @@ function download_button()
   <div id="shadow">
     <div id="main">
       <div id="navigation">
-        <a href="index.html" id="logo-top"><span>Home</span></a>
+        <a href="/" id="logo-top"><span>Home</span></a>
         <span></span><a href="http://blog.instantbird.org/">News</a><a href="https://addons.instantbird.org/">Add-ons</a><a href="faq.html">F.A.Q.</a><a href="https://wiki.instantbird.org/">Wiki</a><a href="about.html">About</a>
       </div>
 
