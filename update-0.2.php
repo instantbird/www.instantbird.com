@@ -8,12 +8,13 @@
 </head>
 
 <body>
-<img src="images/instantbird-logo-update.png" alt="logo" id="logo" />
-<h1>Instantbird 0.2 is here!</h1>
-<ul>
-<li>Redesigned conversation window.</li>
-<li>Preferences &amp; other new tools.</li>
-<li>Hundreds of themes for your Instantbird!</li>
-</ul>
+  <img src="images/instantbird-logo-update.png" alt="logo" id="logo" />
+  <h1>Instantbird 0.2 is here!</h1>
+  <p id="link">Free Upgrade: <a href="http://www.instantbird.com/features.html">learn more...</a></p>
+  <ul>
+    <li>Redesigned conversation window and visual refresh.</li>
+    <li>New options window, status changing and log viewer.</li>
+    <li>Hundreds of themes and extensions for you to choose!</li>
+  </ul>
 </body>
 </html>
