@@ -1,0 +1,56 @@
+@font-face
+{
+  font-family: Sacco-Vanzetti Instantbird;
+  font-weight: normal;
+  src: url('fonts/SaccoVanzettiInstantbird.otf') format("opentype");
+}
+
+@font-face
+{
+  font-family: Sacco-Vanzetti Instantbird;
+  font-weight: bold;
+  src: url('fonts/SaccoVanzettiInstantbirdBold.otf') format("opentype");
+}
+
+body
+{
+  margin: 0 35px;
+  padding: 0;
+  font-family: Sacco-Vanzetti Instantbird, Arial, sans-serif;
+  font-size: medium;
+  color: #4d4d4d;
+  background-color: white;
+  background: -moz-linear-gradient(top, #f8dead, white) fixed;
+}
+
+h1
+{
+  font-size: x-large;
+}
+
+#logo
+{
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+ul
+{
+  clear: both;
+  margin: 0;
+  padding: 3px 10px 5px 25px;
+  border: 1px solid #caddee;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: #caddee 0px 0px 5px;
+  box-shadow: #caddee 0px 0px 5px;
+  background: -moz-linear-gradient(top, #d6ebfe, white 150px) fixed;
+}
+
+li
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: small;
+}
