@@ -78,7 +78,7 @@ function download_button()
 
   echo "        <a href=\"$url\" id=\"download-button\">
           <span id=\"download-icon\"></span>
-          <span id=\"download-title\">Get Instantbird for Free</span>
+          <span id=\"download-title\">Get Instantbird - Free</span>
           <span id=\"download-description\">Version $version, $language<br/>
           $os_name ($dl_size)</span>
         </a>
