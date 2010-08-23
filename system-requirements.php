@@ -5,11 +5,10 @@ include('header.inc.php');
       <div id="page">
 
         <ul id="index-box">
-          <li><a href="downloads/0.2/instantbird-0.2.en-US.mac.dmg">Get Instantbird Now</a></li>
           <li><a href="features.html">Features</a></li>
           <li><a href="download-all.html">Systems and Languages</a></li>
           <li><a href="release-notes.html">Release Notes</a></li>
-          <li style="border-bottom-style: none;">Minimum system requirements</li>
+          <li style="border-bottom-style: none;"><a href="<?php echo download_url_auto() ?>">Get Instantbird <?php echo $latest_major_version; ?> Now!</a></li>
         </ul>
 
         <h1>System Requirements</h1>
