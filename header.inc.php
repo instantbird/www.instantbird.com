@@ -91,7 +91,7 @@ function download_button()
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
   <title><?php if (isset($title)) echo $title; else echo 'Instantbird';?></title>
-  <link rel="stylesheet" type="text/css" href="home.css" />
+  <link rel="stylesheet" type="text/css" href="theme/home.css" />
   <link rel="shortcut icon" href="favicon.ico" />
   <link rel="alternate" type="application/rss+xml" title="Blog@instantbird.org" href="http://blog.instantbird.org/flux.rss" />
 </head>
