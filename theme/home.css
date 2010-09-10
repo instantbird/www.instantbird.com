@@ -470,7 +470,7 @@ pre
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
   border-bottom: 1px solid #cccccc;
-  background: url('../images/whatsnew-background.png') repeat-y left top;
+  background: url('title-background.png') repeat-y left top;
 }
 
 #whatsnew-box .news
@@ -765,7 +765,7 @@ pre
   padding: 15px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
   border-bottom: 1px solid #cccccc;
-  background: url('../images/whatsnew-background.png') repeat-y left top;
+  background: url('title-background.png') repeat-y left top;
 }
 
 #cat-description
