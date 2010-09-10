@@ -297,6 +297,12 @@ pre
   float: left;
 }
 
+#navigation #logo-top.logo-blog
+{
+  width: 419px;
+  background-image: url('../instantbird-blog-logo-top.png');
+}
+
 #navigation #logo-top:hover
 {
   background-position: 0px -64px;
