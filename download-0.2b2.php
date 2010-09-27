@@ -18,52 +18,52 @@ include('header.inc.php');
 <tr>
   <th>Language</th>
   <th>Version</th>
-  <th><img alt="" src="images/ico-win.png" />Windows</th>
-  <th><img alt="" src="images/ico-osx.png" />Mac&nbsp;OS&nbsp;X</th>
-  <th><img alt="" src="images/ico-tux.png" />Linux</th>
+  <th><img alt="" src="theme/ico-win.png" />Windows</th>
+  <th><img alt="" src="theme/ico-osx.png" />Mac&nbsp;OS&nbsp;X</th>
+  <th><img alt="" src="theme/ico-tux.png" />Linux</th>
 </tr>
 <tr>
   <td>English</td>
   <td>0.2b2</td>
   <td>
-    <a href="downloads/0.2b2/instantbird-0.2b2.en-US.win32.installer.exe"><img alt="" src="images/ico-win.png" /><span>Download (installer)</span></a>
+    <a href="downloads/0.2b2/instantbird-0.2b2.en-US.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download (installer)</span></a>
     <a href="downloads/0.2b2/instantbird-0.2b2.en-US.win32.zip"><span>(zip)</span></a>
   </td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.en-US.mac.dmg"><img alt="" src="images/ico-osx.png" /><span>Download</span></a></td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.en-US.linux-i686.tar.bz2"><img alt="" src="images/ico-tux.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.en-US.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.en-US.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
 </tr>
 
 <tr>
   <td>French</td>
   <td>0.2b2</td>
   <td>
-    <a href="downloads/0.2b2/instantbird-0.2b2.fr.win32.installer.exe"><img alt="" src="images/ico-win.png" /><span>Download (installer)</span></a>
+    <a href="downloads/0.2b2/instantbird-0.2b2.fr.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download (installer)</span></a>
     <a href="downloads/0.2b2/instantbird-0.2b2.fr.win32.zip"><span>(zip)</span></a>
   </td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.fr.mac.dmg"><img alt="" src="images/ico-osx.png" /><span>Download</span></a></td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.fr.linux-i686.tar.bz2"><img alt="" src="images/ico-tux.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.fr.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.fr.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
 </tr>
 
 <tr>
   <td>Polish</td>
   <td>0.2b2</td>
   <td>
-    <a href="downloads/0.2b2/instantbird-0.2b2.pl.win32.installer.exe"><img alt="" src="images/ico-win.png" /><span>Download (installer)</span></a>
+    <a href="downloads/0.2b2/instantbird-0.2b2.pl.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download (installer)</span></a>
     <a href="downloads/0.2b2/instantbird-0.2b2.pl.win32.zip"><span>(zip)</span></a>
   </td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.pl.mac.dmg"><img alt="" src="images/ico-osx.png" /><span>Download</span></a></td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.pl.linux-i686.tar.bz2"><img alt="" src="images/ico-tux.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.pl.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.pl.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
 </tr>
 
 <tr>
   <td>Russian</td>
   <td>0.2b2</td>
   <td>
-    <a href="downloads/0.2b2/instantbird-0.2b2.ru.win32.installer.exe"><img alt="" src="images/ico-win.png" /><span>Download (installer)</span></a>
+    <a href="downloads/0.2b2/instantbird-0.2b2.ru.win32.installer.exe"><img alt="" src="theme/ico-win.png" /><span>Download (installer)</span></a>
     <a href="downloads/0.2b2/instantbird-0.2b2.ru.win32.zip"><span>(zip)</span></a>
   </td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.ru.mac.dmg"><img alt="" src="images/ico-osx.png" /><span>Download</span></a></td>
-  <td><a href="downloads/0.2b2/instantbird-0.2b2.ru.linux-i686.tar.bz2"><img alt="" src="images/ico-tux.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.ru.mac.dmg"><img alt="" src="theme/ico-osx.png" /><span>Download</span></a></td>
+  <td><a href="downloads/0.2b2/instantbird-0.2b2.ru.linux-i686.tar.bz2"><img alt="" src="theme/ico-tux.png" /><span>Download</span></a></td>
 </tr>
 
 </table>

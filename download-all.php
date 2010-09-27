@@ -21,9 +21,9 @@ include('header.inc.php');
         <tr>
           <th>Language</th>
           <th>Version</th>
-          <th><img alt="" src="images/ico-win.png" />Windows</th>
-          <th><img alt="" src="images/ico-osx.png" />Mac&nbsp;OS&nbsp;X</th>
-          <th><img alt="" src="images/ico-tux.png" />Linux</th>
+          <th><img alt="" src="theme/ico-win.png" />Windows</th>
+          <th><img alt="" src="theme/ico-osx.png" />Mac&nbsp;OS&nbsp;X</th>
+          <th><img alt="" src="theme/ico-tux.png" />Linux</th>
         </tr>
 <?php
 
@@ -32,9 +32,9 @@ foreach ($latest_minor_version_locales as $code) {
   echo "        <tr>
           <td>".$locales_names[$code]."</td>
           <td>$version</td>
-          <td><a href=\"".download_url($version, 'windows', $code)."\"><img alt=\"\" src=\"images/ico-win.png\" /><span>Download</span></a></td>
-          <td><a href=\"".download_url($version, 'mac', $code)."\"><img alt=\"\" src=\"images/ico-osx.png\" /><span>Download</span></a></td>
-          <td><a href=\"".download_url($version, 'linux', $code)."\"><img alt=\"\" src=\"images/ico-tux.png\" /><span>Download</span></a></td>
+          <td><a href=\"".download_url($version, 'windows', $code)."\"><img alt=\"\" src=\"theme/ico-win.png\" /><span>Download</span></a></td>
+          <td><a href=\"".download_url($version, 'mac', $code)."\"><img alt=\"\" src=\"theme/ico-osx.png\" /><span>Download</span></a></td>
+          <td><a href=\"".download_url($version, 'linux', $code)."\"><img alt=\"\" src=\"theme/ico-tux.png\" /><span>Download</span></a></td>
         </tr>
 
 ";
