@@ -29,7 +29,7 @@ include('header.inc.php');
         <p>We are a team of highly motivated individuals, working to provide you the best instant messenger. Free.</p>
 
         <div id="florian" class="team">
-          <h3>Florian Qu&egrave;ze</h3>
+          <h3><a href="about-flo.html">Florian Qu&egrave;ze</a></h3>
           <p>Instantbird Guru<br/>
           Email: <a href="mailto:flo@instantbird.org">flo@instantbird.org</a><br/>
           IRC: flo</p>
