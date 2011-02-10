@@ -1,4 +1,4 @@
-<?php
+1<?php
 $title = 'Instantbird - Frequently Asked Questions';
 include('header.inc.php');
 ?>
@@ -108,9 +108,9 @@ $faq = array(
           'title' => 'Where is my profile folder?',
           'text' => 'It is located in one of the following locations depending on your operating system:
 <table>
-<tr><td>Windows</td><td><code>%appdata%\Instantbird\</code> (copy and paste this exactly in the Windows explorer)</td></tr>
-<tr><td>Mac OS X</td><td><code>~/Library/Application Support/instantbird</code></td></tr>
-<tr><td>Linux and Unix systems</td><td><code>~/.instantbird</code></td></tr>
+<tr><td>Windows</td><td><code>%appdata%\Instantbird\Profiles\</code> (copy and paste this exactly in the Windows explorer)</td></tr>
+<tr><td>Mac OS X</td><td><code>~/Library/Application Support/Instantbird/Profiles/</code></td></tr>
+<tr><td>Linux and Unix systems</td><td><code>~/.instantbird/</code></td></tr>
 </table>
 <p>Any version of Instantbird that you install after removing Instantbird will continue to use the data from this profile folder.</p>'),
 
