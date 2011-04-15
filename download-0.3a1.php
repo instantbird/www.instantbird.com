@@ -36,7 +36,7 @@ include('header.inc.php');
 
 <p>As Instantbird is an open source project, you can freely <a href="downloads/0.3a1/instantbird-0.3a1.src.tgz">download the source code</a> and modify it.</p>
 
-<p style="margin-top: 60px;">Alpha releases are not localized. If you want to donwload Instantbird in another language, you should <a href="download.html">download the current stable release</a>.</p>
+<p style="margin-top: 60px;">Alpha releases are not localized. If you want to download Instantbird in another language, you should <a href="download.html">download the current stable release</a>.</p>
 
 <h2 class="borderbottom">What's new?</h2>
 
