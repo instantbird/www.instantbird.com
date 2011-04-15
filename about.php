@@ -21,6 +21,7 @@ include('header.inc.php');
         <div id="about-irc">
           <h3>Have a question that wasn't answered in the <a href="faq.html">F.A.Q.</a>?</h3>
           <p>Join us on IRC if you want to discuss it (<a href="irc://irc.mozilla.org/#instantbird">#instantbird</a> channel on the irc.mozilla.org server), or email us at <a href="mailto:contact@instantbird.org">contact@instantbird.org</a>.</p>
+          <p>Warning: both our IRC channel and our contact mailing list have public archives where your messages will be publicly readable, so ensure you don't include any private data.</p>
         </div>
 
 
