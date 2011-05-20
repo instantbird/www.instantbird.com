@@ -1,4 +1,4 @@
-1<?php
+<?php
 $title = 'Instantbird - Frequently Asked Questions';
 include('header.inc.php');
 ?>
