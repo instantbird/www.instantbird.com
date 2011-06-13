@@ -4,11 +4,17 @@ $latest_minor_version = '0.2';
 $latest_minor_version_locales = array('en-US', 'fi', 'fr', 'pl', 'ru');
 
 $locales_names = array(
+  'cs' => 'Czech',
+  'de' => 'German',
   'en-US' => 'English',
+  'es' => 'Spanish',
   'fi' => 'Finnish',
   'fr' => 'French',
+  'nl' => 'Dutch',
   'pl' => 'Polish',
-  'ru' => 'Russian'
+  'ru' => 'Russian',
+  'sk' => 'Slovak',
+  'uk' => 'Ukrainian'
 );
 
 function get_preferred_locale()

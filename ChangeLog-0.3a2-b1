@@ -1,0 +1,472 @@
+changeset:   1471:e0b2fb584091
+parent:      1469:79ef438ad6e4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Apr 13 15:09:28 2011 +0200
+summary:     Bump version number to 0.3a3pre on the default branch.
+
+changeset:   1472:c9c8b62ed323
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 14 01:51:21 2011 +0200
+summary:     Implement the system messages related to status changes in JS so that JS protocols can share them.
+
+changeset:   1473:de67ddc507b3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 14 18:16:21 2011 +0200
+summary:     Avoid duplicate status change notifications in conversations.
+
+changeset:   1474:ac115272d36c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 14 19:50:15 2011 +0200
+summary:     Bug 366 - Alphabetical sorting of group names.
+
+changeset:   1475:cba505a96f76
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Apr 15 17:25:28 2011 +0200
+summary:     Left and right arrow keys shouldn't open/close a contact while it's being aliased.
+
+changeset:   1476:a2e165a80dec
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Apr 16 01:19:13 2011 +0200
+summary:     Bug 343 - Sort contacts alphabetically.
+
+changeset:   1477:86841bb8b4c9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 21 17:03:47 2011 +0200
+summary:     Bug 760 - [Mac only] Clicking a growl notification should activate the application, r=clokep.
+
+changeset:   1478:01e84d49d021
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 21 17:32:27 2011 +0200
+summary:     Avoid a JS error when libpurple sends a display-name-changed signal for an offline buddy, r=clokep.
+
+changeset:   1479:f36be683de49
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Thu Apr 21 18:29:54 2011 +0200
+summary:     Bug 754 - Restart button on notification bar of add-ons window does not work, f=fqueze.
+
+changeset:   1480:14c07721ccdd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 21 22:32:40 2011 +0200
+summary:     Bug 741 - Fetch the tweets with @ mentions and tracked keywords when connecting a twitter account. Original version and review: clokep.
+
+changeset:   1481:e28ebc05a613
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 21 22:35:35 2011 +0200
+summary:     Remove the 'Your account is disconnected.' system message from the twitter code (follow-up to c9c8b62ed323).
+
+changeset:   1482:3a7219369759
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Apr 21 23:36:25 2011 +0200
+summary:     Discard the OAuth authorization dialog if the user clicks on the 'Disconnect' button of the account manager (+ some simplification/dead code removal).
+
+changeset:   1483:8db57a9720ab
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Apr 22 12:12:34 2011 +0200
+summary:     Implement the progress listener of the OAuth request in a way that will work with several simultaneous requests.
+
+changeset:   1484:31381cf276e8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Apr 22 12:13:52 2011 +0200
+summary:     Cleanup Twitter accounts at shutdown.
+
+changeset:   1485:513db79d1da5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Apr 22 12:56:13 2011 +0200
+summary:     Closing an already uninitialized UIConversation shouldn't do anything (and shouldn't fail). Prevents some shutdown errors.
+
+changeset:   1486:0b4aafaedc93
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Apr 22 16:19:01 2011 +0200
+summary:     Bug 496 - Add shortcut <modifier>+<number n> to access n-th tab in conversation window.
+
+changeset:   1487:3e0f99aee2cd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed May 04 16:48:37 2011 +0200
+summary:     Bug 768 - Make conversation tabs look like Firefox 4 tabs.
+
+changeset:   1488:8690ac515d10
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed May 04 16:50:34 2011 +0200
+summary:     Bug 765 - unknown.png missing on the Aero theme.
+
+changeset:   1489:b430dd24a5f4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed May 04 23:51:14 2011 +0200
+summary:     Fix JS errors when merging 2 contacts displayed in the 'Other Contacts' group.
+
+changeset:   1490:b59368edc8e4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 05 16:28:43 2011 +0200
+summary:     Bug 775 - disconnected accounts can't send messages.
+
+changeset:   1491:3029870b6942
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 05 16:40:46 2011 +0200
+summary:     Correctly remove contact DOM nodes removed before their insert transition has started.
+
+changeset:   1492:f7169f1ccd3f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 05 16:41:53 2011 +0200
+summary:     Report all errors while delivering buddy list notifications to the Error Console.
+
+changeset:   1493:a83d78418335
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 05 16:45:51 2011 +0200
+summary:     Avoid various JS errors caused by 'Other Contacts' group notifications fired before contact notifications.
+
+changeset:   1494:9440f3d44cb2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat May 07 16:59:03 2011 +0200
+summary:     Move the UI code into a 'content' directory inside the omnijar.
+
+changeset:   1495:be7dbc23dad8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed May 11 15:11:44 2011 +0200
+summary:     Bug 581 - Instantbird (default) is incompatible with Instantbird.
+
+changeset:   1496:e52ac1260bb5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 12 19:20:33 2011 +0200
+summary:     Bug 334 - Give the user a way to set a buddy icon and a display name.
+
+changeset:   1497:4d8d53386cb6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 12 19:45:20 2011 +0200
+summary:     Bustage fix for non-debug builds.
+
+changeset:   1498:18219ad5caf0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 16 15:30:56 2011 +0200
+summary:     Bug 731 - Sounds should work even when the buddy list is closed, be asynchronous, and be controlled by 2 separate preferences for messaging and buddy list events.
+
+changeset:   1499:7f1f36534832
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 16 16:00:35 2011 +0200
+summary:     Follow-up to bug 334, correctly reapply the empty text when no display name has been entered.
+
+changeset:   1500:9e6ff75a97bc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 16 16:25:40 2011 +0200
+summary:     [Mac] Dragging the tab strip should move the conversation window.
+
+changeset:   1501:20fc992ce4e9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 17 17:03:25 2011 +0200
+summary:     Port the changes from 'Bug 592133 - Installer always includes |Minefield is a Trademark of The Mozilla Foundation|'.
+
+changeset:   1502:13baeefb20d8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 19 14:50:13 2011 +0200
+summary:     Fire 'icon-changed' notifications on account-buddies, buddies, contacts and conversations.
+
+changeset:   1503:8e1a729df269
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 19 15:04:28 2011 +0200
+summary:     Bug 448 - allow message themes to show the user's own icon.
+
+changeset:   1504:a12fd5ec1fb2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 19 17:23:50 2011 +0200
+summary:     Hide the 'getAnonymousElementByAttribute' calls in conversation.xml to improve readability.
+
+changeset:   1505:8ad8500228a2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 19 20:38:17 2011 +0200
+summary:     The 'topic' attribute of purpleIConvChat should be settable.
+
+changeset:   1506:c66b5ba4ccc1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri May 20 03:20:48 2011 +0200
+summary:     Bug 744 - top of conversation UI (contact info) - part 1.
+
+changeset:   1507:e848f8c453e2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun May 22 12:26:36 2011 +0200
+summary:     Adapt glib's configuration for PPC builds (fixes MSN and AIM connection issues on PPC).
+
+changeset:   1508:fc27e39cc4d0
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon May 23 15:46:36 2011 +0200
+summary:     Bug 691 - Implement /help command to get information on registered commands, r=fqueze.
+
+changeset:   1509:cd9bd5683215
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 23 16:11:05 2011 +0200
+summary:     Fix icon display on Windows when the profile is stored on a network location.
+
+changeset:   1510:dcbe7c1efc4b
+user:        Benedikt P. <benediktp@ymail.com>
+date:        Mon May 23 18:09:18 2011 +0200
+summary:     Bug 795 - All-Tabs button not displayed correctly on conversation windows, r=fqueze.
+
+changeset:   1511:7f00b6a37a04
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 24 16:12:32 2011 +0200
+summary:     Remove ugly top margin on Linux conversation windows.
+
+changeset:   1512:c856c0b1cd19
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 24 16:53:03 2011 +0200
+summary:     Bug 744 - top of conversation UI (contact info) - part 2: protocol icon giving access to an 'all-targets' menu.
+
+changeset:   1513:b13df4582161
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed May 25 18:30:36 2011 +0200
+summary:     Bug 797 - Add help strings for Instantbird commands, r=fqueze.
+
+changeset:   1514:0dab142aefef
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 26 10:17:19 2011 +0200
+summary:     Bug 580 - Use Function.bind instead of 'self' variables and getBindingParent calls.
+
+changeset:   1515:dfcb5d529c7c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 26 18:15:48 2011 +0200
+summary:     Bug 744 - Move the top of conversation UI into 2 separate bindings (fixes a regression from c856c0b1cd19 where the topic was no longer editable).
+
+changeset:   1516:ffab3491ce07
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 26 18:24:36 2011 +0200
+summary:     Bug 791 - Wrong conversation header size after moving the splitter and resizing the window.
+
+changeset:   1517:1b90f5e6e4cf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 26 19:41:11 2011 +0200
+summary:     Bug 744 - Tooltip for the alltargets button.
+
+changeset:   1518:aa4b36cf0b8e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun May 29 19:43:21 2011 +0200
+summary:     Bug 676 - Display user icons in twitter timelines.
+
+changeset:   1519:07fab1b2715e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 30 12:36:16 2011 +0200
+summary:     Follow-up to bug 649 - purple proxies should not be in the way of JavaScript protocols: override protocols should have the same proxy behavior as their base.
+
+changeset:   1520:b06de022100f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 30 17:06:33 2011 +0200
+summary:     Integrate Time Bubbles' features into the default Bubbles message theme.
+
+changeset:   1521:0cade9d0f74e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 30 17:54:27 2011 +0200
+summary:     [Mac] Disable history in the hidden window to avoid a warning.
+
+changeset:   1522:1023849b0d65
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 30 17:58:02 2011 +0200
+summary:     Bug 532 - Disable advanced options for the Facebook and Google Talk protocol overrides, and disable 'Join Chat' for Facebook.
+
+changeset:   1523:3a3d0e64df1b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 30 18:43:37 2011 +0200
+summary:     Bug 504 - Use the CSS3 name (without the '-moz' prefix) of the border-radius, box-shadow and background-origin properties.
+
+changeset:   1524:b4caa7cf3f8b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 30 19:33:38 2011 +0200
+summary:     Port 'Bug 517097 - make enabling debug symbols more sane' and 'Bug 554024 - switch mozilla-central Linux builds to use -gdwarf-2 instead of -gstabs' changes to mozconfig files.
+
+changeset:   1525:5e3af713ee10
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 30 19:55:49 2011 +0200
+summary:     Make sound for contact events rather than buddy events to reduce pointless noise for contacts with several buddies.
+
+changeset:   1526:146e4bed1809
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 31 02:05:17 2011 +0200
+summary:     Bug 812 - Display the character count while typing a tweet, r=clokep.
+
+changeset:   1527:92c5329d2fd7
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue May 31 02:36:53 2011 +0200
+summary:     Bug 618 - Basic Jump List support on Windows 7, r=fqueze.
+
+changeset:   1528:97bc144c4562
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 31 12:58:16 2011 +0200
+summary:     Follow-up to bug 812: hide the character count when the textbox is empty.
+
+changeset:   1529:f03505da64ec
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 31 14:58:01 2011 +0200
+summary:     Follow-up to bug 618, addressing Mic's review comments.
+
+changeset:   1530:97a9f46c57db
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Wed Jun 01 00:48:32 2011 +0200
+summary:     Bug 620 - Use Glass on Aero (Windows Vista and 7), r=fqueze.
+
+changeset:   1531:c8228e0682a8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 01 12:40:48 2011 +0200
+summary:     Bug 718 - Error console links to libpurple source code are broken (port the comm-central ce2bbf8d11fd changeset).
+
+changeset:   1532:227376b9edd8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 01 15:26:43 2011 +0200
+summary:     Special case the system messages displayed when a status is changed from 'unknown', to avoid misleading the user into thinking the person's status has just changed.
+
+changeset:   1533:48c6f52e5fe2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 01 17:38:05 2011 +0200
+summary:     Bug 811 - List the tags a contact have in its tooltip, r=clokep.
+
+changeset:   1534:d617dc4a10c7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 01 18:19:58 2011 +0200
+summary:     Ensure we don't attempt to get information about buddies of disconnected accounts from libpurple (fix regression from bug 334 - e52ac1260bb5 that changed the GetPrplInfo method to work on disconnected accounts too).
+
+changeset:   1535:75f58b6bee36
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 02 00:45:18 2011 +0200
+summary:     Define MOZILLA_DIR before including package-name.mk in build.mk to avoid errors in the path of printconfigsetting.py.
+
+changeset:   1536:15bdac4d1a36
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 02 00:51:35 2011 +0200
+summary:     Bug 808 - UI to add/remove tags.
+
+changeset:   1537:a0dbff0be100
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 02 18:26:18 2011 +0200
+summary:     Bug 783 - User icons sometimes lost after a reconnecting the account.
+
+changeset:   1538:5ea81eb82790
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Jun 03 12:32:28 2011 +0200
+summary:     Bug 680 - Localize Twitter code, r=fqueze.
+
+changeset:   1539:2c7509660b28
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Fri Jun 03 12:37:26 2011 +0200
+summary:     Bug 819 - [Aero-only] Remove triple border at the bottom of the account list in the account manager, r=fqueze.
+
+changeset:   1540:dca75317ad29
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 03 17:40:35 2011 +0200
+summary:     Bug 818 - Change the way the 'textbox vertical overhead' is computed in the textbox sizing algorithm so that it still works when the conv-bottom deck has a border.
+
+changeset:   1541:4e858fa2022e
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Fri Jun 03 17:44:36 2011 +0200
+summary:     Bug 820 - [Aero only] Improve readability of the menu bar and status selector text, r=fqueze.
+
+changeset:   1542:ab2d37fb5d7b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 03 18:58:52 2011 +0200
+summary:     Bug 743 - Larger and more discoverable drop targets for merging buddies into contacts that currently have only one buddy.
+
+changeset:   1543:88ff717f390e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 03 19:45:59 2011 +0200
+summary:     Bug 792 - Need empty text for topics.
+
+changeset:   1544:71cbaabb817d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jun 07 14:14:24 2011 +0200
+summary:     Fix link opening from the add-on manager window, r=clokep.
+
+changeset:   1545:a221a47337b3
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Jun 08 00:21:33 2011 +0200
+summary:     Bug 697 - Commands no longer work in protocol overrides, r=fqueze.
+
+changeset:   1546:2e00b5c94702
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 08 00:32:35 2011 +0200
+summary:     Bug 529 - put a XUL page in chrome for the 'discovery' pane of the new add-on manager (+ fix a related pref, see bug 562), r=clokep.
+
+changeset:   1547:f586fd4c4b03
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 08 00:47:51 2011 +0200
+summary:     Bug 827 - Update copyright year to 2011.
+
+changeset:   1548:50a0839a5888
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 08 16:30:42 2011 +0200
+summary:     Bug 780 - Avoid freezing when adding several buddies to blist.sqlite, r=instantbot.
+
+changeset:   1549:602f437f11c2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 08 16:37:48 2011 +0200
+summary:     Fix typo in the 'extensions-discover.description' string.
+
+changeset:   1550:b71486b1491b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 08 19:11:08 2011 +0200
+summary:     Update 'Fake' to work with Instantbird 0.3.
+
+changeset:   1551:d2f37c50fdba
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 08 19:53:56 2011 +0200
+summary:     Follow-up to bug 680 (localize twitter code): export the 'LOG' function in jsProtoHelper.
+
+changeset:   1552:ba3794e540c5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 09 15:03:11 2011 +0200
+summary:     Fix the default font size for x-cyrillic ('uk' locale).
+
+changeset:   1553:c98535677ad3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 09 23:49:13 2011 +0200
+summary:     Bug 784 - Use placeholder icon that can obviously be changed for the buddy icon (icon by Idechix).
+
+changeset:   1554:ad78b9fd0ce1
+branch:      0.3b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 10 15:19:49 2011 +0200
+summary:     Set version number to 0.3b1, change default revisions in client.py and add shipped-locales.
+
+changeset:   1556:163b65677c8d
+branch:      0.3b1
+parent:      1554:ad78b9fd0ce1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 10 16:48:20 2011 +0200
+summary:     Fix errors while repackaging builds.
+
+changeset:   1557:450fa2ae9c0a
+branch:      0.3b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 10 16:48:52 2011 +0200
+summary:     Include nl and pl too as they are almost complete and English strings will be merged in to replace the missing strings.
+
+changeset:   1558:0b283aa8fe91
+branch:      0.3b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 10 18:25:25 2011 +0200
+summary:     Update the l10n repositories after pulling in new changesets.
+
+changeset:   1559:d192ebb6b041
+branch:      0.3b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jun 10 18:26:09 2011 +0200
+summary:     Make missing strings non-fatal.
+
+changeset:   1560:637035b44e0a
+branch:      0.3b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jun 11 01:09:59 2011 +0200
+summary:     More l10n repackaging fixes.
+
+changeset:   1561:56dc97ef4f7c
+branch:      0.3b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jun 11 01:12:23 2011 +0200
+summary:     Additional locales: ru (ready), es-ES (almost ready).
+
+changeset:   1562:bdd32db44958
+branch:      0.3b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jun 11 08:45:05 2011 +0200
+summary:     Remove call to check-locales.pl (see bug 572224 and bug 572222).
+
+changeset:   1563:e4232086e0e0
+branch:      0.3b1
+tag:         tip
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jun 11 12:45:48 2011 +0200
+summary:     Attempt to fix the Windows repackaging error.
+
