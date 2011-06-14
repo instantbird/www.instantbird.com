@@ -85,7 +85,7 @@ keyword means AND.</li>
 
 <li><strong>Updated</strong>: Instantbird 0.3a2 is based on libpurple 2.7.11 and Mozilla 2.0.2pre which brings great <a href="https://developer.mozilla.org/en/Firefox_4_for_developers">new possibilities for add-on developers</a> (<a href="https://developer.mozilla.org/en/Extensions/Bootstrapped_extensions">restartless add-ons for example</a>).</li>
 <li><strong>Improved stability</strong>: we used the crash reports that we got from the 0.2 and 0.3 alpha releases and nightly builds to fix bugs that resulted in crashes.</li>
-<li>And more... read the full <a href="ChangeLog-0.3a2">ChangeLog</a> for details.</li>
+<li>And more... read the full <a href="ChangeLog-0.3b1">ChangeLog</a> for details.</li>
 </ul>
 
 <h2 class="borderbottom">Known issues</h2>
