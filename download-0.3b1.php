@@ -51,7 +51,7 @@ foreach ($version_locales as $code) {
 <li>New features:<ul>
  <li>Users can now set their <strong>buddy icon</strong> and the <strong>display name</strong> of their accounts right on the contacts list.</li>
  <li>New <strong>information toolbar at the top of the conversation UI</strong>, showing the buddy icon, display name and current status of your contact. In addition, you can switch the buddy you're talking to by clicking on the protocol icon.</li>
- <li>The conversation <strong>tabs styling</strong> has been <strong>updating</strong> to match Firefox 4, and users of recent Windows version is appreciate some <strong>Aero glass effects</strong>.</li>
+ <li>The conversation <strong>tabs styling</strong> has been <strong>updated</strong> to match Firefox 4, and users of recent Windows versions will appreciate some <strong>Aero glass effects</strong>.</li>
  <li>Bubbles, the default message theme, has received <a href="http://blog.instantbird.org/c42-introducing-time-bubbles.html" title="Instantbird blog: Introducing Time Bubbles">new time-related features</a>, see our blog post for details.</li>
  <li>(Windows 7 only) <strong>Jumplist support</strong> to quickly change the status.</li>
  <li><strong>The contact list is sorted</strong> alphabetically (both groups and contacts appear sorted).</li>
