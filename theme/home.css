@@ -325,13 +325,21 @@ pre
   margin-top: 7px;
 }
 
+#share-box
+{
+  margin-top: 25px;
+  margin-right: 30px;
+  float: right;
+  clear: right;
+}
+
 #logo img
 {
   margin-left: 15px;
   vertical-align: -65px;
 }
 
-#getinstantbird-box
+#getinstantbird-box, #motto
 {
   width: 450px;
   margin-left: 30px;
@@ -344,7 +352,9 @@ pre
 
 #motto
 {
-  margin: 45px 0;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 #download-button
@@ -375,19 +385,25 @@ pre
   box-shadow: 0px 0px 5px #888;
 }
 
-#download-icon
+#download-button-box
 {
-  width: 40px;
   height: 40px;
-  margin: 14px 12px;
+  margin-top: 14px;
+  margin-left: 12px;
+  padding-left: 50px;
   background: url('../images/download-anim.png') no-repeat 0px 0px;
   display: block;
-  float: left;
 }
 
-#download-button:hover #download-icon
+#download-button:hover #download-button-box
 {
   background-position: 0px -40px;
+}
+
+#download-title, #download-description
+{
+  position: relative;
+  top: -10px;
 }
 
 #download-title
@@ -403,6 +419,18 @@ pre
   font-size: small;
   line-height: 16px;
   display: block;
+}
+
+#tweet-button
+{
+  background: url('../images/share-twitter.png') no-repeat center left;
+  padding-left: 20px;
+}
+
+#facebook-button
+{
+  background: url('../images/share-facebook.png') no-repeat center left;
+  padding-left: 20px;
 }
 
 #addons-box
@@ -477,6 +505,19 @@ pre
   border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
   border-bottom: 1px solid #cccccc;
   background: url('title-background.png') repeat-y left top;
+}
+
+#feed-icon {
+  float: right;
+  margin: -8px 5px 0px 10px;
+}
+
+#feed-link {
+  width: 48px;
+  height: 48px;
+  float: right;
+  margin: -8px 5px 0px 10px;
+  background: url('../images/feed-icon.png') no-repeat right center;
 }
 
 #whatsnew-box .news
