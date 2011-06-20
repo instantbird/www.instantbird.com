@@ -83,10 +83,10 @@ function download_button()
   $dl_size = $os_info[$os]['size'];
 
   echo "        <a href=\"$url\" id=\"download-button\">
-          <span id=\"download-icon\"></span>
+          <div id=\"download-button-box\">
           <span id=\"download-title\">Get Instantbird - Free</span>
           <span id=\"download-description\">Version $version, $language<br/>
-          $os_name ($dl_size)</span>
+          $os_name ($dl_size)</span></div>
         </a>
 ";
 }

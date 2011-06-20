@@ -8,7 +8,7 @@
         <p class="arrow-link"><a href="https://addons.instantbird.org/">More add-ons</a></p>
       </div>
       <div id="whatsnew-box">
-      <h1>What's new?</h1>
+      <h1>What's new?<a title="Subscribe to Instantbird's blog feed" id="feed-link" href="http://blog.instantbird.org/flux.rss"> </a></h1>
         <div class="news">
           <h2><a href="http://blog.instantbird.org/FIXME">FIXME</a></h2>
           <p>FIXME<a title="View full post" href="http://blog.instantbird.org/FIXME">...</a></p>
