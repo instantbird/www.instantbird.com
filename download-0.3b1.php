@@ -24,7 +24,7 @@ include('header.inc.php');
 </tr>
 <?php
 $version = '0.3b1';
-$version_locales = array('cs', 'de', 'en-US', 'es', 'fr', 'nl', 'pl', 'ru', 'sk', 'uk');
+$version_locales = array('cs', 'de', 'en-US', 'es-ES', 'fr', 'nl', 'pl', 'ru', 'sk', 'uk');
 foreach ($version_locales as $code) {
   echo "        <tr>
           <td>".$locales_names[$code]."</td>
