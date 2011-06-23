@@ -1,7 +1,7 @@
 <?php
-$latest_major_version = '0.2';
-$latest_minor_version = '0.2';
-$latest_minor_version_locales = array('en-US', 'fi', 'fr', 'pl', 'ru');
+$latest_major_version = '1.0';
+$latest_minor_version = '1.0';
+$latest_minor_version_locales = array('cs', 'de', 'en-US', 'es-ES', 'fr', 'it', 'nl', 'pl', 'ru', 'sk', 'uk');
 
 $locales_names = array(
   'cs' => 'Czech',
@@ -10,6 +10,7 @@ $locales_names = array(
   'es-ES' => 'Spanish',
   'fi' => 'Finnish',
   'fr' => 'French',
+  'it' => 'Italian',
   'nl' => 'Dutch',
   'pl' => 'Polish',
   'ru' => 'Russian',
@@ -89,6 +90,35 @@ function download_button()
           $os_name ($dl_size)</span></div>
         </a>
 ";
+}
+
+function download_table($version, $locales)
+{
+  global $locales_names;
+
+  echo '<table id="table-download">
+<tr>
+  <th>Language</th>
+  <th>Version</th>
+  <th><img alt="" src="theme/ico-win.png" />Windows</th>
+  <th><img alt="" src="theme/ico-osx.png" />Mac&nbsp;OS&nbsp;X</th>
+  <th><img alt="" src="theme/ico-tux.png" />Linux</th>
+</tr>
+
+';
+  foreach ($locales as $code) {
+    echo "        <tr>
+          <td>".$locales_names[$code]."</td>
+          <td>$version</td>
+          <td><a href=\"".download_url($version, 'windows', $code)."\"><img alt=\"\" src=\"theme/ico-win.png\" /><span>Download</span></a></td>
+          <td><a href=\"".download_url($version, 'mac', $code)."\"><img alt=\"\" src=\"theme/ico-osx.png\" /><span>Download</span></a></td>
+          <td><a href=\"".download_url($version, 'linux', $code)."\"><img alt=\"\" src=\"theme/ico-tux.png\" /><span>Download</span></a></td>
+        </tr>
+
+";
+  }
+echo '</table>
+';
 }
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

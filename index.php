@@ -35,7 +35,6 @@ echo $os_img[get_preferred_os()];
 <?php echo download_button(); ?>
 
         <p class="arrow-link"><a href="release-notes.html">Release Notes</a> - <a href="download-all.html" style="background: none; padding-left: 0;">Other Systems and Languages</a></p>
-        <p>Want to see what's coming soon? Try <a href="download-0.3b1.html">Instantbird 0.3 beta</a>!</p>
       </div>
 
       <hr class="spacer"/>

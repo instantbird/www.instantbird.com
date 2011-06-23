@@ -21,16 +21,9 @@ include('header.inc.php');
       <div id="features-box">
 <?php
 $features = array(
-  array('title' => 'Conversations in Tabs',
-        'desc'  => 'Conversations are grouped in Tabs, ensuring you never feel swamped by conversations windows poping up everywhere.</p>
-<p>The tabs are easy to use: you can drag them to reorder them, or move a conversation into a new window.',
-        'img_windows' => '<a href="images/screenshots/windows-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/windows-conversation-tabs.png" /></a>',
-        'img_mac'     => '<a href="images/screenshots/macosx-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/macosx-conversation-tabs.png" style="margin: -14px -25px 0 -25px;" /></a>',
-        'img_linux'   => '<a href="images/screenshots/linux-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/linux-conversation-tabs.png" style="margin: -6px -8px 0 -6px;" /></a>'),
-
   array('title' => 'Talk to all your friends',
         'desc'  => 'With Instantbird, you can now talk to all your friends with a single application!</p>
-<p>AIM, Yahoo, MSN, Google Talk and even Facebook are supported!',
+<p>AIM, Yahoo, MSN, Google Talk, Facebook and even Twitter are supported!',
         'img'   => '<img alt="Screenshot" src="images/screenshots/multi-protocol.png" style="margin: -6px -7px;" />'),
 
   array('title' => 'Trouble free',
@@ -41,6 +34,13 @@ $features = array(
         'img_mac'     => '<a href="images/screenshots/macosx-trouble-free-big.png"><img alt="Screenshot" src="images/screenshots/macosx-trouble-free.png" style="margin: -8px -7px -18px -14px;" /></a>',
         'img_linux'   => '<a href="images/screenshots/linux-trouble-free-big.png"><img alt="Screenshot" src="images/screenshots/linux-trouble-free.png" style="margin: -4px;" /></a>'),
 
+  array('title' => 'Conversations in Tabs',
+        'desc'  => 'Conversations are grouped in Tabs, ensuring you never feel swamped by conversations windows poping up everywhere.</p>
+<p>The tabs are easy to use: you can drag them to reorder them, or move a conversation into a new window.',
+        'img_windows' => '<a href="images/screenshots/windows-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/windows-conversation-tabs.png" /></a>',
+        'img_mac'     => '<a href="images/screenshots/macosx-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/macosx-conversation-tabs.png" style="margin: -14px -25px 0 -25px;" /></a>',
+        'img_linux'   => '<a href="images/screenshots/linux-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/linux-conversation-tabs.png" style="margin: -6px -8px 0 -6px;" /></a>'),
+
   array('title' => 'Customizable conversations',
         'desc'  => 'With a few carefully designed message themes available by default and
 hundreds more available as add-ons, there\'s all you need to make your conversations feel personal.</p>
@@ -49,13 +49,19 @@ hundreds more available as add-ons, there\'s all you need to make your conversat
         'img_mac'     => '<a href="images/screenshots/macosx-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/macosx-customizable-conversations.png" style="margin: -8px;" /></a>',
         'img_linux'   => '<a href="images/screenshots/linux-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/linux-customizable-conversations.png" style="margin: -8px;" /></a>'),
 
+  array('title' => 'Smart contacts',
+        'desc'  => 'Having several ways to contact the same person?</p><p>No problem, just drop a contact onto another and Instantbird will know it\'s the same person.',
+        'img_windows' => 'FIXME<a href="images/screenshots/windows-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/windows-customizable-conversations.png" style="margin: -8px;" /></a>',
+        'img_mac'     => 'FIXME<a href="images/screenshots/macosx-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/macosx-customizable-conversations.png" style="margin: -8px;" /></a>',
+        'img_linux'   => 'FIXME<a href="images/screenshots/linux-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/linux-customizable-conversations.png" style="margin: -8px;" /></a>'),
+
   array('title' => 'Always here for you',
         'desc'  => 'Instantbird will work on all your computers, whether they are running Windows, Mac OS X or Linux.</p>
 <p>Being free and Open-Source, you will never have to pay to use it.</p>
 <p>You will never have to learn to use another IM client again!',
         'img'   => '<a href="images/screenshots/cross-platform-big.png"><img alt="Screenshot" src="images/screenshots/cross-platform.png" style="margin: -4px 0 0 -4px;" /></a>'),
 
-  array('title' => 'Powerful tools just where you need them',
+  array('title' => 'Limitless extensibility',
         'desc'  => 'Powerful tools like inline search or zoom are built-in to help you get the most out of your conversations.</p>
 <p>More are available as add-ons, thanks to Instantbird\'s limitless extensibility!',
         'img_windows' => '<a href="images/screenshots/windows-powerful-tools-big.png"><img alt="Screenshot" src="images/screenshots/windows-powerful-tools.png" /></a>',
