@@ -1,6 +1,4 @@
 <?php include('header.inc.php');
-$default_bundle = new bundle('index');
-
 $os_img = array('windows' => '<img alt="_(screenshotAltText)" src="images/screenshots/windows-screenshot-homepage.png" />',
                 'mac' => '<img alt="_(screenshotAltText)" src="images/screenshots/macosx-screenshot-homepage.png" style="margin: -3px -8px -11px -8px;" />',
                 'linux' => '<img alt="_(screenshotAltText)" src="images/screenshots/linux-screenshot-homepage.png" style="margin: -3px;" />');
@@ -41,9 +39,10 @@ $page_content = '      <div id="screenshot-box">
       <p id="powered-by-mozilla"><a href="http://www.mozilla.org/poweredby"><img alt="_(poweredByMozillaAltText)" src="images/powered-by-mozilla.png" /></a></p>
 ';
 
-$twitterLink = '<a title="'._('shareOnTwitterLinkTooltip').'" id="tweet-button" href="http://twitter.com/share?url=http://www.instantbird.com/&text='._('shareOnTwitterTweet').'&related=instantbird">twitter</a>';
-$facebookLink = '<a title="'._('shareOnFacebookLinkTooltip').'" id="facebook-button" href="https://www.facebook.com/sharer/sharer.php?u=http://www.instantbird.com/">Facebook</a>';
-echo __($page_content, $default_bundle, array('&twitterLink;' => $twitterLink,
-                                              '&facebookLink;' => $facebookLink));
+$index_bundle = new bundle('index');
+$twitterLink = '<a title="'.$index_bundle->_('shareOnTwitterLinkTooltip').'" id="tweet-button" href="http://twitter.com/share?url=http://www.instantbird.com/&text='.$index_bundle->_('shareOnTwitterTweet').'&related=instantbird">twitter</a>';
+$facebookLink = '<a title="'.$index_bundle->_('shareOnFacebookLinkTooltip').'" id="facebook-button" href="https://www.facebook.com/sharer/sharer.php?u=http://www.instantbird.com/">Facebook</a>';
+echo __($page_content, $index_bundle, array('&twitterLink;' => $twitterLink,
+                                            '&facebookLink;' => $facebookLink));
 echo footer();
 ?>

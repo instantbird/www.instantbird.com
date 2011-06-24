@@ -34,7 +34,6 @@ function get_preferred_website_locale()
 }
 
 $website_locale = get_preferred_website_locale();
-$default_bundle = NULL;
 
 class bundle {
   private function read_properties_file_into_array($path, &$array) {
@@ -66,12 +65,6 @@ class bundle {
   function _($key) {
     return $this->string_array[$key];
   }
-}
-
-function _($key)
-{
-  global $default_bundle;
-  return $default_bundle->_($key);
 }
 
 function __($page_content, $bundle, $replacements = NULL)
