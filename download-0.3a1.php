@@ -69,4 +69,4 @@ keyword means AND.</li>
 
 </div>
 
-<?php readfile('footer.inc.php'); ?>
+<?php echo footer(); ?>

@@ -39,5 +39,5 @@ include('header.inc.php');
         <p>Please note that Linux distributors may provide packages for your distribution which have different requirements.</p>
       </div>
 <?php
-readfile('footer.inc.php');
+echo footer();
 ?>

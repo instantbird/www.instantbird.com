@@ -1,22 +1,30 @@
 <?php
-$title = 'Instantbird '.$latest_minor_version.' - release notes';
+$delayHeader = TRUE;
 include('header.inc.php');
-?>
+$rn_bundle = new bundle('releasenotes');
+$title = 'Instantbird - '.$rn_bundle->_('releaseNotesPageTitleSuffix');
+
+echo head().__('
       <div id="page">
 
         <ul id="index-box">
-          <li><a href="features.html">Features</a></li>
-          <li><a href="download-all.html">Systems and Languages</a></li>
-          <li>Release Notes</li>
-          <li style="border-bottom-style: none;"><a href="<?php echo download_url_auto() ?>">Get Instantbird <?php echo $latest_major_version; ?> Now!</a></li>
+          <li><a href="features.html">_(features)</a></li>
+          <li><a href="download-all.html">_(systemsAndLanguages)</a></li>
+          <li>_(releaseNotes)</li>
+          <li style="border-bottom-style: none;"><a href="'.download_url_auto().'">_(getInstantbirdNow)</a></li>
         </ul>
+', new bundle('learnmorenavigation'), array('&versionNumber;' => $latest_major_version)).
+__('
+        <h1>_(instantbirdVersionReleaseNotes)</h1>
 
-        <h1>Instantbird <?php echo $latest_minor_version; ?> Release Notes</h1>
+        <h2>_(checkoutWhatsNewAndKnownIssues).</h2>
 
-        <h2>Check out what's new and the known issues about the latest version of Instantbird. As always, you're encouraged to tell us what you think, by <a href="about.html#get_in_touch">giving feedback</a> or by <a href="http://bugzilla.instantbird.org">filing a bug in Bugzilla</a>.</h2>
+', $rn_bundle, array('&versionNumber;' => $latest_minor_version,
+                     '&givingFeedbackLink;' => '<a href="about.html#get_in_touch">'.$rn_bundle->_('givingFeedbackLink').'</a>',
+                     '&filingABugLink;' => '<a href="http://bugzilla.instantbird.org">'.$rn_bundle->_('filingABugLink').'</a>'));
 
-<?php readfile('release-notes-'.$latest_minor_version.'.php'); ?>
-      </div>
-<?php
-readfile('footer.inc.php');
+include('release-notes-'.$latest_minor_version.'.php');
+
+echo '      </div>
+'.footer();
 ?>

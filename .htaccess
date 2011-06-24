@@ -1,6 +1,8 @@
 RewriteEngine on
 
 RewriteRule ^([a-z0-9.-]+)\.html?$ $1.php [L]
+RewriteRule ^([a-zA-Z]{2}(-[a-zA-Z]{2})?)/(.*\.(html?|php))?$ $3?lang=$1
+RewriteRule ^([a-zA-Z]{2}(-[a-zA-Z]{2})?)/(.*)$ $3
 
 # Rewrite urls from the old site
 RewriteRule contact.php about.html [R]

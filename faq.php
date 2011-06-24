@@ -201,4 +201,4 @@ foreach ($faq as $section_name => $section_topics) {
 }
 ?>
       </div>
-<?php readfile('footer.inc.php'); ?>
+<?php echo footer(); ?>

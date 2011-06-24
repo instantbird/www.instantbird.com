@@ -56,4 +56,4 @@
   </div>
 
  </div>
-<?php readfile('footer.inc.php'); ?>
+<?php echo footer(); ?>

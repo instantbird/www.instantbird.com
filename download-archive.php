@@ -43,5 +43,5 @@ foreach($old_versions as $version => $name)
 </div>
 
 <?php
-readfile('footer.inc.php');
+echo footer();
 ?>

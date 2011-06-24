@@ -65,4 +65,4 @@
 <li>Contribute code:<p>For those of you with more technical knowledge, you can go ahead and provide patches.</p><p>You probably want to start by <a href="http://wiki.instantbird.org/Instantbird:Compiling">compiling a build yourself</a>. Talk with us during the process, we can help you get started faster!</p></li>
 </ul>
   </div>
-<?php readfile('footer.inc.php'); ?>
+<?php echo footer(); ?>

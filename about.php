@@ -69,5 +69,5 @@ include('header.inc.php');
         <p>Feel free to <a href="#get_in_touch">contact us</a> if you have questions.</p>
       </div>
 <?php
-readfile('footer.inc.php');
+echo footer();
 ?>

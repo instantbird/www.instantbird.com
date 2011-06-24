@@ -1,30 +1,39 @@
 <?php 
 $title = "Instantbird $version_title";
 include('header.inc.php');
-?>
+$dl_bundle = new bundle('download');
 
+$page_content = __('
 <div id="page">
 
-<h1>Instantbird <?php echo $version_title; ?></h1>
+<h1>Instantbird &versionNumber;</h1>
 
-<p>Instantbird <?php echo $version_title; ?> was already available in <?php echo count($version_locales); ?> languages, thanks to the contributions from our translators around the world, and we look forward to see this number grow with your help!</p>
+<p>_(wasAlreadyAvailableInNLocales)</p>
 
-<h2 class="borderbottom">Download</h2>
+<h2 class="borderbottom">_(download)</h2>
 
-<p>Instantbird runs on Windows, Mac OS X and Linux platforms.</p>
-<p>Please see the <a href="system-requirements.html">minimum system requirements</a> needed to run Instantbird.</p>
+<p>_(runsOn)</p>
+<p>_(seeSysReq)</p>
 
-<?php download_table($version_number, $version_locales);?>
+', $dl_bundle, array('&sysReqLink;' => '<a href="system-requirements.html">'.$dl_bundle->_('sysReqLink').'</a>',
+                     '&versionNumber;' => $version_title,
+                     '&localesCount;' => count($version_locales))).
+download_table($version_number, $version_locales, $dl_bundle).__('
 
-<h2 class="borderbottom"><a name="links" class="no-link">Download the source code</a></h2>
+<h2 class="borderbottom"><a name="links" class="no-link">_(downloadSourceCode)</a></h2>
 
-<p>As Instantbird is an open source project, you can freely <a href="<?php echo download_url($version_number, 'src', ''); ?>">download the source code</a> and modify it.</p>
+<p>_(openSourceProject)</p>
 
-<?php readfile('release-notes-'.$version_number.'.php'); ?>
+', $dl_bundle, array('&downloadSourceLink;' => '<a href="'.download_url($version_number, 'src', '').'">'.$dl_bundle->_('downloadSourceLink').'</a>'));
 
-<h2 class="borderbottom">Older versions</h2>
-<p>You can access the <a href="download-archive.html">archives</a> to download the older versions of Instantbird.</p>
+echo $page_content;
 
-</div>
+include('release-notes-'.$version_number.'.php');
 
-<?php readfile('footer.inc.php'); ?>
+echo __('<h2 class="borderbottom">_(olderVersions)</h2>
+<p>_(accessTheArchives)</p>
+
+</div>', $dl_bundle, array('&archivesLink;' => '<a href="download-archive.html">'.$dl_bundle->_('archivesLink').'</a>'));
+
+echo footer();
+?>
