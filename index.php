@@ -14,16 +14,29 @@ $page_content = '      <div id="screenshot-box">
 
       <div id="motto">
         <p>_(withInstantbirdConnectTo)<br />
-          <a title="AOL Instant Messenger" rel="nofollow" href="http://www.aim.com/"><img src="images/services/icon-aim.png" alt="AIM Icon"></a>
-          <a title="Windows Live Messenger (MSN)" rel="nofollow" href="http://www.msn.com/"><img src="images/services/icon-msn.png" alt="MSN Icon"></a>
-          <a title="Yahoo! Messenger" rel="nofollow" href="http://messenger.yahoo.com/"><img src="images/services/icon-yahoo.png" alt="Yahoo Icon"></a>
-          <a title="Google Talk_(jabberCompatible)" rel="nofollow" href="http://talk.google.com/"><img src="images/services/icon-googletalk.png" alt="Google Talk Icon"></a>
-          <a title="Twitter" rel="nofollow" href="http://twitter.com/"><img src="images/services/icon-twitter.png" alt="Twitter Icon"></a>
-          <a title="Facebook Chat" rel="nofollow" href="http://www.facebook.com"><img src="images/services/icon-facebook.png" alt="Facebook Chat Icon"></a>
-          <a title="XMPP (Jabber)" rel="nofollow" href="http://www.xmpp.org/"><img src="images/services/icon-jabber.png" alt="Jabber Icon"></a>
-          <a title="IRC" rel="nofollow" href="http://en.wikipedia.org/wiki/Internet_Relay_Chat"><img src="images/services/icon-irc.png" alt="IRC Icon"></a>
-          <a title="ICQ_(AIMCompatible)" rel="nofollow" href="http://www.icq.com/"><img src="images/services/icon-icq.png" alt="ICQ Icon"></a>
-        </p>
+';
+
+$possible_prpl = array('aim' => array('title' => 'AOL Instant Messenger', 'url' => 'http://www.aim.com/'),
+                       'facebook' => array('title' => 'Facebook Chat', 'url' => 'http://www.facebook.com'),
+                       'gadu-gadu' => array('title' => 'Gadu-Gadu', 'url' => 'http://www.gadu-gadu.pl/'),
+                       'googletalk' => array('title' => 'Google Talk_(jabberCompatible)', 'url' => 'http://talk.google.com/'),
+                       'icq' => array('title' => 'ICQ_(AIMCompatible)', 'url' => 'http://www.icq.com/'),
+                       'irc' => array('title' => 'IRC', 'url' => 'http://en.wikipedia.org/wiki/Internet_Relay_Chat'),
+                       'jabber' => array('title' => 'XMPP (Jabber)', 'url' => 'http://www.xmpp.org/'),
+                       'msn' => array('title' => 'Windows Live Messenger (MSN)', 'url' =>'http://www.msn.com/'),
+                       'myspaceim' => array('title' => 'MySpace IM', 'url' => 'http://www.myspace.com/im'),
+                       'qq' => array('title' => 'QQ', 'url' => 'http://im.qq.com/'),
+                       'twitter' => array('title' => 'Twitter', 'url' => 'http://twitter.com/'),
+                       'yahoo' => array('title' => 'Yahoo! Messenger', 'url' => 'http://messenger.yahoo.com/'));
+$index_bundle = new bundle('index');
+$prpls = explode(',', $index_bundle->_('prplList'));
+foreach ($prpls as $prpl) {
+  if (!isset($possible_prpl[$prpl]))
+    continue;
+  $proto = $possible_prpl[$prpl];
+  $page_content .= '          <a title="'.$proto['title'].'" rel="nofollow" href="'.$proto['url'].'"><img src="images/services/icon-'.$prpl.'.png" alt="'.$proto['title'].' Icon"></a>'."\n";
+}
+$page_content .= '        </p>
         <p>_(instantbirdMotto) <a href="features.html">_(learnMoreLink)</a>.</p>
       </div>
 
@@ -39,7 +52,6 @@ $page_content = '      <div id="screenshot-box">
       <p id="powered-by-mozilla"><a href="http://www.mozilla.org/poweredby"><img alt="_(poweredByMozillaAltText)" src="images/powered-by-mozilla.png" /></a></p>
 ';
 
-$index_bundle = new bundle('index');
 $twitterLink = '<a title="'.$index_bundle->_('shareOnTwitterLinkTooltip').'" id="tweet-button" href="http://twitter.com/share?url=http://www.instantbird.com/&text='.$index_bundle->_('shareOnTwitterTweet').'&related=instantbird">twitter</a>';
 $facebookLink = '<a title="'.$index_bundle->_('shareOnFacebookLinkTooltip').'" id="facebook-button" href="https://www.facebook.com/sharer/sharer.php?u=http://www.instantbird.com/">Facebook</a>';
 echo __($page_content, $index_bundle, array('&twitterLink;' => $twitterLink,
