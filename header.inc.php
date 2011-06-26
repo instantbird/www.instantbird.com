@@ -122,7 +122,7 @@ function get_preferred_os($screenshot = FALSE)
     return 'mac';
   if (strpos($user_agent, 'Linux') !== FALSE)
     return 'linux';
-  if ($screenshot && strpos($user_agent, 'Windows NT 6.' !== FALSE))
+  if ($screenshot && strpos($user_agent, 'Windows NT 6.') !== FALSE)
     return 'winaero';
   return 'windows';
 }
