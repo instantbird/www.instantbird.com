@@ -16,6 +16,7 @@ function get_preferred_website_locale()
         $locales[strtolower($locale)] = $locale;
     closedir($dir);
   }
+  $locales['ct'] = 'ct';
 
   if (isset($_GET['lang'])) {
     $locale = strtolower($_GET['lang']);
@@ -57,9 +58,21 @@ class bundle {
       $locale = $website_locale;
     $array = array();
     $this->read_properties_file_into_array("l10n/en-US/$module.properties", $array);
-    if ($locale != 'en-US')
+    if ($locale == 'ct') {
+      foreach ($array as $key => $str)
+        $array[$key] = preg_replace('@(&?\w+)@e', "\$this->cot('\\1')", $str);
+     }
+    else if ($locale != 'en-US')
       $this->read_properties_file_into_array("l10n/$locale/$module.properties", $array);
     $this->string_array = $array;
+  }
+
+  function cot($str) {
+    if ($str[0] == '&')
+      return $str;
+    if (strlen($str) < 3)
+      return 'cot';
+    return 'c'.str_repeat('o', strlen($str) - 2).'t';
   }
 
   function _($key) {
