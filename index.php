@@ -1,10 +1,11 @@
 <?php include('header.inc.php');
 $os_img = array('windows' => '<img alt="_(screenshotAltText)" src="images/screenshots/windows-screenshot-homepage.png" />',
+                'winaero' => '<img alt="_(screenshotAltText)" src="images/screenshots/winaero-screenshot-homepage.png" />',
                 'mac' => '<img alt="_(screenshotAltText)" src="images/screenshots/macosx-screenshot-homepage.png" style="margin: -3px -8px -11px -8px;" />',
                 'linux' => '<img alt="_(screenshotAltText)" src="images/screenshots/linux-screenshot-homepage.png" style="margin: -3px;" />');
 
 $page_content = '      <div id="screenshot-box">
-        <a href="features.html">'.$os_img[get_preferred_os()].'</a>
+        <a href="features.html">'.$os_img[get_preferred_os(TRUE)].'</a>
         <p class="arrow-link"><a href="features.html">_(seeMoreLink)</a></p>
       </div>
 

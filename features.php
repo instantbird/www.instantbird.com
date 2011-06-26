@@ -31,24 +31,28 @@ $features = array(
   array('title' => '_(troubleFreeTitle)',
         'desc'  => '_(troubleFreeDesc1)</p><p>_(troubleFreeDesc2)</p><p>_(troubleFreeDesc3)',
         'img_windows' => '<a href="images/screenshots/windows-trouble-free-big.png"><img alt="Screenshot" src="images/screenshots/windows-trouble-free.png" /></a>',
+        'img_winaero' => '<a href="images/screenshots/winaero-trouble-free-big.png"><img alt="Screenshot" src="images/screenshots/winaero-trouble-free.png" /></a>',
         'img_mac'     => '<a href="images/screenshots/macosx-trouble-free-big.png"><img alt="Screenshot" src="images/screenshots/macosx-trouble-free.png" style="margin: -8px -7px -18px -14px;" /></a>',
         'img_linux'   => '<a href="images/screenshots/linux-trouble-free-big.png"><img alt="Screenshot" src="images/screenshots/linux-trouble-free.png" style="margin: -4px;" /></a>'),
 
   array('title' => '_(conversationsInTabsTitle)',
         'desc'  => '_(conversationsInTabsDesc1)</p><p>_(conversationsInTabsDesc2)',
         'img_windows' => '<a href="images/screenshots/windows-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/windows-conversation-tabs.png" /></a>',
+        'img_winaero' => '<a href="images/screenshots/winaero-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/winaero-conversation-tabs.png" /></a>',
         'img_mac'     => '<a href="images/screenshots/macosx-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/macosx-conversation-tabs.png" style="margin: -14px -25px 0 -25px;" /></a>',
         'img_linux'   => '<a href="images/screenshots/linux-conversation-tabs-big.png"><img alt="Screenshot" src="images/screenshots/linux-conversation-tabs.png" style="margin: -6px -8px 0 -6px;" /></a>'),
 
   array('title' => '_(customizableConversationsTitle)',
         'desc'  => '_(customizableConversationsDesc1)</p><p>_(customizableConversationsDesc2)',
         'img_windows' => '<a href="images/screenshots/windows-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/windows-customizable-conversations.png" style="margin: -8px;" /></a>',
+        'img_winaero' => '<a href="images/screenshots/winaero-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/winaero-customizable-conversations.png" style="margin: -8px;" /></a>',
         'img_mac'     => '<a href="images/screenshots/macosx-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/macosx-customizable-conversations.png" style="margin: -8px;" /></a>',
         'img_linux'   => '<a href="images/screenshots/linux-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/linux-customizable-conversations.png" style="margin: -8px;" /></a>'),
 
   array('title' => '_(smartContactsTitle)',
         'desc'  => '_(smartContactsDesc1)</p><p>_(smartContactsDesc2)',
         'img_windows' => 'FIXME<a href="images/screenshots/windows-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/windows-customizable-conversations.png" style="margin: -8px;" /></a>',
+        'img_winaero' => 'FIXME<a href="images/screenshots/winaero-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/winaero-customizable-conversations.png" style="margin: -8px;" /></a>',
         'img_mac'     => 'FIXME<a href="images/screenshots/macosx-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/macosx-customizable-conversations.png" style="margin: -8px;" /></a>',
         'img_linux'   => 'FIXME<a href="images/screenshots/linux-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/linux-customizable-conversations.png" style="margin: -8px;" /></a>'),
 
@@ -59,11 +63,12 @@ $features = array(
   array('title' => '_(limitlessExtensibilityTitle)',
         'desc'  => '_(limitlessExtensibilityDesc1)</p><p>_(limitlessExtensibilityDesc2)',
         'img_windows' => '<a href="images/screenshots/windows-powerful-tools-big.png"><img alt="Screenshot" src="images/screenshots/windows-powerful-tools.png" /></a>',
+        'img_winaero' => '<a href="images/screenshots/winaero-powerful-tools-big.png"><img alt="Screenshot" src="images/screenshots/winaero-powerful-tools.png" /></a>',
         'img_mac'     => '<a href="images/screenshots/macosx-powerful-tools-big.png"><img alt="Screenshot" src="images/screenshots/macosx-powerful-tools.png" style="margin: -9px -16px -22px -16px;" /></a>',
         'img_linux'   => '<a href="images/screenshots/linux-powerful-tools-big.png"><img alt="Screenshot" src="images/screenshots/linux-powerful-tools.png" style="margin: -4px -5px -5px -4px;" /></a>')
 );
 
-$os = get_preferred_os();
+$os = get_preferred_os(TRUE);
 $page_content = '';
 foreach($features as $feature) {
   $img = isset($feature['img_'.$os]) ? $feature['img_'.$os] : $feature['img'];

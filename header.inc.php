@@ -115,13 +115,15 @@ function get_preferred_download_locale()
   return 'en-US';
 }
 
-function get_preferred_os()
+function get_preferred_os($screenshot = FALSE)
 {
   $user_agent = $_SERVER['HTTP_USER_AGENT'];
   if (strpos($user_agent, 'Mac') !== FALSE)
     return 'mac';
   if (strpos($user_agent, 'Linux') !== FALSE)
     return 'linux';
+  if ($screenshot && strpos($user_agent, 'Windows NT 6.' !== FALSE))
+    return 'winaero';
   return 'windows';
 }
 
