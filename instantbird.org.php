@@ -1,68 +1,77 @@
-<?php include('header.inc.php'); ?>
-
+<?php include('header.inc.php');
+$org_bundle = new bundle('instantbird.org');
+echo __('
   <div id="page">
 
-<h1>We bring you Instantbird because...</h1>
-    <h2 style="text-align:center">We believe instant messaging is an important component of <em>your</em> online life.</h2>
+<h1>_(instantbirdBecause)</h1>
+    <h2 style="text-align:center">_(weBelieveImportantComponentOnlineLife)</h2>
 
-<h2 class="borderbottom">We believe:</h2>
+<h2 class="borderbottom">_(weBelieve)</h2>
 <ul>
-<li>That instant messaging software deserves more attention: Given the amount of time spent using instant messaging everyday, it is worth spending a few minutes to choose the software that <strong>feels right to you</strong>.</li>
-<li>That there ought to be <strong>a solid alternative</strong> to the instant messaging software that are already mainstream.</li>
-<li>Instant messaging is one part of your online life of which <strong>you can reclaim control</strong>.</li>
-<li>It should be <strong>easy to use, reliable, fun and empowering</strong>
+<li>_(deservesMoreAttention)</li>
+<li>_(solidAlternative)</li>
+<li>_(reclaimControl)</li>
+<li>_(shouldBeEasyReliableFunEmpowering)
  <ul>
-  <li>It should <strong>just work</strong>! The purpose of a messaging software is to let you communicate, without it being in your way. You want to use it, not spend your time fighting against it.</li>
-  <li>Instant messaging is no longer a new toy, but a viable means of communication for critical matters, thus it ought to be <strong>very stable</strong>, to ensure that <strong>you can rely on it</strong>.</li>
-  <li>Whether or not you spend a lot of time with it, you should be able to <strong>make it your very own</strong>. You need the <strong>power to decide how it should be</strong>, to <strong><a href="https://addons.instantbird.org/">customize it</a></strong>.</li>
+  <li>_(shouldJustWork)</li>
+  <li>_(relyOnIt)</li>
+  <li>_(customizeIt)</li>
  </ul>
 </li>
-<li>An instant messenger should <strong>respect the user</strong>:
+<li>_(respectTheUser):
  <ul>
-  <li><strong>Privacy</strong>: because instant messaging involves intimate or confidential data, you should be in control of how your data is handled.</li>
-  <li><strong>Freedom</strong>: there should be <strong>no surprise</strong> when using it. It should <strong>do just what you want</strong>.</li>
+  <li><strong>_(privacy)</strong>: _(privacyText)</li>
+  <li><strong>_(freedom)</strong>: _(freedomText)</li>
  </ul>
- <blockquote><p>To ensure this will always be the case, the way it works should be <strong>open, transparent</strong>. That's why it matters that <strong>Instantbird is open-source software</strong>.</p></blockquote>
+ <blockquote><p>_(openSource)</p></blockquote>
 </li>
 
-<li>An instant messenger should be <strong>accessible</strong>, <strong>adapted to the user</strong>:
-<blockquote><p><strong>Your language, computer knowledge, operating system, or capabilities should not be a barrier</strong>; the software should be adapted to your needs rather than requiring you to adapt.</p></blockquote>
+<li>_(shouldBeAccessibleAdapted):
+<blockquote><p>_(adaptedToYourNeeds)</p></blockquote>
 </li>
 </ul>
 
-<p>The instant messaging user experience ought to be delightful, but it has evolved very little during the last few years. It's <strong>time to bring back innovation</strong>! Our goal is to deliver all of these beliefs in Instantbird, and we welcome all input from our users.</p>
+<p>_(bringBackInnovation)</p>
 
-<h2 class="borderbottom"><a name="getinvolved" class="no-link">Getting Involved:</a></h2>
+<h2 class="borderbottom"><a name="getinvolved" class="no-link">_(gettingInvolved)</a></h2>
 
-<p>If you share our beliefs, you are likely interested in joining us. There are <strong>numerous ways to get involved</strong> and some of them do not require you having any technical knowledge:</p>
+<p>_(joiningUs)</p>
 
 <ul>
 
-<li>Give feedback, contribute ideas
- <p>It's essential that we know how Instantbird works for you, so that we can improve it in ways that will make it more useful to you.</p>
- <p>There are several ways to send some feedback, including:  sending crash reports, <a href="https://bugzilla.instantbird.org/">filing bugs</a>, or talking with us. If you have some question, don't hesitate to <a href="http://www.instantbird.com/contact.com#get_in_touch">get in touch with us</a>.</p>
-<p>Don't hesitate to come and discuss with us the ideas you have for future improvements. We really appreciate it. They may make it in a future release, or interest some add-on authors!</p>
+<li>_(feedbackAndIdeas)
+ <p>_(knowHowItWorksForYou)</p>
+ <p>_(severalWaysToSendFeedback)</p>
+<p>_(comeDiscussYourIdeas)</p>
 </li>
-<li>Spread the word!
+<li>_(spreadTheWord)
 
- <p>Talk to your friends, colleagues and relatives about Instantbird: Tell them what you like about it and why you think they may be interested. Help them during the setup process (especially to setup their accounts). Ask them a few days later if they still use it and/or if they have issues with it. If they encountered issues, ensure we are aware of them (see 'Give feedback' above).</p>
-</li>
-
-
-<li>Test pre-release versions
-<p>We release alpha and beta versions so that you can give feedback about the new features. If you want to follow the development closely, we have nightly builds for you to test.</p>
-<p>Please report any issue you may find.</p>
+ <p>_(talkAboutIt)</p>
 </li>
 
-<li>Help other Instantbird users!
-<p>If you hang around in our IRC chatroom, you may see questions from other users who need help. Don't hesitate to help them even though you may feel other people have more knowledge. If you start helping someone and discover you don't know the solution, don't worry! Others will help out!</p>
+
+<li>_(testPreReleaseVersions)
+<p>_(alphaBetaNightly)</p>
+<p>_(pleaseReportIssues)</p>
 </li>
 
-<li>Translate:<p>To help us offer Instantbird to a broader audience, you can <a href="http://wiki.instantbird.org/Instantbird:Translation">translate Instantbird</a> into your own language.</p></li>
+<li>_(helpOtherInstantbirdUsers)
+<p>_(answerQuestionsOnIRC)</p>
+</li>
 
-<li>Add-on development:<p><a href="http://wiki.instantbird.org/Instantbird:Extension">Create</a>, <a href="https://addons.instantbird.org/">review</a> and edit add-ons and thus give others the possibility of feeling that their Instantbird fits them even more, thanks to you.</p></li>
+<li>_(translate):<p>_(translateInstantbirdIntoYourLanguage)</p></li>
 
-<li>Contribute code:<p>For those of you with more technical knowledge, you can go ahead and provide patches.</p><p>You probably want to start by <a href="http://wiki.instantbird.org/Instantbird:Compiling">compiling a build yourself</a>. Talk with us during the process, we can help you get started faster!</p></li>
+<li>_(addonDevelopment):<p>_(createEditReviewAddons)</p></li>
+
+<li>_(contributeCode):<p>_(weCanHelpYou)</p></li>
 </ul>
   </div>
-<?php echo footer(); ?>
+', $org_bundle, array('&customizeItLink;' => '<a href="https://addons.instantbird.org/">'.$org_bundle->_('customizeItLink').'</a>',
+                      '&filingBugsLink;' => '<a href="https://bugzilla.instantbird.org/">'.$org_bundle->_('filingBugsLink').'</a>',
+                      '&getInTouchWithUsLink;' => '<a href="http://www.instantbird.com/contact.com#get_in_touch">'.$org_bundle->_('getInTouchWithUsLink').'</a>',
+                      '&translateInstantbirdLink;' => '<a href="http://wiki.instantbird.org/Instantbird:Translation">'.$org_bundle->_('translateInstantbirdLink').'</a>',
+                      '&createAddonLink;' => '<a href="http://wiki.instantbird.org/Instantbird:Extension">'.$org_bundle->_('createAddonLink').'</a>',
+                      '&reviewAddonsLink;' => '<a href="https://addons.instantbird.org/">'.$org_bundle->_('reviewAddonsLink').'</a>',
+                      '&compilingABuildYourselfLink;' => '<a href="http://wiki.instantbird.org/Instantbird:Compiling">'.$org_bundle->_('compilingABuildYourselfLink').'</a>')).
+footer();
+?>
