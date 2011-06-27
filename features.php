@@ -51,14 +51,14 @@ $features = array(
 
   array('title' => '_(smartContactsTitle)',
         'desc'  => '_(smartContactsDesc1)</p><p>_(smartContactsDesc2)',
-        'img_windows' => 'FIXME<a href="images/screenshots/windows-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/windows-customizable-conversations.png" style="margin: -8px;" /></a>',
-        'img_winaero' => 'FIXME<a href="images/screenshots/winaero-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/winaero-customizable-conversations.png" style="margin: -8px;" /></a>',
-        'img_mac'     => 'FIXME<a href="images/screenshots/macosx-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/macosx-customizable-conversations.png" style="margin: -8px;" /></a>',
-        'img_linux'   => 'FIXME<a href="images/screenshots/linux-customizable-conversations-big.png"><img alt="Screenshot" src="images/screenshots/linux-customizable-conversations.png" style="margin: -8px;" /></a>'),
+        'img_windows' => '<img alt="Screenshot" src="images/screenshots/windows-smart-contacts.png" style="margin: -8px;" />',
+        'img_winaero' => '<img alt="Screenshot" src="images/screenshots/winaero-smart-contacts.png" style="margin: -8px;" />',
+        'img_mac'     => '<img alt="Screenshot" src="images/screenshots/macosx-smart-contacts.png" style="margin: -16px;" />',
+        'img_linux'   => '<img alt="Screenshot" src="images/screenshots/linux-smart-contacts.png" style="margin: -8px;" />'),
 
   array('title' => '_(alwaysHereForYouTitle)',
         'desc'  => '_(alwaysHereForYouDesc1)</p><p>_(alwaysHereForYouDesc2)</p><p>_(alwaysHereForYouDesc3)',
-        'img'   => '<a href="images/screenshots/cross-platform-big.png"><img alt="Screenshot" src="images/screenshots/cross-platform.png" style="margin: -4px 0 0 -4px;" /></a>'),
+        'img'   => '<a href="images/screenshots/cross-platform-big.png"><img alt="Screenshot" src="images/screenshots/cross-platform.png" style="margin: -8px;" /></a>'),
 
   array('title' => '_(limitlessExtensibilityTitle)',
         'desc'  => '_(limitlessExtensibilityDesc1)</p><p>_(limitlessExtensibilityDesc2)',
