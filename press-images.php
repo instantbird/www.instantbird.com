@@ -6,27 +6,30 @@ echo __(' <div id="page">
   <p style="margin-left: -20px">_(useThese)</p>
 
   <h2 class="borderbottom">_(lookAndFeel)</h2>
-  <img src="press/screenshots/0.2-windows-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
-  <img src="press/screenshots/0.2-macosx-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
-  <img src="press/screenshots/0.2-linux-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-winaero-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-windows-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-macosx-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-linux-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
 
   <h2 class="borderbottom">_(crossPlatform)</h2>
-  <img src="press/screenshots/0.2-cross-platform-big.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-cross-platform-big.png" alt="_(instantbirdScreenshot)" />
 
   <h2 class="borderbottom">_(conversationWindow)</h2>
-  <img src="press/screenshots/0.2-bubblestheme-cropped.png" alt="_(instantbirdScreenshot)" />
-  <img src="press/screenshots/0.2-bubblestheme.png" alt="_(instantbirdScreenshot)" />
-  <img src="press/screenshots/0.2-darktheme-cropped.png" alt="_(instantbirdScreenshot)" />
-  <img src="press/screenshots/0.2-darktheme.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-bubblestheme-cropped.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-bubblestheme.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-darktheme-cropped.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-darktheme.png" alt="_(instantbirdScreenshot)" />
 
-  <img src="press/screenshots/0.2-chatroom1.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-chatroom1.png" alt="_(instantbirdScreenshot)" />
 
-  <img src="press/screenshots/0.2-findbar.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-findbar.png" alt="_(instantbirdScreenshot)" />
 
   <h2 class="borderbottom">_(preferencesWindow)</h2>
-  <img src="press/screenshots/0.2-prefwindow-general.png" alt="_(instantbirdScreenshot)" />
-  <img src="press/screenshots/0.2-prefwindow-themes.png" alt="_(instantbirdScreenshot)" />
-  <img src="press/screenshots/0.2-prefwindow-advanced.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-prefwindow-general.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-prefwindow-themes.png" alt="_(instantbirdScreenshot)" />
+  <img src="press/screenshots/1.0-prefwindow-advanced.png" alt="_(instantbirdScreenshot)" />
+
+  <h2><a href="press-images-0.2.html">Instantbird 0.2</a></h2>
 
   <h2 class="borderbottom"><a name="logo" class="no-link">_(logo)</a></h2>
   <div class="list-sizes">
