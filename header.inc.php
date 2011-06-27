@@ -3,6 +3,36 @@ $latest_major_version = '1.0';
 $latest_minor_version = '1.0';
 $latest_minor_version_locales = array('cs', 'de', 'en-US', 'es-ES', 'fr', 'it', 'nl', 'pl', 'ru', 'sk', 'uk');
 
+function get_preferred_locale_from_array($locales)
+{
+  foreach ($locales as $key => $str) {
+    $short = explode('-', $key);
+    $short = $short[0];
+    if (!isset($locales[$short]))
+      $locales[$short] = $str;
+  }
+
+  if (isset($_GET['lang'])) {
+    $locale = strtolower($_GET['lang']);
+    if (isset($locales[$locale]))
+      return $locales[$locale];
+  }
+
+  $res = 'en-US';
+  foreach (explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']) as $lang) {
+    $locale = explode(';', $lang);
+    $locale = strtolower($locale[0]);
+    if (isset($locales[$locale]))
+      return $locales[$locale];
+    $short = explode('-', $locale);
+    $short = $short[0];
+    if (isset($locales[$short]) && $res == 'en-US')
+      $res = $locales[$short];
+  }
+
+  return $res;
+}
+
 function get_preferred_website_locale()
 {
   if (!isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && !isset($_GET['lang']))
@@ -18,20 +48,7 @@ function get_preferred_website_locale()
   }
   $locales['ct'] = 'ct';
 
-  if (isset($_GET['lang'])) {
-    $locale = strtolower($_GET['lang']);
-    if (isset($locales[$locale]))
-      return $locales[$locale];
-  }
-
-  foreach (explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']) as $lang) {
-    $locale = explode(';', $lang);
-    $locale = strtolower($locale[0]);
-    if (isset($locales[$locale]))
-      return $locales[$locale];
-  }
-
-  return 'en-US';
+  return get_preferred_locale_from_array($locales);
 }
 
 $website_locale = get_preferred_website_locale();
@@ -99,20 +116,7 @@ function get_preferred_download_locale()
   foreach ($latest_minor_version_locales as $locale)
     $locales[strtolower($locale)] = $locale;
 
-  if (isset($_GET['lang'])) {
-    $locale = strtolower($_GET['lang']);
-    if (isset($locales[$locale]))
-      return $locales[$locale];
-  }
-
-  foreach (explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']) as $lang) {
-    $locale = explode(';', $lang);
-    $locale = strtolower($locale[0]);
-    if (isset($locales[$locale]))
-      return $locales[$locale];
-  }
-
-  return 'en-US';
+  return get_preferred_locale_from_array($locales);
 }
 
 function get_preferred_os($screenshot = FALSE)
