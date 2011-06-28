@@ -105,7 +105,7 @@ foreach ($prpls as $prpl) {
   if (!isset($possible_prpl[$prpl]))
     continue;
   $proto = $possible_prpl[$prpl];
-  $page_content .= '          <a title="'.$proto['title'].'" rel="nofollow" href="'.$proto['url'].'"><img src="images/services/icon-'.$prpl.'.png" alt="'.$proto['title'].' Icon"></a>'."\n";
+  $page_content .= '          <a title="'.$proto['title'].'" rel="nofollow" href="'.$proto['url'].'"><img src="images/services/icon-'.$prpl.'.png" alt="'.$proto['title'].' Icon" /></a>'."\n";
 }
 $page_content .= '        </p>
         <p>_(instantbirdMotto) <a href="features.html">_(learnMoreLink)</a>.</p>
@@ -123,7 +123,7 @@ $page_content .= '        </p>
       <p id="powered-by-mozilla"><a href="http://www.mozilla.org/poweredby"><img alt="_(poweredByMozillaAltText)" src="images/powered-by-mozilla.png" /></a></p>
 ';
 
-$twitterLink = '<a title="'.$index_bundle->_('shareOnTwitterLinkTooltip').'" id="tweet-button" href="http://twitter.com/share?url=http://www.instantbird.com/&text='.$index_bundle->_('shareOnTwitterTweet').'&related=instantbird">twitter</a>';
+$twitterLink = '<a title="'.$index_bundle->_('shareOnTwitterLinkTooltip').'" id="tweet-button" href="http://twitter.com/share?url=http://www.instantbird.com/&amp;text='.$index_bundle->_('shareOnTwitterTweet').'&amp;related=instantbird">twitter</a>';
 $facebookLink = '<a title="'.$index_bundle->_('shareOnFacebookLinkTooltip').'" id="facebook-button" href="https://www.facebook.com/sharer/sharer.php?u=http://www.instantbird.com/">Facebook</a>';
 echo __($page_content, $index_bundle, array('&twitterLink;' => $twitterLink,
                                             '&facebookLink;' => $facebookLink));
