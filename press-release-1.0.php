@@ -6,7 +6,7 @@ include('header.inc.php');
 <h1>Instantbird 1.0 - Press release</h1>
 
 <p>LILLE, FRANCE - June 28, 2011 - The Instantbird team is pleased to
-announce today the release of <strong>Instantbird 1.0</strong>, in 11
+announce a polished <strong>Instantbird 1.0</strong>, released today in 11
 locales.</p>
 <p>Instantbird is an extremely easy to use and
 highly <strong>extensible instant messaging</strong> client that aims
@@ -35,7 +35,7 @@ interface.</p>
 <li>XMPP (Jabber)</li>
 <li>Yahoo! Messenger</li>
 </ul>
-<p>But also many others like: Gadu-Gadu, Novell Groupwise, ICQ, IRC, MySpaceIM, Netsoul, QQ, SIMPLE, Yahoo! JAPA, and even more optionally available on the <a href="https://addons.instantbird.org/en-US/instantbird/">Instantbird Add-Ons website</a>,
+<p>But also many others like: Gadu-Gadu, Novell Groupwise, ICQ, IRC, MySpaceIM, Netsoul, QQ, SIMPLE, Yahoo! JAPAN, and even more optionally available on the <a href="https://addons.instantbird.org/en-US/instantbird/">Instantbird Add-Ons website</a>,
 such as <a href="https://addons.instantbird.org/en-US/instantbird/addon/269">Omegle</a> and
 <a href="https://addons.instantbird.org/en-US/instantbird/addon/255">LJ Talk (LiveJournal)</a>.</p>
 
@@ -58,7 +58,7 @@ over 250 add-ons available, here are some of our favorites:</p>
 <p>As part of our belief in <strong>respecting our users</strong>, we give them an <strong>ad-free experience</strong> and respect their privacy by not collecting any information about them (Instantbird contacts our servers only when checking for updates, or in the unfortunate and uncommon event of a crash).</p>
 
 <h2>About us</h2>
-<p>The Instantbird team is a group of volunteers that are passionate about empowering instant messaging users by providing a stable, fun instant
+<p>The Instantbird team is a group of volunteers who are passionate about empowering instant messaging users by providing a stable, fun instant
 messenger. Read more about <a href="http://instantbird.com/about.html">who we are</a> and <a href="http://instantbird.org/">our core beliefs and values</a>.</p>
 
 <p>While Instantbird has received invaluable support from the Mozilla community at large, it hasn't been funded in any way by the Mozilla Foundation. The company-quality infrastructure deployed to build and support Instantbird has been funded by the initial creators who strongly believe in the importance of this project. The increasingly fast growth of Instantbird's user base leads us to believe the project could find some user-respecting revenue streams from which the project could become economically sustainable and empower the non-profit created for it to start hiring key contributors, following a model similar to what Mozilla has been doing with Firefox.</p>
