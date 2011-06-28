@@ -1,43 +1,53 @@
 <?php
-$title = 'Instantbird - System requirements';
+$delayHeader = TRUE;
 include('header.inc.php');
-?>
+$sr_bundle = new bundle('systemrequirements');
+$title = 'Instantbird - '.$sr_bundle->_('systemRequirementsPageTitleSuffix');
+echo head().__('
       <div id="page">
 
         <ul id="index-box">
-          <li><a href="features.html">Features</a></li>
-          <li><a href="download-all.html">Systems and Languages</a></li>
-          <li><a href="release-notes.html">Release Notes</a></li>
-          <li style="border-bottom-style: none;"><a href="<?php echo download_url_auto() ?>">Get Instantbird <?php echo $latest_major_version; ?> Now!</a></li>
+          <li><a href="features.html">_(features)</a></li>
+          <li><a href="download-all.html">_(systemsAndLanguages)</a></li>
+          <li><a href="release-notes.html">_(releaseNotes)</a></li>
+          <li style="border-bottom-style: none;"><a href="'.download_url_auto().'">_(getInstantbirdNow)</a></li>
         </ul>
+', new bundle('learnmorenavigation'), array('&versionNumber;' => $latest_major_version)).
 
-        <h1>System Requirements</h1>
-        <h2>The following are the minimum system requirements needed to run Instantbird.</h2>
+__('
+        <h1>_(systemRequirements)</h1>
+        <h2>_(systemRequirementsDescription)</h2>
 
         <h2 class="borderbottom icowin clear-float">Windows</h2>
         <ul>
-          <li>Operating Systems: Microsoft Windows 2000, Windows XP, Windows Server 2003, Windows Vista or Windows 7</li>
-          <li>128 MB of RAM</li>
-          <li>50 MB of hard disk space</li>
-        </ul>
-
+          <li>_(operatingSystems): Microsoft Windows 2000, Windows XP, Windows Server 2003, Windows Vista, Windows 7</li>
+          <li>_(MBofRAM)</li>
+          <li>_(MBofHardDiskSpace)</li>
+        </ul>', $sr_bundle, array('&memorySize;' => '128',
+                                  '&diskSize;' => '50')).
+__('
         <h2 class="borderbottom icoosx">Mac</h2>
         <ul>
-          <li>Operating Systems: Mac OS X 10.4 (Tiger) and later</li>
-          <li>256 MB of RAM</li>
-          <li>100 MB of hard disk space</li>
-        </ul>
-
+          <li>_(operatingSystems): _(OSXVersionAndLater)</li>
+          <li>_(MBofRAM)</li>
+          <li>_(MBofHardDiskSpace)</li>
+        </ul>', $sr_bundle, array('&macOSXVersion;' => 'Mac OS X 10.4 (Tiger)',
+                                  '&memorySize;' => '256',
+                                  '&diskSize;' => '100')).
+__('
         <h2 class="borderbottom icotux">Linux</h2>
-        <p>Instantbird needs at least the following libraries to run on Linux:</p>
+        <p>_(librariesLinux)</p>
         <ul>
-          <li>GTK+ 2.10 or higher</li>
-          <li>GLib 2.12 or higher</li>
-          <li>Pango 1.14 or higher</li>
-          <li>X.Org 1.0 or higher</li>
-        </ul>
-        <p>Please note that Linux distributors may provide packages for your distribution which have different requirements.</p>
+          <li>_(libraryVersionOrHigher)</li>
+', $sr_bundle, array('&libraryAndVersion;' => 'GTK+ 2.10')).
+__('          <li>_(libraryVersionOrHigher)</li>
+', $sr_bundle, array('&libraryAndVersion;' => 'GLib 2.12')).
+__('          <li>_(libraryVersionOrHigher)</li>
+', $sr_bundle, array('&libraryAndVersion;' => 'Pango 1.14')).
+__('          <li>_(libraryVersionOrHigher)</li>
+', $sr_bundle, array('&libraryAndVersion;' => 'X.Org 1.0')).
+__('        </ul>
+        <p>_(distributionPackages)</p>
       </div>
-<?php
-readfile('footer.inc.php');
+', $sr_bundle).footer();
 ?>

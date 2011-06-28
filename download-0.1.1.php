@@ -62,4 +62,4 @@ include('header.inc.php');
 
 </div>
 
-<?php readfile('footer.inc.php'); ?>
+<?php echo footer(); ?>

@@ -34,5 +34,5 @@ include('header.inc.php');
 
       </div>
 <?php
-readfile('footer.inc.php');
+echo footer();
 ?>

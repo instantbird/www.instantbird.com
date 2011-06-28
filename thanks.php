@@ -1,24 +1,26 @@
 <?php
-$title = 'Instantbird - Thanks';
+$delayHeader = TRUE;
 include('header.inc.php');
-?>
+$t_bundle = new bundle('thanks');
+$title = 'Instantbird - '.$t_bundle->_('thanksPageTitleSuffix');
+echo head().__('
       <div id="page">
 
-        <h1>Thanks!</h1>
+        <h1>_(thanks)</h1>
 
-        <h2>The Instantbird team would like to thank all those who, with their invaluable contributions and support, made this project possible!</h2>
+        <h2>_(toAllThoseWhoMadeThisProjectPossible)</h2>
 
-        <h2 class="borderbottom">Organizations</h2>
+        <h2 class="borderbottom">_(organizations)</h2>
 
-        <p>Special thanks to:</p>
+        <p>_(specialThanksTo)</p>
           
         <ul>
-          <li id="thanks-mozilla">The <a href="http://www.mozilla.org/">Mozilla</a> community, for <a href="http://www.mozilla.org/projects/powered-by.html">the awesome platform</a>!</li>
-          <li id="thanks-pidgin">The <a href="http://pidgin.im/">Pidgin</a> team, for providing <a href="http://developer.pidgin.im/wiki/WhatIsLibpurple" title="What is libpurple?">libpurple</a>.</li>
-          <li id="thanks-creinnov"><a href="http://cre-innov.univ-lille1.fr/">Cre'Innov</a>, for the material support.</li>
+          <li id="thanks-mozilla">_(mozillaCommunityForAwesomePlatform)</li>
+          <li id="thanks-pidgin">_(pidginTeamForLibpurple)</li>
+          <li id="thanks-creinnov">_(creInnovForMaterialSupport)</li>
         </ul>
 
-        <h2 class="borderbottom">Individuals</h2>
+        <h2 class="borderbottom">_(individuals)</h2>
 
         <ul id="thanks-individuals">
           <li>Alexandre A.</li>
@@ -27,6 +29,7 @@ include('header.inc.php');
           <li>Bryce V.</li>
           <li>Charles M.</li>
           <li>Collin B.</li>
+          <li>Florian J.</li>
           <li>Gervase M.</li>
           <li>Julien R.</li>
           <li>Mark Y.</li>
@@ -36,11 +39,15 @@ include('header.inc.php');
           <li>Simon N.</li>
           <li>Vincent C.</li>
           <li>Vincent O.</li>
-          <li>our translators, whose names are listed in the about dialog of the localized version they contributed to.</li>
-          <li>... and all those of you who have contributed in one way or another, whose names we have forgotten (sorry!) or never known!</li>
+          <li>_(translatorsInAboutDialogs)</li>
+          <li>_(allOthers)</li>
          </ul>
 
       </div>
-<?php
-readfile('footer.inc.php');
+', $t_bundle, array('&mozillaLink;' => '<a href="http://www.mozilla.org/">Mozilla</a>',
+                    '&awesomePlatformLink;' => '<a href="http://www.mozilla.org/projects/powered-by.html">'.$t_bundle->_('awesomePlatformLink').'</a>',
+                    '&pidginLink;' => '<a href="http://pidgin.im/">Pidgin</a>',
+                    '&libpurpleLink;' => '<a href="http://developer.pidgin.im/wiki/WhatIsLibpurple" title="What is libpurple?">libpurple</a>',
+                    '&creInnovLink;' => '<a href="http://cre-innov.univ-lille1.fr/">Cre\'Innov</a>')).
+  footer();
 ?>

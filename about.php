@@ -1,33 +1,35 @@
 <?php
-$title = 'Instantbird - About';
+$delayHeader = TRUE;
 include('header.inc.php');
-?>
-      <div id="page" class="condensed">
+$about_bundle = new bundle('about');
+$title = 'Instantbird - '.$about_bundle->_('aboutPageTitleSuffix');
 
-        <img alt="About Instantbird" src="images/about-logo.png" id="about-logo" />
+echo head().__('      <div id="page" class="condensed">
 
-        <h1>About Instantbird</h1>
+        <img alt="_(aboutInstantbird)" src="images/about-logo.png" id="about-logo" />
 
-        <h2>With Instantbird, we intend to redefine the way instant messaging is used, so that it works the way you want. Both simple and powerful, it will help you manage all your real time communications. <a href="http://www.instantbird.org/">Learn more</a>.</h2>
+        <h1>_(aboutInstantbird)</h1>
+
+        <h2>_(simpleAndPowerful) <a href="http://www.instantbird.org/">_(learnMoreLink)</a>.</h2>
 
 
-        <h2 class="borderbottom"><a name="get_in_touch" class="no-link">Get in touch!</a></h2>
+        <h2 class="borderbottom"><a name="get_in_touch" class="no-link">_(getInTouch)</a></h2>
 
         <div id="about-bug">
-          <h3 class="first-title">Found something that could be improved?</h3>
-          <p><a href="http://bugzilla.instantbird.org">File a bug</a> please! We look forward to read your ideas, they help us make Instantbird what it is.</p>
+          <h3 class="first-title">_(foundSomethingThatCouldBeImproved)</h3>
+          <p>_(fileABugPlease)</p>
         </div>
         
         <div id="about-irc">
-          <h3>Have a question that wasn't answered in the <a href="faq.html">F.A.Q.</a>?</h3>
-          <p>Join us on IRC if you want to discuss it (<a href="irc://irc.mozilla.org/#instantbird">#instantbird</a> channel on the irc.mozilla.org server), or email us at <a href="mailto:contact@instantbird.org">contact@instantbird.org</a>.</p>
-          <p>Warning: both our IRC channel and our contact mailing list have public archives where your messages will be publicly readable, so ensure you don't include any private data.</p>
+          <h3>_(unansweredQuestion)</h3>
+          <p>_(joinUsOnIRCorEmailUs)</p>
+          <p>_(warningPublicArchives)</p>
         </div>
 
 
-        <h2 class="borderbottom">Who makes instantbird?</h2>
+        <h2 class="borderbottom">_(whoMakesInstantbird)</h2>
 
-        <p>We are a team of highly motivated individuals, working to provide you the best instant messenger. Free.</p>
+        <p>_(teamOfMotivatedIndividuals)</p>
 
         <div id="florian" class="team">
           <h3><a href="about-flo.html">Florian Qu&egrave;ze</a></h3>
@@ -51,23 +53,30 @@ include('header.inc.php');
         </div>
 
         <div id="contributors" class="team">
-          <h3>Our contributors</h3>
-          <p>Several individuals and organizations helped us in invaluable ways.<br/>
-          <a href="thanks.html">Thanks!</a></p>
+          <h3>_(ourContributors)</h3>
+          <p>_(individualsAndOrganizations)<br/>
+          <a href="thanks.html">_(thanksLink)</a></p>
         </div>
 
         <div id="you" class="team">
-          <h3>And... You!</h3>
-          <p>There are so many ways to get involved that there's certainly one for you!<br/>
-          <a href="http://www.instantbird.org/#getinvolved">Learn more.</a></p>
+          <h3>_(andYou)</h3>
+          <p>_(manyWaysToGetInvolved)<br/>
+          <a href="http://www.instantbird.org/#getinvolved">_(learnMoreLink).</a></p>
         </div>
 
 
-        <h2 class="borderbottom">Press</h2>
+        <h2 class="borderbottom">_(press)</h2>
 
-        <p>We have <a href="press-images.html">image resources</a> (<a href="press-images.html#logo">logos</a>, <a href="press-images.html">ready to use screenshots</a>) to help you if you write about Instantbird.</p>
-        <p>Feel free to <a href="#get_in_touch">contact us</a> if you have questions.</p>
+        <p>_(weHaveResourcesToHelpYou)</p>
+        <p>_(feelFreeToContactUs)</p>
       </div>
-<?php
-readfile('footer.inc.php');
+', $about_bundle, array('&fileABugLink;' => '<a href="http://bugzilla.instantbird.org">'.$about_bundle->_('fileABugLink').'</a>',
+                        '&FAQLink;' => '<a href="faq.html">'.$about_bundle->_('FAQLink').'</a>',
+                        '&mailingListLink;' => '<a href="mailto:contact@instantbird.org">contact@instantbird.org</a>',
+                        '&IRCChannelLink;' => '<a href="irc://irc.mozilla.org/#instantbird">#instantbird</a>',
+                        '&imageResourcesLink;' => '<a href="press-images.html">'.$about_bundle->_('imageResourcesLink').'</a>',
+                        '&logosLink;' => '<a href="press-images.html#logo">'.$about_bundle->_('logosLink').'</a>',
+                        '&screenshotsLink;' => '<a href="press-images.html">'.$about_bundle->_('screenshotsLink').'</a>',
+                        '&contactUsLink;' => '<a href="#get_in_touch">'.$about_bundle->_('contactUsLink').'</a>')).
+footer();
 ?>
