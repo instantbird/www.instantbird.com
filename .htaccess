@@ -17,3 +17,6 @@ RewriteRule ^downloads/1\.0/(.*)$ http://instantbird.googlecode.com/files/$1 [L,
 
 RewriteRule ^downloads/(0\.1(\.(1|2)(\.1)?)?/.*)$ http://ftp.instantbird.com/instantbird/$1 [L,R]
 RewriteRule ^downloads/(.*)$ http://ftp.instantbird.com/instantbird/releases/$1 [L,R]
+
+# No http access to the l10n raw files
+RewriteRule ^l10n . [R]
