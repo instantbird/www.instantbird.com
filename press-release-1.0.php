@@ -48,7 +48,7 @@ over 250 add-ons available, here are some of our favorites:</p>
 <ul>
 <li><a href="https://addons.instantbird.org/en-US/instantbird/addon/248">Colorize</a> -- change a buddy's color in a private conversation based on their name</li>
 <li><a href="https://addons.instantbird.org/en-US/instantbird/addon/250">Highlight</a> -- be notified of certain words in a chat as if they were your nickname</li>
-<li><a href="https://addons.instantbird.org/en-US/instantbird/addon/276">Tab Complete</a> -- tab compeletion of nicknames and commands</li>
+<li><a href="https://addons.instantbird.org/en-US/instantbird/addon/276">Tab Complete</a> -- tab completion of nicknames and commands</li>
 <li><a href="https://addons.instantbird.org/en-US/instantbird/addon/249">Reply to Nick</a> -- allows easy replying: double clicking a message in the chat inserts the sender's name in the message input box</li>
 <li><a href="https://addons.instantbird.org/en-US/instantbird/addon/251">Show Nick</a> -- colors the nicknames in messages in multi-user chats</li>
 <li><a href="https://addons.instantbird.org/en-US/instantbird/addon/244">Vertical Tabs</a> -- too many conversations open? Move the tabs from horizontal to vertical!</li>
