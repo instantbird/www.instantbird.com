@@ -10,7 +10,7 @@
 <body>
   <img src="images/instantbird-logo-update.png" alt="logo" id="logo" />
   <h1>Instantbird 1.0 is here!</h1>
-  <p id="link">Free Upgrade: <a href="http://www.instantbird.com/features.html">learn more...</a></p>
+  <p id="link">Free Upgrade: <a href="http://www.instantbird.com/release-notes.html">learn more...</a></p>
   <ul>
     <li>Redesigned contacts window.</li>
     <li>Twitter support.</li>
