@@ -68,7 +68,7 @@ echo __('
   </div>
 ', $org_bundle, array('&customizeItLink;' => '<a href="https://addons.instantbird.org/">'.$org_bundle->_('customizeItLink').'</a>',
                       '&filingBugsLink;' => '<a href="https://bugzilla.instantbird.org/">'.$org_bundle->_('filingBugsLink').'</a>',
-                      '&getInTouchWithUsLink;' => '<a href="http://www.instantbird.com/contact.com#get_in_touch">'.$org_bundle->_('getInTouchWithUsLink').'</a>',
+                      '&getInTouchWithUsLink;' => '<a href="http://www.instantbird.com/about.html#get_in_touch">'.$org_bundle->_('getInTouchWithUsLink').'</a>',
                       '&translateInstantbirdLink;' => '<a href="http://wiki.instantbird.org/Instantbird:Translation">'.$org_bundle->_('translateInstantbirdLink').'</a>',
                       '&createAddonLink;' => '<a href="http://wiki.instantbird.org/Instantbird:Extension">'.$org_bundle->_('createAddonLink').'</a>',
                       '&reviewAddonsLink;' => '<a href="https://addons.instantbird.org/">'.$org_bundle->_('reviewAddonsLink').'</a>',
