@@ -1,9 +1,9 @@
 <?php include('header.inc.php');
 $org_bundle = new bundle('instantbird.org');
-echo __('
+echo '
   <div id="page">
 
-<h1>_(instantbirdBecause)</h1>
+<h1>'.strtr($org_bundle->_('instantbirdBecause'), array('Instantbird' => '<a href="http://www.instantbird.com/">Instantbird</a>')).__('</h1>
     <h2 style="text-align:center">_(weBelieveImportantComponentOnlineLife)</h2>
 
 <h2 class="borderbottom">_(weBelieve)</h2>
