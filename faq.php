@@ -87,6 +87,14 @@ $faq = array(
           'title' => '_(facebookusernameTitle)',
           'text' => '_(facebookusernameText)'),
 
+    array('name' => 'facebookauthorization',
+          'title' => '_(facebookauthorizationTitle)',
+          'text' => '_(facebookauthorizationText)<br><ol>'.
+                    '<li>_(facebookauthorizationText1)</li>'.
+                    '<li>_(facebookauthorizationText2)</li>'.
+                    '<li>_(facebookauthorizationText3)</li>'.
+                    '<li>_(facebookauthorizationText4)</li></ol>'),
+
     array('name' => 'getaddons',
           'title' => '_(getaddonsTitle)',
           'text' => '_(getaddonsText)'),
@@ -195,6 +203,7 @@ echo __($page_content, $faq_bundle, array(
 '&profileFolderLink;' => '<a href="#profilefolder">'.$faq_bundle->_('profileFolderLink').'</a>',
 '&addonsLink;' => '<a href="#getaddons">'.$faq_bundle->_('addonsLink').'</a>',
 '&facebookLink;' => '<a href="http://www.facebook.com/username/">http://www.facebook.com/username/</a>',
+'&facebookChatLink;' => '<a href="http://www.facebook.com/sitetour/chat.php">'.$faq_bundle->_('facebookChatLink').'</a>',
 '&addonsWebsiteLink;' => '<a href="https://addons.instantbird.org/">'.$faq_bundle->_('addonsWebsiteLink').'</a>',
 '&profileLink;' => '<a href="#profilefolder">'.$faq_bundle->_('profileLink').'</a>',
 '&weBelieveLink;' => '<a href="http://www.instantbird.org/">'.$faq_bundle->_('weBelieveLink').'</a>',
