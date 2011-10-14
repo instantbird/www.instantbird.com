@@ -1,7 +1,7 @@
 <?php
-$latest_major_version = '1.0';
-$latest_minor_version = '1.0';
-$latest_minor_version_locales = array('cs', 'de', 'en-US', 'es-ES', 'fr', 'it', 'nl', 'pl', 'ru', 'sk', 'uk');
+$latest_major_version = '1.1';
+$latest_minor_version = '1.1';
+$latest_minor_version_locales = array('cs', 'de', 'en-US', 'es-ES', 'et', 'fr', 'it', 'nl', 'pl', 'ru', 'sk', 'sv-SE', 'uk');
 
 function get_preferred_locale_from_array($locales)
 {

@@ -13,6 +13,7 @@ This is for historical purpose only, you should try to always run
 <ul>
 <?php
 $old_versions = array(
+  '1.0',
   '0.2',
   '0.1.3.1',
   '0.1.3',
