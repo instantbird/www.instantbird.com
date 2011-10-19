@@ -198,6 +198,8 @@ foreach ($faq as $section_name => $section_topics) {
 }
 echo __($page_content, $faq_bundle, array(
 '&systemRequirementsLink;' => '<a href="system-requirements.html">'.$faq_bundle->_('systemRequirementsLink').'</a>',
+'&sysReqWinVersion;' => 'Windows 2000',
+'&sysReqMacVersion;' => 'Mac OS X 10.5',
 '&homePageLink;' => '<a href="/">'.$faq_bundle->_('homePageLink').'</a>',
 '&downloadPageLink;' => '<a href="download-all.html">'.$faq_bundle->_('downloadPageLink').'</a>',
 '&profileFolderLink;' => '<a href="#profilefolder">'.$faq_bundle->_('profileFolderLink').'</a>',

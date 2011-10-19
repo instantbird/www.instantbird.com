@@ -31,7 +31,7 @@ __('
           <li>_(operatingSystems): _(OSXVersionAndLater)</li>
           <li>_(MBofRAM)</li>
           <li>_(MBofHardDiskSpace)</li>
-        </ul>', $sr_bundle, array('&macOSXVersion;' => 'Mac OS X 10.4 (Tiger)',
+        </ul>', $sr_bundle, array('&macOSXVersion;' => 'Mac OS X 10.5 (Leopard)',
                                   '&memorySize;' => '256',
                                   '&diskSize;' => '100')).
 __('
