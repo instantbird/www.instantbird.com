@@ -20,7 +20,7 @@ __('
 
         <h2 class="borderbottom icowin clear-float">Windows</h2>
         <ul>
-          <li>_(operatingSystems): Microsoft Windows 2000, Windows XP, Windows Server 2003, Windows Vista, Windows 7</li>
+          <li>_(operatingSystems): Microsoft Windows XP SP 2, Windows Server 2003, Windows Vista, Windows 7</li>
           <li>_(MBofRAM)</li>
           <li>_(MBofHardDiskSpace)</li>
         </ul>', $sr_bundle, array('&memorySize;' => '128',
