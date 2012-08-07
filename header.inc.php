@@ -254,7 +254,7 @@ function head()
   headerLink('http://blog.instantbird.org/', $header->_('blogLink')).
   headerlink('https://addons.instantbird.org/', $header->_('addonsLink')).
   headerlink('faq.html', $header->_('faqLink')).
-  headerlink('https://wiki.instantbird.org/', $header->_('wikiLink')).
+  headerlink('https://wiki.instantbird.org/', $header->_('developersLink')).
   headerlink('about.html', $header->_('aboutLink')).
 '
 
