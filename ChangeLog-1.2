@@ -1,0 +1,2019 @@
+changeset:   1733:cd2d663b57be
+parent:      1731:07440638cc63
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 13 16:34:17 2011 +0200
+summary:     Bump the version number to 1.2a1pre for nightlies.
+
+changeset:   1735:4c664512dfbd
+parent:      1733:cd2d663b57be
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 13 17:14:06 2011 +0200
+summary:     Do the l10n repackaging from a clean locale repository.
+
+changeset:   1737:2ab2917e81d3
+parent:      1735:4c664512dfbd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 13 22:55:06 2011 +0200
+summary:     Attempt to fix Windows l10n repackaging bustage caused by changes from bug 313956.
+
+changeset:   1738:dbe3294cbe8c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 20 12:17:41 2011 +0200
+summary:     Libpurple callbacks returning a boolean value should use gboolean rather than PRBool.
+
+changeset:   1739:937d6c06b2d8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 20 13:03:57 2011 +0200
+summary:     Bug 1095 - No notification when the user's nick is mentioned in the twitter timeline, r=clokep.
+
+changeset:   1740:3ae73e3b04e0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 20 22:17:27 2011 +0200
+summary:     Bug 1088 - Twitter timeline's normalizedName shouldn't be localized, r=clokep.
+
+changeset:   1741:8fbd4dce3bbd
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Oct 20 22:22:10 2011 +0200
+summary:     Bug 1081 - White variant of the Papersheets message style isn't white in MUCs, r=fqueze.
+
+changeset:   1742:00f58c19af0e
+user:        v17al <mattdentremont@gmail.com>
+date:        Thu Oct 20 22:25:09 2011 +0200
+summary:     Bug 948 - Add hidden prefs for finer control over sound notifications, r=fqueze.
+
+changeset:   1743:951973812c10
+user:        v17al <mattdentremont@gmail.com>
+date:        Thu Oct 20 22:27:21 2011 +0200
+summary:     Bug 763 - Allow middle-click on IRC nick, r=fqueze.
+
+changeset:   1744:f747753078ba
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Thu Oct 20 22:31:53 2011 +0200
+summary:     Bug 1073 - Follow-up to bug 504: remove a now unused field from group.xml, r=fqueze.
+
+changeset:   1745:dd0ee8d3a2b6
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Thu Oct 20 22:49:14 2011 +0200
+summary:     Bug 1031 - Remove the optional last parameter from addEventListener calls, r=fqueze.
+
+changeset:   1746:f8d66422ae98
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Oct 25 19:07:25 2011 +0200
+summary:     Bug 1087 - No entities in outgoing tweets, r=fqueze.
+
+changeset:   1747:ed7ae3c364bc
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Oct 26 12:55:52 2011 +0200
+summary:     Bug 1062 - Add 'Copy Link to Tweet' to tweet context menu, r=fqueze.
+
+changeset:   1748:7e4bbbb830b7
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Oct 26 13:02:26 2011 +0200
+summary:     Bug 1036 - /say does not have help information, r=fqueze.
+
+changeset:   1749:9ff5edcb1619
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Oct 27 01:39:17 2011 +0200
+summary:     Bug 1097 - Tab complete should be case sensitive only if at least one uppercase letter has been typed, r=fqueze.
+
+changeset:   1750:893f46ec629d
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Thu Oct 27 01:40:05 2011 +0200
+summary:     Bug 750 - Expand Tray Icon context menu with commonly used actions, r=fqueze.
+
+changeset:   1751:b985510492b2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 27 18:05:18 2011 +0200
+summary:     Avoid cropping the name of conversations on hold that have a very long topic.
+
+changeset:   1752:4438ed97a790
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Oct 27 18:12:56 2011 +0200
+summary:     Avoid having an horizontal scrollbar in the Contacts window when the 'Conversations on hold' string is longer than the window's width.
+
+changeset:   1753:351bf781388d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Oct 29 02:17:05 2011 +0200
+summary:     Bug 759 - create a chat/ folder to contain the core code that isn't related to libpurple.
+
+changeset:   1754:48709551a8bc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 09 01:16:17 2011 +0100
+summary:     Bug 759 - reorganize purplexpcom, part 2: rewrite the core service, account list, status handling and protocol plugin loading in JS components that don't depend on libpurple.
+
+changeset:   1755:3ee46e975997
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 09 11:19:45 2011 +0100
+summary:     Attempt to fix build bustage.
+
+changeset:   1756:40d3eaad9fe6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 09 14:47:32 2011 +0100
+summary:     Fix twitter brokenness after 48709551a8bc.
+
+changeset:   1757:c06176f81f71
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 09 14:48:14 2011 +0100
+summary:     Package new components added in 48709551a8bc.
+
+changeset:   1758:251e0a4186b0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 09 16:44:07 2011 +0100
+summary:     Actually process auto-login at startup (fix regression from 48709551a8bc).
+
+changeset:   1759:966657ce46fd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 09 22:51:30 2011 +0100
+summary:     Avoid a JS error while loading an empty account list.
+
+changeset:   1760:6c5abb266d47
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Nov 09 23:13:10 2011 +0100
+summary:     Bug 1121 - No longer possible to double click a tweet to reply to it, r=fqueze.
+
+changeset:   1761:2db854d92232
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 09 23:19:50 2011 +0100
+summary:     Follow up to 40d3eaad9fe6 to actually fix the creation of twitter conversations.
+
+changeset:   1762:f90c2648a35d
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Nov 09 23:23:04 2011 +0100
+summary:     Bug 1083 - The copyright year shouldn't be localizable, r=fqueze.
+
+changeset:   1763:ba4e219b3d55
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Nov 09 23:41:23 2011 +0100
+summary:     Bug 1112 - Only show active nicks in color in participant list, r=fqueze.
+
+changeset:   1764:8430992e1544
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Nov 10 00:15:26 2011 +0100
+summary:     Bug 1124 - Some minor conversation CSS improvements, r=fqueze.
+
+changeset:   1765:d9a296c543d9
+user:        v17al <mattdentremont@gmail.com>
+date:        Thu Nov 10 01:38:39 2011 +0100
+summary:     Bug 772 - Use a sortComparator function on groups to allow easy changing of the order of contacts, r=fqueze.
+
+changeset:   1766:36cd75e06c0a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 15 17:14:05 2011 +0100
+summary:     Follow-up to bug 759 - fix auto-reconnect timer times.
+
+changeset:   1767:b4d86b27b180
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 15 17:56:18 2011 +0100
+summary:     Bug 1168 - Follow-up to bug 759: fix the fake account used to display message style previews so that it has a statusInfo attribute.
+
+changeset:   1768:8cdbef751c1d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 15 18:12:01 2011 +0100
+summary:     Follow-up to bug 759: correctly save account specific proxy changes.
+
+changeset:   1769:0868366b02e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 15 18:47:22 2011 +0100
+summary:     Follow-up to bug 759: fix the parameters of the example getAccount method of GenericProtocolPrototype, r=clokep.
+
+changeset:   1770:7f6548d61894
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 15 19:20:25 2011 +0100
+summary:     Follow-up to bug 759: correctly select a free account id.
+
+changeset:   1771:051d48073c9a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Nov 15 19:50:55 2011 +0100
+summary:     Bug 1164 - Fix regression from bug 759: correctly report the connectionErrorReason (it was overridden by NO_ERROR when executing purpleAccount::Disconnecting twice).
+
+changeset:   1772:a82483046e4d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 16 14:24:41 2011 +0100
+summary:     Add a default value for the color attribute in GenericMessagePrototype (fixes a CSS warning visible in Simple and Papersheets message style previews), r=clokep.
+
+changeset:   1773:105ae1f0281a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Nov 17 22:00:14 2011 +0100
+summary:     Fix linker warnings when statically linking libpurple protocol plugins into purple.dll on Windows.
+
+changeset:   1774:b506212b8959
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Nov 17 22:10:37 2011 +0100
+summary:     Bug 1172 - Throw a descriptive error message when the expected id of a JS protocol doesn't match the one the implementation knows + add some comments on the addBuddy/loadBuddy methods.
+
+changeset:   1775:b6e0a30d6b95
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Nov 18 00:55:56 2011 +0100
+summary:     Bug 1169 - Make tab completion favor active nicks, r=fqueze.
+
+changeset:   1776:4a7547100281
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Nov 18 02:09:00 2011 +0100
+summary:     Avoid issues with the hasOwnProperty nickname.
+
+changeset:   1777:535bf71528c9
+user:        Quentin Raynayd <raynaudquentin@gmail.com>
+date:        Sun Nov 20 02:36:35 2011 +0100
+summary:     Bug 1161 - Update to Mozilla 8.0, r=fqueze.
+
+changeset:   1778:e9129718bf4e
+user:        Quentin Raynaud <raynaudquentin@gmail.com>
+date:        Sun Nov 20 03:16:25 2011 +0100
+summary:     Bug 1163 - disable angle on Windows until we have a new compile VM, r=fqueze.
+
+changeset:   1779:da77f916e825
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 20 03:33:41 2011 +0100
+summary:     Fix PPC build bustage.
+
+changeset:   1780:6fcc43e5956c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 20 13:51:01 2011 +0100
+summary:     Bug 1161 - Update to Mozilla 9 (based on attachment 990 from Quentin Raynaud).
+
+changeset:   1781:b61ab282a10b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 20 15:24:12 2011 +0100
+summary:     Fix bustage caused by bug 616999.
+
+changeset:   1782:1aec50008efb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 20 19:25:41 2011 +0100
+summary:     Use Mozilla 9.0 beta 2 instead of beta 1.
+
+changeset:   1783:0e6f1f47bce9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 20 19:26:25 2011 +0100
+summary:     Fix compilation of the JS engine on PPC.
+
+changeset:   1784:e91301c49e93
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 20 23:15:27 2011 +0100
+summary:     Follow-up to bug 1169 (favor active nicks in completion) to unbreak the completion of commands in IM conversations, r=aleth.
+
+changeset:   1785:6a56836b8d98
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Nov 20 23:18:58 2011 +0100
+summary:     Fix breakage of twitter caused by the update to Mozilla 8.
+
+changeset:   1786:202385edd289
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 21 16:05:35 2011 +0100
+summary:     Bug 1179 - fix packaging (follow-up to bug 1161 - update to Mozilla 9).
+
+changeset:   1787:66a12b861691
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Nov 21 18:11:09 2011 +0100
+summary:     Bug 1180 - Add a preference default value that is now required by the add-on manager (fix regression from the recent update to Mozilla 8).
+
+changeset:   1788:8c0b516103ed
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Nov 23 00:05:50 2011 +0100
+summary:     Bug 1159 - Follow-up to bug 1112: names not matched when alias is set, r=fqueze.
+
+changeset:   1789:2a427d19b509
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Nov 23 00:07:41 2011 +0100
+summary:     Bug 1174 - Own nickname shouldn't block completion of another, r=fqueze.
+
+changeset:   1790:b16f72029cd9
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Nov 23 00:10:00 2011 +0100
+summary:     Bug 1177 - Remove occasional warning on tab completion, r=fqueze.
+
+changeset:   1791:fcccb00f9a8e
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Nov 23 00:23:56 2011 +0100
+summary:     Bug 1183 - Warning: this.mCurrentConversation undefined, r=fqueze.
+
+changeset:   1792:0348e9dfbce7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 23 00:49:33 2011 +0100
+summary:     Bug 968 - Avoid duplicating account_buddy database entries (with broken prpls) and ensure account-buddy notifications are always forwarded to a buddy.
+
+changeset:   1793:8a1c7afa6ce4
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Nov 23 01:00:09 2011 +0100
+summary:     Bug 1184 - Warning: _showOffline undefined in group.xml, r=fqueze.
+
+changeset:   1794:a0365b25ff14
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 23 01:24:06 2011 +0100
+summary:     Bug 1182 - Warning: reference to undefined property this._findField in findbar.xml.
+
+changeset:   1795:f7e273f69c46
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 23 16:09:31 2011 +0100
+summary:     Report an error in the console for another kind of blist.sqlite corruption.
+
+changeset:   1796:13280f6f3093
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Nov 24 18:25:59 2011 +0100
+summary:     Bug 761 - JS-Socket fails to properly handle SSL error (+ a few other bug fixes in socket.jsm), r=clokep.
+
+changeset:   1797:01cc21daf7f6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Nov 26 12:49:49 2011 +0100
+summary:     Fix the win32 buildbot mozconfigs for compatibility with MSVC10.
+
+changeset:   1798:2393be72d095
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Nov 30 01:15:45 2011 +0100
+summary:     Bug 1182 - 'Reference to undefined property' JS warnings in accounts.js, r=fqueze.
+
+changeset:   1799:5558759bb593
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Nov 30 01:16:06 2011 +0100
+summary:     Bug 1182 - 'Reference to undefined property' JS warnings in account.xml, conversation.xml and tabbrowser.xml.
+
+changeset:   1800:8a2df449facc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Dec 06 19:02:39 2011 +0100
+summary:     Bug 1171 - Add a JavaScript implementation of the XMPP protocol; use it for Google Talk and Facebook Chat. Based on the code developed by Varuna JAYASIRI for Google Summer of Code 2011. Partial reviews by Mook, clokep, aleth, Mic.
+
+changeset:   1801:51bef9d59539
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 07 12:08:39 2011 +0100
+summary:     Fix removing the statusText of a JS-XMPP buddy.
+
+changeset:   1802:bcd48c42b970
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 07 14:07:18 2011 +0100
+summary:     Bug 1182 - Fix 'reference to undefined property' warnings in accountWizard.js, r=aleth.
+
+changeset:   1803:886c14911cc2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 07 16:53:28 2011 +0100
+summary:     Bug 759 - part 3 - mass rename purpleI XPCOM interfaces to prplI (except the purpleIProxy* interfaces), r=clokep.
+
+changeset:   1804:7cee3360eda5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 08 14:31:58 2011 +0100
+summary:     Reconnect JS-XMPP accounts automatically when the user is back online.
+
+changeset:   1805:739ee1d141eb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 08 14:41:10 2011 +0100
+summary:     Stop using utilities.js for the account manager, r=clokep.
+
+changeset:   1806:3f9b17a5695b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 08 14:47:20 2011 +0100
+summary:     Fix handling of the default value of boolean advanced account preferences in the account wizard.
+
+changeset:   1807:99001189b31c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 08 18:21:10 2011 +0100
+summary:     Move the default preferences of all-instantbird.js that are used by code in chat/ to chat/chat-prefs.js.
+
+changeset:   1808:d367be2a2eb8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 09 11:19:31 2011 +0100
+summary:     'undefined' proposed as status text when switching back to an online status from the UI at the top of the contacts window after being offline.
+
+changeset:   1809:344ecd3a4d7c
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun Dec 11 22:41:10 2011 +0100
+summary:     Bug 1182 - Fix 'Reference to undefined property' JS warnings in buddytooltip.xml, blist.js and account.xml, r=fqueze.
+
+changeset:   1810:623feed8b5e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Dec 11 23:10:49 2011 +0100
+summary:     Bug 1182 - Fix 'reference to undefined property' warnings from imThemes.jsm, r=clokep.
+
+changeset:   1811:5a9c9760fb59
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 12 00:11:28 2011 +0100
+summary:     Bug 1098 - Authorization loop if the lastMessageId preference has an invalid value for a Twitter account, r=clokep.
+
+changeset:   1812:6c9fd7291335
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Dec 12 01:38:29 2011 +0100
+summary:     Bug 759 - Reorganize purplexpcom - Move imIStatusInfo and imITagsService/imITag to separate files, r=fqueze.
+
+changeset:   1813:a6c5dc1dc201
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 12 15:21:50 2011 +0100
+summary:     Bug 1203 - Handle the password as an UTF8 string for the DIGEST-MD5 SASL method of JS-XMPP, r=clokep.
+
+changeset:   1814:c5d76309b6bb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 12 15:32:12 2011 +0100
+summary:     Bug 1204 - buddy icons missing in JS-XMPP messages, r=clokep.
+
+changeset:   1815:1a03a3b11095
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Dec 13 21:50:42 2011 +0100
+summary:     Bug 1128 - Contact list CSS inheritance cleanup, r=fqueze.
+
+changeset:   1816:9809dcddbd91
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Dec 13 23:09:55 2011 +0100
+summary:     Bug 1185 - No tab completion after brackets etc... r=fqueze.
+
+changeset:   1817:8d564c726cfb
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Dec 14 00:14:02 2011 +0100
+summary:     Bug 1032 - Scrolling to the first unread message is too difficult, r=fqueze.
+
+changeset:   1818:b26956bb43d6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 19 12:36:22 2011 +0100
+summary:     Bug 759 - Reorganize purplexpcom - Handle connection info changes in imAccounts.js instead of in the UI, r=clokep.
+
+changeset:   1819:f36767524a2e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 19 12:37:42 2011 +0100
+summary:     Move the default values of logging prefs from purple-prefs.js to chat-prefs.js.
+
+changeset:   1820:88fda421b08e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 19 12:38:43 2011 +0100
+summary:     Fix the jsTest protocol plugin for compatibility with the changes from bug 759.
+
+changeset:   1821:cf3a78f875a1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 19 12:40:06 2011 +0100
+summary:     Cr is used but not defined in imXPCOMUtils.jsm.
+
+changeset:   1822:e44b45bd28b1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 21 12:17:04 2011 +0100
+summary:     Avoid infinite recursion if an unread-message-count-changed observer calls markAsRead.
+
+changeset:   1823:59b6d45b646e
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Dec 21 14:15:36 2011 +0100
+summary:     Bug 1199 - Only notify prplIAccounts of status changes when enabled, r=fqueze.
+
+changeset:   1824:20dd664184cc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 21 14:18:16 2011 +0100
+summary:     Correctly disable account manager buttons when going offline.
+
+changeset:   1825:dccea7af73e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 21 14:42:32 2011 +0100
+summary:     Disconnect JS-XMPP accounts when they are uninitialized.
+
+changeset:   1826:80b48d1c1554
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 21 16:17:53 2011 +0100
+summary:     Avoid shutdown errors when conversations were still opened.
+
+changeset:   1827:033dfcf2e107
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Dec 21 19:53:14 2011 +0100
+summary:     Fix JS-XMPP to not leak XML parsers.
+
+changeset:   1828:20994ee9bfaa
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Dec 22 00:34:15 2011 +0100
+summary:     Avoid leaking JS conversations.
+
+changeset:   1829:788a90ffd9d7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 23 11:46:35 2011 +0100
+summary:     Bug 759 - reorganize purplexpcom - package chat locale files in chrome://chat/locale instead of chrome://purple/locale.
+
+changeset:   1830:bd416fa96070
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 23 11:52:41 2011 +0100
+summary:     Bug 1212 - contact status icons not shown on the Windows aero theme (regression from bug 1128).
+
+changeset:   1831:c663d78550e9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 23 16:11:17 2011 +0100
+summary:     Bug 759 - reorganize purplexpcom - move files (mostly icons) around so that chat/ doesn't depend on chrome://instantbird/.
+
+changeset:   1832:c6d39182a867
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 23 17:08:51 2011 +0100
+summary:     Avoid crash caused by 033dfcf2e107.
+
+changeset:   1833:5a1ce34d6953
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Dec 26 23:12:46 2011 +0100
+summary:     Fix aero packaging.
+
+changeset:   1834:723214af0fff
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Dec 30 01:32:42 2011 +0100
+summary:     Bug 1187 - display conversation messages in chunks of no more than 40ms to avoid blocking the UI thread; display a progress bar if we need to display messages in several chunks.
+
+changeset:   1835:aad1e30b0622
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 02 20:06:32 2012 +0100
+summary:     Log conversations in a JSON-based format.
+
+changeset:   1836:d9beafc51e18
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Jan 02 20:08:15 2012 +0100
+summary:     Bug 1216 - update copyright year to 2012, r=fqueze.
+
+changeset:   1837:ca22479be345
+user:        Quentin Raynaud <raynaudquentin@gmail.com>
+date:        Wed Jan 04 00:44:03 2012 +0100
+summary:     Bug 1223 - Update Mozilla from 9.0b2 to 9.0.1, r=fqueze.
+
+changeset:   1838:4cd386fc148b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 11 22:39:47 2012 +0100
+summary:     Add a way to build a Log from an nsIFile (useful for indexing logs by crawling the logs directory).
+
+changeset:   1839:ef130d733809
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 11 22:43:37 2012 +0100
+summary:     Return early instead of throwing when attempting to initialize the imCore several times (this simplifies some code for Thunderbird).
+
+changeset:   1840:118139b13a08
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jan 15 16:20:58 2012 +0100
+summary:     Avoid redefining errno constants which are already defined with MSVC10.
+
+changeset:   1841:7c895c7b278c
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Jan 15 16:24:08 2012 +0100
+summary:     Bug 1225 - Define CPP in the build system for pymake support (port Mozilla bug 714178), r=fqueze.
+
+changeset:   1842:734f05f0a6eb
+user:        Quentin Raynaud <raynaudquentin@gmail.com>
+date:        Sun Jan 15 16:42:45 2012 +0100
+summary:     Bug 1223 - Update XUL from 9.0b2 to 9.0.1 - also pull the localized string from the release repositories, r=fqueze.
+
+changeset:   1843:1a4bc154d904
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Jan 15 17:04:40 2012 +0100
+summary:     Bug 683 - Handle deleting messages on twitter, r=fqueze.
+
+changeset:   1844:f569db453da4
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun Jan 15 18:16:34 2012 +0100
+summary:     Bug 1209 - Make section scroll symmetric, r=fqueze.
+
+changeset:   1845:a223d9bb1680
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jan 15 18:54:47 2012 +0100
+summary:     Ensure scrolling to the previous section always centers a non system message.
+
+changeset:   1846:c8bb92c8b507
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jan 15 23:30:09 2012 +0100
+summary:     Remove the whispered prplIMessage attribute, as it wasn't used and caused a warning in logger.js (because jsProtoHelper didn't implement it), r=clokep.
+
+changeset:   1847:8cf5eb2a5ae6
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Jan 15 23:43:44 2012 +0100
+summary:     Bug 1235 - sortComparator is sometimes called with the contact element instead of the contact object, r=fqueze.
+
+changeset:   1848:80043d7ec774
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 16 23:22:56 2012 +0100
+summary:     Update libpurple from version 2.10.0 to 2.10.1.
+
+changeset:   1849:be416e3b6a3f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 16 23:37:24 2012 +0100
+summary:     Bug 1017 - Avoid shutdown crash when some JS code holds a reference to a purpleAccountBuddy instance after libpurple is uninitialized.
+
+changeset:   1850:6daa8d47806e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 16 23:40:43 2012 +0100
+summary:     Backport the fix from bug 704866 (Mac top crasher when using the application menu).
+
+changeset:   1851:41ba4fa613a1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 18 11:51:28 2012 +0100
+summary:     Revert the changes from 118139b13a08 (which was causing a serious regression) and use a different fix for the errno constant redefinitions when building with MSVC10.
+
+changeset:   1852:f62a20705c2f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 23 16:53:30 2012 +0100
+summary:     Another attempt at getting rid of the macro redefinition warnings on Windows with MSVC10.
+
+changeset:   1853:8ae3442eaf01
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 24 13:01:01 2012 +0100
+summary:     Fix the ib rule of build.mk.
+
+changeset:   1854:6dbe0da3ffc4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jan 25 15:25:58 2012 +0100
+summary:     Bug 434 - Use toolkit password manager, r=clokep.
+
+changeset:   1855:2c7e775bec92
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Jan 25 23:49:52 2012 +0100
+summary:     Bug 1016 - Quit warning is hidden when conversation window lacks focus, r=clokep.
+
+changeset:   1856:91475f830792
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jan 26 00:31:48 2012 +0100
+summary:     Bug 1243 - Only show progress bar when necessary, r=fqueze.
+
+changeset:   1857:b90c0a750ebc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 26 01:14:16 2012 +0100
+summary:     Fix shutdown crash @ purple_connection_get_state.
+
+changeset:   1858:3bc7b486f5bf
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jan 26 01:28:53 2012 +0100
+summary:     Bug 1234 - Improve keyboard navigation, r=fqueze.
+
+changeset:   1859:744a55d0f708
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jan 26 01:33:00 2012 +0100
+summary:     Bug 1162 - Focus contact window on 'Restore' in tray context menu, r=clokep.
+
+changeset:   1860:1c6fbc25f7fc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jan 26 19:02:17 2012 +0100
+summary:     Rename the contract ids of XPCOM components living in chat/ to names that are suitable for use in Thunderbird (@instantbird.org/purple -> @mozilla.org/chat).
+
+changeset:   1861:6a44de9daf58
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 27 11:24:35 2012 +0100
+summary:     Remove -j4 from the Windows buildbot mozconfigs, as gmake randomly fails with it.
+
+changeset:   1862:fe0a7055e1d4
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 27 11:27:14 2012 +0100
+summary:     Back out e9129718bf4e now that our Windows build slave has a correct Direct X SDK.
+
+changeset:   1863:6164e063fc9b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 27 12:17:39 2012 +0100
+summary:     Rename the logger contractid (@instantbird.org -> @mozilla.org/chat), like in 1c6fbc25f7fc.
+
+changeset:   1864:cf79062c4bc8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jan 27 15:19:07 2012 +0100
+summary:     Use brandShortName instead of 'instantbird' as the default XMPP resource.
+
+changeset:   1865:ae5959108cec
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 30 12:46:13 2012 +0100
+summary:     Cleanup of the chat/ directory, based mostly on bienvenu's review comments in bug 714733.
+
+changeset:   1866:d9de2dad2625
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 30 17:01:55 2012 +0100
+summary:     Stop using NSPR types for integers in chat/ idl files.
+
+changeset:   1867:e18e7588be70
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 30 17:20:22 2012 +0100
+summary:     Use 'const' consistently (instead of a mix of const/let/var) for the EXPORTED_SYMBOLS symbol of JS modules.
+
+changeset:   1868:9bc8ceed02b8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 30 18:43:22 2012 +0100
+summary:     Ensure the front-end can use the aSubject parameter of the user-info-received notification however it wants.
+
+changeset:   1869:a5664bc80be0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jan 30 19:06:55 2012 +0100
+summary:     Remove the MOZ_CRASHREPORTER ifdefs in our code.
+
+changeset:   1870:c06a991d108f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jan 31 16:36:21 2012 +0100
+summary:     Cleanup convZoom.js, r=aleth.
+
+changeset:   1871:f2db11620008
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Feb 03 15:26:34 2012 +0100
+summary:     Bug 1256 - Remove timestamp tooltip from URLs, r=fqueze.
+
+changeset:   1872:8d377ceac36f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Feb 03 15:48:38 2012 +0100
+summary:     Escape HTML special characters for contact names displayed in conversations, r=clokep.
+
+changeset:   1873:0c87d1ce587f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Feb 15 00:14:06 2012 +0100
+summary:     Disable who_channel_timer in the IRC libpurple prpl as it seems to cause disconnections with a 'Max SendQ exceeded' error.
+
+changeset:   1874:46f3a0c1a1ea
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Feb 16 12:07:07 2012 +0100
+summary:     Fix the test for anchors without href in convbrowser.xml.
+
+changeset:   1875:bce36aedaa74
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Feb 17 13:19:15 2012 +0100
+summary:     Bug 1251 - Implement adding/removing buddies in JS-XMPP, r=clokep.
+
+changeset:   1876:aeeb3eb04a8e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 20 18:25:55 2012 +0100
+summary:     Bug 1251 - part 2 - Show buddy authorization requests for JS-XMPP, r=clokep.
+
+changeset:   1877:69ff22bff5e3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 20 22:24:00 2012 +0100
+summary:     Bug 1205 - Propertly UTF8 encode string preferences, r=clokep.
+
+changeset:   1878:44169a5baca5
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Feb 21 17:47:55 2012 +0100
+summary:     Rename account.css to menulist.css, r=aleth (over IRC).
+
+changeset:   1879:20c735606a4c
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Feb 21 17:56:08 2012 +0100
+summary:     Bug 1252 - First listitem in log viewer never shows that it is selected, r=fqueze.
+
+changeset:   1880:7b6b8b43889e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Feb 24 16:34:28 2012 +0100
+summary:     Bug 1282 - fix handling of the offline status when necko thinks it isn't connected, r=clokep.
+
+changeset:   1881:920499b108a1
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Feb 27 15:19:30 2012 +0100
+summary:     Bug 507 - Implement IRC in JavaScript, r=fqueze.
+
+changeset:   1882:68c65aefc0b6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Feb 27 16:46:59 2012 +0100
+summary:     Follow-up to bug 507: rephrase obsolete comment, r=clokep.
+
+changeset:   1883:b5684f11a32a
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Thu Mar 01 12:38:37 2012 +0100
+summary:     Bug 1295 - Remove the double 'Quit: ' from quit messages, r=fqueze.
+
+changeset:   1884:c525086f3a9c
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Mar 02 01:11:02 2012 +0100
+summary:     Bug 1300 - Server message when closing tab of an already parted MUC, r=fqueze.
+
+changeset:   1885:c52ff748f62c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 02 12:39:43 2012 +0100
+summary:     Bug 1178 - Regression: renamed contacts disappear from list, r=clokep.
+
+changeset:   1886:f9a904fc3bcf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 02 12:43:04 2012 +0100
+summary:     Rename the 'finishRemoveNode' method of the contact.xml binding to 'destroy' in an attempt to make this code less confusing, rs=clokep.
+
+changeset:   1887:df6a069f3596
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 04 21:02:00 2012 +0100
+summary:     Follow-up to bug 772: remove some dead code.
+
+changeset:   1888:931175959e82
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 04 21:09:25 2012 +0100
+summary:     Bug 1017 - Shutdown crash [@ purple_blist_node_set_ui_data ], rs=clokep.
+
+changeset:   1889:ca2a52ca1f40
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 04 21:53:40 2012 +0100
+summary:     When disconnecting a JS-XMPP account, forget the resources of all buddies.
+
+changeset:   1890:1cb8ddbf657f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 05 11:32:19 2012 +0100
+summary:     Avoid firing the 'ui-conversation-closed' notification twice for the same conversation.
+
+changeset:   1891:de845471b3a3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 05 14:40:46 2012 +0100
+summary:     Auto-joined chats should be handled by imAccounts.js rather than ibCore.jsm, r=clokep.
+
+changeset:   1892:f893c587df9e
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Mar 06 00:31:49 2012 +0100
+summary:     Bug 1316 - Input/output error on quit when closing Instantbird, r=clokep.
+
+changeset:   1893:f9a59d766cfd
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Mar 06 00:38:05 2012 +0100
+summary:     Bug 869 - Contacts window forgets screen position when closed, r=clokep.
+
+changeset:   1894:f2ed2b0178bf
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Mar 07 00:47:57 2012 +0100
+summary:     Bug 1320 - The CTCP time response is calling the wrong property when localizing, r=fqueze.
+
+changeset:   1895:ee75fc196d4c
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Mar 07 00:57:10 2012 +0100
+summary:     Bug 1303 - IRC contacts don't get their status updated, r=aleth,fqueze.
+
+changeset:   1896:dd1c390d3bd8
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Mar 07 01:02:34 2012 +0100
+summary:     Bug 1323 - XMPP default domain should not be gmail.com, r=clokep.
+
+changeset:   1897:5540a627ace2
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Mar 07 01:19:19 2012 +0100
+summary:     Bug 1299 - Remove explicit fonts from default message styles, r=clokep.
+
+changeset:   1898:9f5832bdf6ad
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 11 19:19:33 2012 +0100
+summary:     Disable the OK button of the 'Add Buddy' dialog when the username input box is empty, r=clokep.
+
+changeset:   1899:3fd2f13878aa
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 11 19:21:15 2012 +0100
+summary:     Fix spelling of 'attachment' in comments.
+
+changeset:   1900:908010e6268d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 11 19:22:12 2012 +0100
+summary:     Send the account-removed notification after removing the account from the account list, r=clokep.
+
+changeset:   1901:1d4b3aae2f1f
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Mar 11 20:17:30 2012 +0100
+summary:     Reduce the number of XXX comments in ircBase.jsm to please bienvenu (see bug 714733), r=fqueze.
+
+changeset:   1902:7213137f8f13
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Mar 11 20:17:56 2012 +0100
+summary:     Avoid trying to parse CTCP time response because JS Dates lose all timezone information, r=fqueze.
+
+changeset:   1903:c15791758442
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Mar 11 20:47:55 2012 +0100
+summary:     Bug 1165 - Accessibility: Add a title to the chat log document in the conversation window, r=Mic.
+
+changeset:   1904:ddaca8093e6d
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Sun Mar 11 20:59:16 2012 +0100
+summary:     Bug 1274 - Pressing 'Enter' on a participant in the list doesn't start a private chat, r=clokep.
+
+changeset:   1905:2ea0ec22990e
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun Mar 11 21:57:35 2012 +0100
+summary:     Bug 1328 - /msg <nick> should open an empty conversation tab, r=clokep.
+
+changeset:   1906:5ad2901ff4df
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 12 12:10:16 2012 +0100
+summary:     Add a getSimilarLogs method to imILogger to enumerate all the logs in the same folder.
+
+changeset:   1907:be9bf7549ad2
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Mar 12 12:22:05 2012 +0100
+summary:     More XXX comment changes in the IRC code.
+
+changeset:   1908:bdffb00e8b22
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Mar 12 12:24:27 2012 +0100
+summary:     Bug 1293 - Tooltip improvements for IRC, r=fqueze.
+
+changeset:   1909:28cfd3354da2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 12 16:52:09 2012 +0100
+summary:     Use a docshell-less document in imContentSink.jsm.
+
+changeset:   1910:0bbc5d109a08
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 12 18:05:34 2012 +0100
+summary:     Address Blake's comment in the review of the chat strings (bug 714733), r=clokep.
+
+changeset:   1911:e142bb7beb1a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 12 19:22:59 2012 +0100
+summary:     Add usernameEmptyText for JS-IRC and JS-Gtalk, r=clokep.
+
+changeset:   1912:3d80c9187ca2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Mar 12 19:35:53 2012 +0100
+summary:     Cleanup chat l10n stuff.
+
+changeset:   1913:c08805584d99
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 13 01:00:58 2012 +0100
+summary:     Improved localization notes in chat/ and fixed the ctcp.ping message, r=clokep.
+
+changeset:   1914:d0d7c6f75312
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 13 02:01:56 2012 +0100
+summary:     Fix bustage from 3d80c9187ca2.
+
+changeset:   1915:459b32cdc226
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Mar 17 12:06:14 2012 +0100
+summary:     Fix the account properties dialog in the case where the protocol plugin is missing, r=clokep.
+
+changeset:   1916:0dcfaed3a5e1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 20 00:35:31 2012 +0100
+summary:     Bug 1284 - Update to Mozilla 10.
+
+changeset:   1917:e38b6dbd3130
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 20 09:23:40 2012 +0100
+summary:     Add a patch needed to compile the JS engine on PPC.
+
+changeset:   1918:7ba67283f52a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 20 09:24:27 2012 +0100
+summary:     Re-add patches that were removed for no obvious reason in 0dcfaed3a5e1.
+
+changeset:   1919:2a8cd922d029
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Mar 20 22:37:43 2012 +0100
+summary:     Bug 1291 - Source displayed in "entered the room" system messages for JS-IRC is too verbose, r=fqueze.
+
+changeset:   1920:d8f6bac791f9
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Mar 20 22:45:30 2012 +0100
+summary:     Bug 1328 - /msg <nick> should open an empty conversation tab: Follow-up to 2ea0ec22990e to fix the case of trailing whitespace after a nick, r=clokep.
+
+changeset:   1921:75f70f625cd6
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Mar 20 22:50:32 2012 +0100
+summary:     Bug 1327 - Commands are "not supported" when missing parameters or returning false, r=clokep.
+
+changeset:   1922:a52a4269c6a1
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Mar 20 22:55:27 2012 +0100
+summary:     Bug 1293 - Tooltip improvements for IRC: tweak the order of tooltip lines, r=clokep.
+
+changeset:   1923:62fad134aa55
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 20 23:09:07 2012 +0100
+summary:     Bug 1344 - stop using XPCOM proxies in purpleSockets.
+
+changeset:   1924:5c12cc9e43d4
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Mar 20 23:23:20 2012 +0100
+summary:     Bug 1308 - Errors on joining channel: 'Adding a chat buddy twice': improve the error message to help debugging, r=fqueze.
+
+changeset:   1925:16ba4b39b811
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 23 00:10:09 2012 +0100
+summary:     Bug 1348 - Update to Mozilla 11.
+
+changeset:   1926:d4ea68df839e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Mar 23 16:39:20 2012 +0100
+summary:     Fix linux bustage.
+
+changeset:   1927:e54b1858ed0c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Mar 24 01:03:06 2012 +0100
+summary:     Bug 1351 - Tray icon missing on Linux after moz11 update (port a change from upstream mintrayr).
+
+changeset:   1928:7f5dfa28bc4e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Mar 27 18:23:17 2012 +0200
+summary:     Bug 1354 - JS-protocols should close their conversations and remove their buddies when they are removed, r=clokep.
+
+changeset:   1929:4bf7cc6e9f6d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Mar 28 12:25:23 2012 +0200
+summary:     Fix Windows crash when playing a sound (since moz11 update 16ba4b39b811) by including gkmedias.dll in the package. Port of bug 709721 from mozilla-central.
+
+changeset:   1930:246aa0e44460
+user:        Andreas Nilsson <nisses.mail@home.se>
+date:        Wed Mar 28 20:32:27 2012 -0400
+summary:     Bug 737466 - The Twitter icon should be their bird logo rather than a "t". r=florian, r,ui-r=bwinton
+
+changeset:   1931:d6500f8161e8
+user:        OHZEKI Tetsuharu <saneyuki.s.snyk@gmail.com>
+date:        Fri Mar 30 20:11:43 2012 -0400
+summary:     Bug 740680 - TB-IM: Remove #! from copying Twitter's tweet url. r=clokep
+
+changeset:   1932:d599c7bc8895
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Mar 30 20:18:29 2012 -0400
+summary:     Bug 740749 - Starting a conversation with an IRC contact does not remove it from the online contacts list. r=florian
+
+changeset:   1933:07ece750914b
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Apr 03 22:52:18 2012 +0200
+summary:     Bug 1332 - Implement /whois and /whowas commands, r=clokep,fqueze.
+
+changeset:   1934:a0d791471fe6
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Apr 03 22:57:52 2012 +0200
+summary:     Bug 1314 - Own nickname (for pings) detection broken, r=clokep,fqueze.
+
+changeset:   1935:8a57df6e1529
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Apr 03 23:35:18 2012 +0200
+summary:     Bug 1329 - Tab complete: prefer sender of the last ping, r=fqueze.
+
+changeset:   1936:3f1604de4278
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Apr 05 00:21:31 2012 +0200
+summary:     Bug 1330 - Tab complete: Be smart about multiple completions, r=fqueze.
+
+changeset:   1937:99e6c4717985
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Thu Apr 05 00:58:43 2012 +0200
+summary:     Bug 1281 - Sending typing notifications even tho the option for it is disabled, r=fqueze.
+
+changeset:   1938:9d673c16ad45
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Thu Apr 05 11:56:05 2012 +0200
+summary:     Bug 1360 - Contact list position on new profile wrong when Windows user has taskbar on top of the screen, r=fqueze.
+
+changeset:   1939:b1cea431c4a4
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Apr 07 00:43:27 2012 +0200
+summary:     Bug 1303 - IRC contacts don't get their status updated when no IRC contact is online, r=fqueze.
+
+changeset:   1940:54fccd250e03
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat Apr 07 00:55:22 2012 +0200
+summary:     Bug 1303 - Update the status of IRC contacts immediately when we know they they joined or leaved a channel where we are, r=clokep.
+
+changeset:   1941:7d7de5899d69
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Apr 07 01:12:11 2012 +0200
+summary:     Bug 1346 - Replace alphabetic increment of last letter on nick collision, r=aleth,fqueze.
+
+changeset:   1942:40aa9e7e5ea0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Apr 09 00:42:39 2012 +0200
+summary:     Bug 1089 - Crash [@ ssl_nss_handshake_cb] - prevent libpurple prpls from corrupting NSS sockets while they are handshaking.
+
+changeset:   1943:ceb11e06a1fc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Apr 09 00:44:59 2012 +0200
+summary:     Bug 1089 - improved debug messages for purple socket watchers.
+
+changeset:   1944:81717e6f64bd
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Apr 13 00:45:38 2012 +0200
+summary:     Bug 1321 - Display name is lower case for IRC DMs, r=clokep,fqueze.
+
+changeset:   1945:bd43e9c70bc3
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Apr 13 00:47:17 2012 +0200
+summary:     Bug 1306 - Joining a password protected IRC channel via password set in autojoin doesn't work with JS-IRC, r=aleth.
+
+changeset:   1946:b9b845b38806
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Apr 13 00:48:07 2012 +0200
+summary:     Bug 1305 - /mode messages don't work on JS-IRC, r=fqueze.
+
+changeset:   1947:3d7c0b70b6a1
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Apr 13 00:55:55 2012 +0200
+summary:     Bug 860 - Add reading position marker line to conversation, r=fqueze.
+
+changeset:   1948:15406843dd0d
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Apr 13 01:16:46 2012 +0200
+summary:     Bug 1372 - QUIT command with no message causes an error, r=fqueze.
+
+changeset:   1949:79b70d96f53a
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Apr 13 01:30:30 2012 +0200
+summary:     Bug 1326 - Stop trying to send the action command if an empty message is given, r=aleth.
+
+changeset:   1950:9562d0640b13
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Apr 13 01:58:58 2012 +0200
+summary:     Bug 1373 - CTCP ERRMSG is handled poorly, r=fqueze.
+
+changeset:   1951:ff06c4e90002
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Apr 13 11:40:39 2012 +0200
+summary:     Bug 1321 - Follow-up to 81717e6f64bd to fix some bustage when opening a private IRC conversation, r=fqueze.
+
+changeset:   1952:e02893adbfed
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Apr 23 22:25:52 2012 +0200
+summary:     Bug 747743 - Mojibake in context menus on the chat conversation, r=clokep.
+
+changeset:   1953:9196673434de
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Apr 24 00:21:23 2012 +0200
+summary:     Bug 1385 - [Tab complete] Smart Undo and Cycle through alternative completions, r=fqueze.
+
+changeset:   1954:51fe07176223
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Tue Apr 24 00:26:00 2012 +0200
+summary:     Bug 835 - Addon manager doesn't persist size and position, r=clokep.
+
+changeset:   1955:ef44e7b31270
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Apr 24 00:43:54 2012 +0200
+summary:     Bug 1305 - /mode messages don't work on JS-IRC - follow-up to handle more cases, r=aleth.
+
+changeset:   1956:9a1f7b32a36b
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Tue Apr 24 00:44:13 2012 +0200
+summary:     Bug 1356 - [Message style selector] Warning: Undefined property this._name, r=clokep.
+
+changeset:   1957:ec52c0464439
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Apr 24 00:45:00 2012 +0200
+summary:     Bug 1378 - Avoid sending empty nicks when changing modes with tab complete, r=aleth.
+
+changeset:   1958:00da8e864aae
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Apr 24 23:15:39 2012 +0200
+summary:     Bug 1398 - [Tab complete] Regression: Don't take the first active nick when there is more than one active nick, r=fqueze.
+
+changeset:   1959:1536cef6bff6
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Apr 24 23:18:12 2012 +0200
+summary:     Bug 1395 - [Tab Complete] Cycling backwards through list of completions, r=clokep,fqueze.
+
+changeset:   1960:6042f2575b43
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Apr 24 23:46:58 2012 +0200
+summary:     Bug 1393 - [Tab Complete] Do not allow a nick to be completed multiple times, r=clokep.
+
+changeset:   1961:2eeb8a68d5a3
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Apr 25 00:04:27 2012 +0200
+summary:     Bug 1389 - Warning: reference to undefined property this._lastScrollHeight, r=clokep.
+
+changeset:   1962:3b67cfcfc0ad
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Apr 25 23:33:25 2012 +0200
+summary:     Bug 1389 - Warning: reference to undefined property this._lastScrollHeight - fix bustage caused by 2eeb8a68d5a3, r=fqueze.
+
+changeset:   1963:1ba4dffd7c74
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Apr 25 23:35:58 2012 +0200
+summary:     Bug 1399 - [Tab complete] Don't add trailing space to completions in the middle of the line, r=clokep.
+
+changeset:   1964:822fabca6367
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Apr 25 23:44:47 2012 +0200
+summary:     Bug 1182 - Fix 'Warning: reference to undefined property this.changeTargetCommand' in conversation.xml, r=clokep.
+
+changeset:   1965:af2a940b0f9e
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Apr 26 00:10:37 2012 +0200
+summary:     Bug 1394 - [Tab Complete] Does not cycle through inactive nicks, r=clokep,fqueze.
+
+changeset:   1966:3c71fb425d43
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Mon Apr 30 00:15:28 2012 +0200
+summary:     Bug 1261 - "Paper Sheets": use media queries for conditional CSS instead of JS, r=clokep.
+
+changeset:   1967:0bae2c9cdccd
+user:        aleth <aletheia2@fastmail.fm>
+date:        Mon Apr 30 00:54:09 2012 +0200
+summary:     Bug 1242 - JSON log viewer scrolls to end of conversation on opening log, r=fqueze.
+
+changeset:   1968:03b51dc961be
+user:        aleth <aletheia2@fastmail.fm>
+date:        Mon Apr 30 00:55:38 2012 +0200
+summary:     Bug 1410 - [Tab Complete] Pressing tab while cursor is in a nickname produces garbage, r=fqueze.
+
+changeset:   1969:9214cc27c3f9
+user:        aleth <aletheia2@fastmail.fm>
+date:        Mon Apr 30 01:02:34 2012 +0200
+summary:     Bug 1406 - Reply-to-nick: Multiple nicks and compatibility with tab complete, r=fqueze.
+
+changeset:   1970:31f19195a359
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue May 01 12:52:06 2012 +0200
+summary:     Bug 1366 - Inform the user when attempting to send a message to an offline nick, r=aleth,fqueze.
+
+changeset:   1971:42dfeac069b7
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue May 01 12:54:06 2012 +0200
+summary:     Bug 1406 - follow-up to avoid adding several times the same nick when double clicking messages, r=fqueze.
+
+changeset:   1972:44cdcdd49d40
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Tue May 01 12:58:25 2012 +0200
+summary:     Bug 1259 - Replace JS animation code in messagestyle themes by CSS, r=fqueze.
+
+changeset:   1973:8686ea6557e5
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed May 02 15:39:07 2012 +0200
+summary:     Bug 1410 - [Tab Complete] Pressing tab while cursor is in a nickname produces garbage - follow-up to fix regressions, r=fqueze.
+
+changeset:   1974:15eb5063f69b
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed May 02 23:54:43 2012 +0200
+summary:     Bug 1357 - Add unread ruler to section scroll, r=fqueze.
+
+changeset:   1975:ab4e62cebafa
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri May 04 00:14:06 2012 +0200
+summary:     Bug 1415 - display the unread ruler at the correct place even if messages were queued for asynchronous display when the first unread message arrived, r=fqueze.
+
+changeset:   1976:ec1dde7b6d05
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri May 04 01:23:34 2012 +0200
+summary:     Bug 1416 - JS-XMPP MUCs are duplicated after rejoining, r=clokep.
+
+changeset:   1977:d5ec6271f566
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri May 04 21:55:10 2012 +0200
+summary:     Bug 1350 - Put back the version number in the default IRC quit message, r=clokep.
+
+changeset:   1978:74c76a451976
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri May 04 22:08:34 2012 +0200
+summary:     Bug 1123 - Tooltips of IRC contacts don't show whois information, r=fqueze.
+
+changeset:   1979:194399651469
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri May 04 06:27:48 2012 -0400
+summary:     Bug 1418 - No/incorrect error message when joining a channel fails, r=aleth.
+
+changeset:   1980:0e3104136068
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Fri May 04 22:51:46 2012 +0200
+summary:     Bug 1135 - Log date is not translated, r=fqueze.
+
+changeset:   1981:3dba6fdbf6f6
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat May 05 00:54:33 2012 +0200
+summary:     Bug 1415 - Unread ruler should also appear after last context message, r=fqueze.
+
+changeset:   1982:97f92dbe9f60
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat May 05 01:24:36 2012 +0200
+summary:     Bug 1353 - No user feedback when sending a message in a conversation of an offline account, r=fqueze.
+
+changeset:   1983:f3bf822cdbdb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed May 09 02:18:36 2012 +0200
+summary:     Bug 1429 - Failure to start when there's less than 500MB of free disk space, r=clokep.
+
+changeset:   1984:a4239e7f3c43
+user:        Jim Porter <squibblyflabbetydoo@gmail.com>
+date:        Wed May 09 16:13:04 2012 +0200
+summary:     Bug 747800 - Fix code causing |Warning: function xyz does not always return a value|; r=standard8
+
+changeset:   1985:75c2eefc3abd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed May 09 16:23:21 2012 +0200
+summary:     Adapt imTextboxUtils.jsm (with ifdefs) to use the Thunderbird specific spellchecker preference when built for Thunderbird, r=clokep.
+
+changeset:   1986:dd35946e4b52
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 10 16:05:03 2012 +0200
+summary:     Bug 735219 - Fix conflict between BigFile and Twitter's http.jsm files, r=bienvenu.
+
+changeset:   1987:1afad9aa06d0
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon May 14 22:41:44 2012 +0200
+summary:     Bug 1409 - Handle (dis)connects better in IRC, r=fqueze.
+
+changeset:   1988:9b88948399c6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 15 12:22:58 2012 +0200
+summary:     Bug 754824 - fix charCodeToByteCount to correctly handle UTF8 characters coded on 4 bytes, r=asuth, r=clokep over IRC.
+
+changeset:   1989:e92b8aded5e7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 15 16:05:44 2012 +0200
+summary:     Bug 742644 - IRC's username empty text ('and server') in the Chat Account Wizard is confusing, r=clokep, ui-r=bwinton.
+
+changeset:   1990:3abdc0efb06d
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed May 16 06:33:24 2012 -0400
+summary:     Bug 1369 - Support WATCH and MONITOR for IRC, r=aleth.
+
+changeset:   1991:6c18f57a02da
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed May 16 17:45:20 2012 +0200
+summary:     Bug 1308 - "Adding a chat buddy twice" errors (JS-IRC sending bad chat-buddy-add notifications), r=clokep.
+
+changeset:   1992:1167b92422a8
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed May 16 17:53:31 2012 +0200
+summary:     Bug 1380 - Unread ruler confusing when coming back to conversation with no new messages, r=Mic.
+
+changeset:   1993:30564a208a4e
+user:        Will Nayes <wnayes@gmail.com>
+date:        Wed May 16 18:24:15 2012 +0200
+summary:     Bug 1391 - Suggest popular protocols during account creation, r=fqueze.
+
+changeset:   1994:ac5bbbf0dddd
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 17 00:26:05 2012 +0200
+summary:     Bug 1436 - Summary page empty due to Top Protocols page modifications (fix regression from bug 1391), r=wnayes.
+
+changeset:   1995:ee30357e62a1
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat May 19 10:52:47 2012 -0400
+summary:     Bug 1442 - IRC messages that need a : for the last parameter broken, r=aleth.
+
+changeset:   1996:33cc73c688a3
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat May 19 11:26:43 2012 -0400
+summary:     Bug 1433 - Switching status from OFFLINE to UNAVAILABLE actually sets status to AVAILABLE, r=clokep.
+
+changeset:   1997:d43ef47d5e8c
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue May 22 18:17:53 2012 -0400
+summary:     Bug 1447 - Stop requesting WHOIS information when offline, r=fqueze.
+
+changeset:   1998:8bca26ec274e
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Tue May 22 10:52:43 2012 +0200
+summary:     Bug 1449 - Make initialization state of Core available and send notification when initialization finishes, r=fqueze.
+
+changeset:   1999:53d6f99b35a3
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Mon May 21 20:05:37 2012 +0200
+summary:     Bug 1071 - Improve look of contact drop target, r=fqueze.
+
+changeset:   2000:4e2cb72c9a2f
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue May 22 18:51:01 2012 -0400
+summary:     Bug 318 - Check if topic on IRC channels is editable and make UI respond accordingly, r=aleth,fqueze.
+
+changeset:   2001:de2e74f15128
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 24 15:54:18 2012 +0200
+summary:     Bug 1455 - IRC accounts connected through SSL cause random hangs, r=clokep.
+
+changeset:   2002:a6b5bedeef6d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 24 16:31:19 2012 +0200
+summary:     Bug 1464 - this._proxyCancel is null error from socket.jsm, r=clokep.
+
+changeset:   2003:53db88041a77
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 24 19:07:52 2012 +0200
+summary:     Bug 1465 - The first connection attempt of new accounts with non-default settings shouldn't be aborted immediately, r=clokep.
+
+changeset:   2004:6742ed7806d2
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Thu May 24 19:14:41 2012 +0200
+summary:     Follow-up to Bug 318 - Check if topic on IRC channels is editable and make UI respond accordingly, r=aleth.
+
+changeset:   2005:3a7a56b260e9
+user:        Benedikt Pfeifer <benediktp@ymail.com>
+date:        Thu May 24 19:29:19 2012 +0200
+summary:     Bug 412 - [Accessibility] Add accessible text for the status icons and other purely graphical info, r=clokep.
+
+changeset:   2006:51c6216fe4e1
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu May 24 23:10:12 2012 +0200
+summary:     Bug 1446 - Reset nick when reconnecting and ensure conversations are notified of nick changes, r=clokep.
+
+changeset:   2007:90609e9d4546
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri May 25 15:24:38 2012 +0200
+summary:     Bug 1466 - Clearing the topic doesn't update the UI and instead displays the previous topic in a system message, r=fqueze.
+
+changeset:   2008:5f8b04383d01
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun May 27 23:58:34 2012 +0200
+summary:     Bug 1463 - [Tab complete] List possible completions only on second tab press when pinged, r=fqueze.
+
+changeset:   2009:4835e3585991
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 28 20:51:05 2012 +0200
+summary:     Fix test_purplexpcom.js for compatibility with bug 759.
+
+changeset:   2010:dfb14c0d81d8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon May 28 20:51:57 2012 +0200
+summary:     Run our xpcshell tests during 'make distribution' on our buildbot slaves.
+
+changeset:   2011:ce19d6a4e4dc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue May 29 00:41:10 2012 +0200
+summary:     Disable tests on the mac buildbot mozconfigs, as they fail on the PPC builder.
+
+changeset:   2012:8b2bae87ca15
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue May 29 00:59:07 2012 +0200
+summary:     Bug 1468 - Fix failing test from bug 1446, r=fqueze.
+
+changeset:   2013:0994b814b441
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed May 30 00:22:05 2012 +0200
+summary:     Bug 1469 - Add unit tests for building IRC messages, r=fqueze.
+
+changeset:   2014:8594a79edd45
+user:        Rafael Ávila de Espíndola <respindola@mozilla.com>
+date:        Mon May 28 11:10:11 2012 -0400
+summary:     Bug 758688 - ensure the storage connection to blist.sqlite is always closed at shutdown, r=florian.
+
+changeset:   2015:57e8d1da63f8
+user:        Gervase Markham <gerv@gerv.net>
+date:        Thu May 31 13:00:27 2012 +0200
+summary:     Bug 759808 - MPL 2 upgrade: Instantbird, r=fqueze.
+
+changeset:   2016:b707ece76191
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 31 13:06:46 2012 +0200
+summary:     Update the tools/createheader.sh script for MPL2.
+
+changeset:   2017:3f9722c19f85
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 31 13:14:34 2012 +0200
+summary:     Send a MessagesDisplayed event from convbrowser.xml each time messages are displayed (port chat/ changes from bug 754914 and bug 759699), r=clokep.
+
+changeset:   2018:20da6cb12aad
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu May 31 16:35:44 2012 +0200
+summary:     Fix copying the username of a message from the Bubbles message theme, r=clokep.
+
+changeset:   2019:7e8c665dda1b
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Jun 01 06:47:46 2012 -0400
+summary:     Bug 1472 - Handle a ChanServ entry message, r=fqueze.
+
+changeset:   2020:de640894b84e
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jun 02 01:14:33 2012 +0200
+summary:     Fix the wrapping in 2 MPL2 license headers.
+
+changeset:   2021:f25198c3c04a
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Jun 01 19:12:05 2012 -0400
+summary:     Bug 1359 - Abstract the shared methods between ircChannel and ircConversation, r=fqueze.
+
+changeset:   2022:8b8724360bf6
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat Jun 02 18:04:43 2012 +0200
+summary:     Bug 1479 - [Tab complete] Remove trailing ": " suffix when pressing backspace before undoing completion, r=fqueze.
+
+changeset:   2023:0c3f8e1700b1
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat Jun 02 23:01:19 2012 +0200
+summary:     Bug 1424 - Warning: GenericConvChatPrototype _init "setting a property that has only a getter", r=clokep.
+
+changeset:   2024:86599b6abbeb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jun 03 01:15:26 2012 +0200
+summary:     Bug 1390 - Update to Mozilla 12.
+
+changeset:   2025:96b272066780
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jun 03 09:58:23 2012 +0200
+summary:     Disable sps profiling on Mac universal builds as having it on i386 but not ppc makes the unify step fail.
+
+changeset:   2026:60f68f042a0a
+user:        Andreas Nilsson <nisses.mail@home.se>
+date:        Mon Jun 04 20:08:38 2012 +0200
+summary:     Bug 735215 - Add icons for generic XMPP, r=florian, ui-r=bwinton.
+
+changeset:   2027:6bfe0ff89425
+user:        Florian Quèze <florian@queze.net>
+date:        Mon Jun 04 20:09:20 2012 +0200
+summary:     Bug 735215 - Enable Jabber / generic XMPP protocol, r=clokep.
+
+changeset:   2028:afdca7970880
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Jun 04 19:45:37 2012 -0400
+summary:     Bug 1473 - IRC /topic help text is incorrect, r=fqueze.
+
+changeset:   2029:0a1aa7e2827a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jun 05 23:31:14 2012 +0200
+summary:     Bug 1377 - aContactA/B errors when buddies sign in or out, r=clokep.
+
+changeset:   2030:33220609b0fc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jun 05 23:32:52 2012 +0200
+summary:     Remove nsDockTile now that it's part of the platform (upstreamed in bug 697546), r=clokep.
+
+changeset:   2031:e9086f2ce535
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jun 05 23:39:08 2012 +0200
+summary:     Bug 761688 - Call removeController in convbrowser.xml only if it has actually been inserted, r=clokep.
+
+changeset:   2032:a26ec4a13add
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Jun 05 14:55:01 2012 +0200
+summary:     Bug 1074 - Default message styles lack context message support, r=Mic
+
+changeset:   2033:027f06cf53a2
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Jun 06 00:19:49 2012 +0200
+summary:     Bug 1484 - Incorrect shutdown leads to the same tweets being fetched twice, r=clokep.
+
+changeset:   2034:17172355cb63
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Thu Jun 07 01:34:41 2012 +0200
+summary:     Bug 1485 - Use the XMPP icons from chat/ instead of purple/, r=fqueze.
+
+changeset:   2035:2ed5407c4a6a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 07 14:58:03 2012 +0200
+summary:     Bug 1355 - unable to establish any network connection until a restart of the application, r=clokep.
+
+changeset:   2036:ef344ab33302
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Jun 05 19:20:12 2012 -0400
+summary:     Bug 1427 - Fix up order and formatting of IRC tooltips, r=aleth.
+
+changeset:   2037:7adc97081fdb
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jun 10 18:45:10 2012 +0200
+summary:     Remove reference to obsolete mozapps/content/preferences/preferences.css file.
+
+changeset:   2038:2749a7494bb8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jun 10 22:20:09 2012 +0200
+summary:     Bug 1501 - Twitter's stream should the the moz-chunked-text XHR responseType, r=clokep.
+
+changeset:   2039:7bfe729f1a58
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Jun 10 22:42:32 2012 +0200
+summary:     Bug 1218 - Twitter Search API queries need some escaping, r=fqueze.
+
+changeset:   2040:6444fecdc522
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun Jun 10 22:44:15 2012 +0200
+summary:     Bug 1499 - Avoid attempting to connect accounts while offline, and disconnect connecting accounts when going offline, r=fqueze.
+
+changeset:   2041:74d6f034e992
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jun 10 22:57:23 2012 +0200
+summary:     Bug 1021 - Replace unsupported libpurple QQ with libqq-pidgin, update the localizable strings.
+
+changeset:   2042:fbf301e2b72c
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jun 10 23:01:51 2012 +0200
+summary:     Bug 1337 - Update libpurple from version 2.10.1 to 2.10.4.
+
+changeset:   2043:6417d64517d7
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Jun 11 00:07:16 2012 +0200
+summary:     Bug 1491 - MPL 2.0 for random (mostly build system related) purple/ files, r=fqueze.
+
+changeset:   2044:392231064149
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jun 11 11:20:28 2012 +0200
+summary:     Bug 1337 - Update libpurple to 2.10.4 - Follow-up to fix Windows build bustage.
+
+changeset:   2045:b8d8b6e60aef
+user:        aleth <aletheia2@fastmail.fm>
+date:        Tue Jun 12 01:27:06 2012 +0200
+summary:     Bug 1375 - Improve the margins around the unread ruler for the Bubbles theme, r=fqueze.
+
+changeset:   2046:ef2c0ff1bc8a
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 13 00:14:58 2012 +0200
+summary:     Bug 735998 - HTML entities in the latest tweet should be decoded before it is used as the topic of the timeline conversation, r=clokep.
+
+changeset:   2047:f73b70977541
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Jun 13 00:16:25 2012 +0200
+summary:     Bug 1505 - [Bubbles] Change link color in system messages, r=clokep.
+
+changeset:   2048:fd5e9bf51bf6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 14 14:57:47 2012 +0200
+summary:     Bug 1203 - Fix logging in to Facebook Chat when the username contains uppercase letters, r=clokep.
+
+changeset:   2049:384f68e4381d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 14 14:58:16 2012 +0200
+summary:     Remove dead code in the ibCore.jsm (the uninit method was never called), r=aleth over IRC.
+
+changeset:   2050:8db9777d814b
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 14 15:03:12 2012 +0200
+summary:     Bug 1507 - Target selector not disabled when there is only one account to select from, r=clokep.
+
+changeset:   2051:e209b56ace45
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 14 15:16:54 2012 +0200
+summary:     Bug 1505 - [Bubbles] Change link color in system messages - make links visible only when hovered, r=fqueze.
+
+changeset:   2052:d4015a1d51f1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 14 16:43:04 2012 +0200
+summary:     Bug 1262 - [Accessibility] Add aria attributes to conversation views and contact groups, r=clokep.
+
+changeset:   2053:08d59a0fef5f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jun 16 00:46:30 2012 +0200
+summary:     Bug 1381 - [JS-XMPP] Send the user's vCard, r=clokep.
+
+changeset:   2054:57066410a600
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sat Jun 16 00:47:36 2012 +0200
+summary:     Bug 742793 - [JS-XMPP] Avatar changes are only visible at restart, r=clokep.
+
+changeset:   2055:4bf828a48187
+user:        Quentin Raynaud <raynaudquentin@gmail.com>
+date:        Sun Jun 17 22:44:12 2012 +0200
+summary:     Bug 1227 - client.py should call itself recursively after updating the instantbird source (as client.py may have changed), r=fqueze.
+
+changeset:   2056:1bdcd936b1c1
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Jun 17 22:46:19 2012 +0200
+summary:     Bug 1486 - Update to Mozilla 13.0.1.
+
+changeset:   2057:f399b21eb75b
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jun 18 13:18:28 2012 +0200
+summary:     Adapt the patch from 'Bug 756277 - XMLHttpRequest started from XPCOM ends up bound to some random window' for Mozilla 13.
+
+changeset:   2058:f4c02bd3b2d0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jun 18 14:31:58 2012 +0200
+summary:     Fix bustage from f399b21eb75b.
+
+changeset:   2059:484417069bea
+user:        Florian Quèze <florian@instantbird.org>
+date:        Mon Jun 18 23:58:04 2012 +0200
+summary:     Attempt to fix xpcshell-tests bustage from bug 729098 on Windows.
+
+changeset:   2060:8aaee35cfaf7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 20 01:06:31 2012 +0200
+summary:     Bug 1210 - Status stuck on idle - use the patch from 'Bug 744527 - Fix idle poll interval'.
+
+changeset:   2061:bea3cbfefb28
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Jun 20 06:27:49 2012 -0400
+summary:     Bug 1486 - Update to Mozilla 13, fix Windows xpcshell tests paths.
+
+changeset:   2062:e95d5a75cbd2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Jun 20 12:49:03 2012 +0200
+summary:     Rename the patch just added by bea3cbfefb28 so that it has a .patch extension and apply-patches.sh applies it.
+
+changeset:   2063:eacbcea750ea
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 21 01:00:51 2012 +0200
+summary:     Remove some obsolete style rules from conversation.css.
+
+changeset:   2064:27f653d6c7b9
+user:        Will Nayes <wnayes@gmail.com>
+date:        Thu Jun 21 01:11:47 2012 +0200
+summary:     Bug 1438 - Typing the beginning of a protocol name listed in the top protocols should select it, r=fqueze.
+
+changeset:   2065:9baa0795be9a
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 21 01:33:46 2012 +0200
+summary:     Bug 1460 - Do not send blank lines / empty messages, r=clokep.
+
+changeset:   2066:8d161d706eb2
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 21 01:39:47 2012 +0200
+summary:     Bug 1509 - Drop target does not reappear after detaching all but one merged buddies, r=clokep.
+
+changeset:   2067:aab2aae54619
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 21 01:45:13 2012 +0200
+summary:     Bug 1520 - Make autojoin and "Join Chat" handle excess whitespace better, r=clokep.
+
+changeset:   2068:d267540b8f52
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 21 02:03:21 2012 +0200
+summary:     Bug 385 - Rejoin IRC channels after reconnect, r=clokep.
+
+changeset:   2069:85be28e2cc78
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 21 02:21:39 2012 +0200
+summary:     Bug 1518 - Don't display the topic system message again if it hasn't changed, r=clokep,fqueze.
+
+changeset:   2070:a0957ec93c4f
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Jun 21 02:36:54 2012 +0200
+summary:     Bug 1505 - [Bubbles] Change link color in system messages - follow-up to use -moz-any-link instead of a in link selectors, r=fqueze.
+
+changeset:   2071:bc4562961d42
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jun 21 12:44:22 2012 +0200
+summary:     Bug 736437 - Chat accounts without protocol plugin aren't correctly handled, r=clokep,bienvenu.
+
+changeset:   2072:6519febff7ea
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Jun 23 09:33:52 2012 -0400
+summary:     Bug 1310 - Do not log channel keys when sending the JOIN command, r=aleth.
+
+changeset:   2073:8ba81ec876ed
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Jun 23 12:01:30 2012 -0400
+summary:     Bug 1519 - /invite doesn't work, r=aleth.
+
+changeset:   2074:9134c46bae1b
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Thu Jun 21 06:35:18 2012 -0400
+summary:     Bug 1534: Allow using a custom username for IRC, r=Mook.
+
+changeset:   2075:3fcf847202dc
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun Jun 24 00:34:11 2012 +0200
+summary:     Bug 1046 - Account window shows up on disconnect/reconnect, r=fqueze.
+
+changeset:   2076:fa358638ac2b
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Jun 24 09:47:21 2012 -0400
+summary:     Bug 944 - Support for Bonjour, r=fqueze,Mook.
+
+changeset:   2077:6e0548b69892
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sun Jun 24 20:04:57 2012 -0400
+summary:     Bug 944 - Support for Bonjour followup: fix configure.in, r=fqueze.
+
+changeset:   2078:42afd9f33fca
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jun 26 10:48:04 2012 +0200
+summary:     Bug 1271 - Missing keyboard shortcuts for "Put conversation on hold" and "Show logs", r=clokep.
+
+changeset:   2079:9b19d9ef0263
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Mon Jun 25 19:59:51 2012 -0400
+summary:     Bug 1539 - Error when attempting to read plaintext logs, r=fqueze.
+
+changeset:   2080:b3d802b70521
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Jun 26 11:02:12 2012 +0200
+summary:     Bug 1496 - test_ctcpFormatToText and test_mIRCColor aren't executed, r=fqueze.
+
+changeset:   2081:8fb82edf3731
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Jun 27 00:07:06 2012 +0200
+summary:     Bug 1404 - Add "Your account is reconnected" system message, r=clokep,fqueze.
+
+changeset:   2082:ea6e55dcd067
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Jun 20 21:56:40 2012 -0400
+summary:     Bug 1296 - Unhandled IRC whois response messages 307 671 317, r=aleth.
+
+changeset:   2083:9d91fcd7d30c
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Jun 27 00:58:42 2012 +0200
+summary:     Bug 1516 - Target selector context menu icons have the wrong size, r=Mic.
+
+changeset:   2084:7378ec77abd3
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Jun 27 01:05:35 2012 +0200
+summary:     Bug 1538 - Don't reset nick at reconnect if the last nick change was user initiated, r=clokep.
+
+changeset:   2085:66d00848de1f
+user:        aleth <aletheia2@fastmail.fm>
+date:        Wed Jun 27 01:37:20 2012 +0200
+summary:     Bug 1540 - Handle 432: Erroneous nickname, r=clokep.
+
+changeset:   2086:683576cf6f00
+user:        Florian Janßen <bugi@media.fjmail.de>
+date:        Wed Jun 27 16:32:27 2012 +0200
+summary:     Bug 1536 - Add an exception in filter.py for the topProtocol.prpl-*.description strings, r=fqueze.
+
+changeset:   2087:e382a55d9049
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Jun 27 20:16:18 2012 -0400
+summary:     Bug 1552 - Handle 329: RPL_CREATIONTIME, r=aleth.
+
+changeset:   2088:3f354c97cdd7
+user:        Florian Quèze <florian@queze.net>
+date:        Thu Jun 28 16:48:14 2012 +0200
+summary:     Bug 754824 - The highlight is off by a few characters in the search result view when some characters are UTF8 encoded on 4 bytes - Follow-up to only match UTF-16 surrogate halves, r=asuth.
+
+changeset:   2089:edbd4a66bdf5
+user:        Florian Quèze <florian@queze.net>
+date:        Thu Jun 28 17:00:55 2012 +0200
+summary:     Bug 755718 - There should be an audible notification when new messages are received on IRC - add a new-directed-incoming-message notification, r=clokep.
+
+changeset:   2090:29e15c46ac9b
+user:        Andreas Nilsson <nisses.mail@home.se>
+date:        Thu Jun 28 18:49:09 2012 +0200
+summary:     Bug 768525 - Update the twitter logo, ui-r=bwinton, rs=clokep.
+
+changeset:   2091:7bab3908b1bd
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Jun 26 19:41:57 2012 -0400
+summary:     Bug 1551 - Remove whowas command, duplicate of whois, r=aleth.
+
+changeset:   2092:db0da458e94d
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Jul 11 13:33:35 2012 +0200
+summary:     Bug 1540 - Handle 432: Erroneous nickname tests, r=aleth,fqueze.
+
+changeset:   2093:cbff748b9e61
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Jun 29 17:12:59 2012 -0400
+summary:     Bug 1542 - Use pkg-config instead of hard coded paths, r=fqueze.
+
+changeset:   2094:b24a37bbc830
+user:        Florian Janßen <bugi@media.fjmail.de>
+date:        Wed Jul 11 16:06:51 2012 +0200
+summary:     Bug 483 - Instantbird default theme has no preview image, r=Mic.
+
+changeset:   2095:ccfdb7f280ac
+user:        Andreas Nilsson <nisses.mail@home.se>
+date:        Sat Jul 14 15:54:13 2012 +0200
+summary:     Bug 768525 - Update the twitter logo, ui-r=bwinton, r=clokep.
+
+changeset:   2096:d24f6643270f
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat Jul 14 15:57:50 2012 +0200
+summary:     Bug 465 - Unread status doesn't disappear when the tabbar-tab (instead of the content of the tab) had the focus when the selected tab changed, r=fqueze.
+
+changeset:   2097:0e113cfc6947
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat Jul 14 16:19:23 2012 +0200
+summary:     Bug 859 - Add context menu to 'conv-top', r=clokep.
+
+changeset:   2098:c03c096f856b
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sat Jul 14 16:48:56 2012 +0200
+summary:     Bug 1450 - Only remove unread ruler when switching away from a tab if tab has been visible for a certain time, r=fqueze.
+
+changeset:   2099:f0507769cd2b
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Fri Jun 01 19:09:14 2012 -0400
+summary:     Bug 1477 - Handle NickServ messages when authenticating with PASS, r=fqueze,aleth.
+
+changeset:   2100:df45f47c0590
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun Jul 22 00:29:21 2012 +0200
+summary:     Bug 785 - Close tab option doesn't work properly when using the tab drop down button, r=clokep,fqueze.
+
+changeset:   2101:5263623bebd1
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Jul 21 08:43:59 2012 -0400
+summary:     Bug 1477 - Handle NickServ messages follow up for more cases, r=aleth.
+
+changeset:   2102:0c376eeefccf
+user:        Florian Quèze <florian@queze.net>
+date:        Sat Jul 14 15:39:04 2012 +0200
+summary:     Bug 740499 - IM conversations aren't indexed in gloda on the fly, r=asuth, clokep.
+
+changeset:   2103:3f2495a780f8
+user:        Florian Quèze <florian@queze.net>
+date:        Mon Jul 23 15:15:57 2012 -0400
+summary:     Bug 776474 - Make Twitter account setup less fragile. r=clokep.
+
+changeset:   2104:b1dbcce18133
+user:        Florian Quèze <florian@queze.net>
+date:        Mon Jul 23 15:18:18 2012 -0400
+summary:     Bug 776528 - Chat tab title not correctly updated after closing a selected conversation. r=clokep.
+
+changeset:   2105:ee40d34b0354
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jul 24 14:41:59 2012 +0200
+summary:     Bug 735642 - Move the twitter OAuth key to the preferences so that Thunderbird can use a different key, r=clokep.
+
+changeset:   2106:4cdab92b4cc0
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Jul 26 19:35:09 2012 +0200
+summary:     Bug 1556 - Download the user's vCard before uploading an avatar, r=clokep.
+
+changeset:   2107:88e2e977cc95
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Jul 27 18:36:24 2012 +0200
+summary:     Bug 1609 - <presence type="subscribe"/> stanzas are ignored when the JID is already in the roster, r=clokep.
+
+changeset:   2108:10df3f6d79e2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jul 31 12:21:46 2012 +0200
+summary:     Bug 1568 - JS-XMPP should handle message type="error" stanzas instead of displaying the messages again in the conversation as incoming, r=clokep.
+
+changeset:   2109:02d93fefd2e2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Tue Jul 31 12:43:26 2012 +0200
+summary:     Bug 741536 - IRC and XMPP connections fail when there's a system HTTP proxy, r=clokep.
+
+changeset:   2110:0711c9c23d7f
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Tue Jul 31 14:26:09 2012 +0200
+summary:     Fix a confusing comment in irc.js, rs=fqueze.
+
+changeset:   2111:9e3a83b7f2bb
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Wed Aug 01 11:17:47 2012 +0200
+summary:     Bug 1439 - Make unambiguous command prefixes work as command aliases, r=aleth.
+
+changeset:   2112:d90405b24e81
+user:        Florian Quèze <florian@instantbird.org>
+date:        Wed Aug 01 23:33:30 2012 +0200
+summary:     Bug 1474 - Port Mozilla Bug 494311 - Remove the locale from updater.ini, r=clokep.
+
+changeset:   2113:42b4d2d16959
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 02 01:34:22 2012 +0200
+summary:     Bug 1523 - Aliasing a JS-XMPP buddy should store the alias on the server, r=clokep.
+
+changeset:   2114:3402ce2191b3
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 02 01:41:00 2012 +0200
+summary:     Bug 1546 - Fix packaging of license files, and include the Apple Bonjour and the GPL licenses in about:license, r=clokep.
+
+changeset:   2115:d29f478bc5b0
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Aug 02 11:11:38 2012 +0200
+summary:     Bug 1471 - Log viewer content is missing context menu, r=clokep.
+
+changeset:   2116:cdc65c66b724
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Aug 02 11:19:50 2012 +0200
+summary:     Bug 1107 - Contact list section header styling for Linux, r=clokep.
+
+changeset:   2117:82814a2774e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 02 15:08:35 2012 +0200
+summary:     Take an MSN crash fix that is part of libpurple 2.10.5's changes.
+
+changeset:   2118:1b767d16b3a9
+user:        aleth <aletheia2@fastmail.fm>
+date:        Thu Aug 02 19:30:40 2012 +0200
+summary:     Bug 1497 - When starting with necko offline, connect accounts as soon as the network is back. Also avoid connecting accounts when starting with "-status offline" on the command line, r=fqueze.
+
+changeset:   2119:1566264293c7
+user:        Florian Quèze <florian@instantbird.org>
+date:        Thu Aug 02 20:05:50 2012 +0200
+summary:     Bug 1210 - Status stuck on away/unavailable, add my nsIdleService fix from Bmo 779843.
+
+changeset:   2120:13131d01e2e6
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 03 01:44:47 2012 +0200
+summary:     Bug 1487 - Update to Mozilla 14.
+
+changeset:   2121:83739a138f9d
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 03 01:54:33 2012 +0200
+summary:     Port |Bug 716354 - freetype2 detection doesn't consider cross-compiling| (c-c bug 743441).
+
+changeset:   2122:457382b40fdc
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 03 08:14:12 2012 +0200
+summary:     Work-around bug 762930 by adding #undef GROUPING lines in accessible/src/base/nsAccessibilityService.cpp and accessible/src/xforms/nsXFormsAccessible.cpp.
+
+changeset:   2123:a0d7856788b8
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 03 08:21:37 2012 +0200
+summary:     Fix typo in 'Bug-762930-undef-GROUPING.patch'.
+
+changeset:   2124:fe0c0fb1c1af
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Aug 03 15:17:53 2012 +0200
+summary:     Bug 1530 - Autoscroll broken after moz13 update when restoring from hold and using Bubbles, r=fqueze.
+
+changeset:   2125:21e486855c58
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Aug 03 15:20:07 2012 +0200
+summary:     Bug 1604 - Don't show unread ruler if all the context messages were system messages, r=fqueze.
+
+changeset:   2126:6ca6cf727c46
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Aug 03 15:48:19 2012 +0200
+summary:     Bug 1611 - Unread ruler movement can cause spurious Bubbles gap time text, r=fqueze.
+
+changeset:   2127:290b023e82ed
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Aug 03 16:05:47 2012 +0200
+summary:     Fix JavaScript strict warning: chrome://instantbird/content/blist.js, line 153/235: variable a/b redeclares argument, r=fqueze.
+
+changeset:   2128:871e12a7e1cf
+user:        Florian Quèze <florian@instantbird.org>
+date:        Fri Aug 03 19:40:42 2012 +0200
+summary:     Bug 1338 - Connect button is disabled after an account spends more than half a second in the disconnecting state, r=aleth.
+
+changeset:   2129:0c4d8120606e
+user:        aleth <aletheia2@fastmail.fm>
+date:        Fri Aug 03 20:02:45 2012 +0200
+summary:     Bug 1616 - Unread ruler in split bubble just before an action message hides the sender name, r=fqueze.
+
+changeset:   2130:53da52bca6f6
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Aug 04 09:54:05 2012 -0400
+summary:     Bug 1435 - Improve the Windows 7 support in the installer, and set the minimum compatible version to Windows XP SP2, r=fqueze.
+
+changeset:   2131:9aefe3726ef8
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Aug 04 09:57:53 2012 -0400
+summary:     Bug 1614 - Update the credits for Instantbird 1.2, r=fqueze.
+
+changeset:   2132:357d4fbaf1dc
+user:        Patrick Cloke <clokep@gmail.com>
+date:        Sat Aug 04 10:17:16 2012 -0400
+summary:     Bug 1617 - Set minimum required OS version for Mac builds, r=fqueze.
+
+changeset:   2133:70243c558e3b
+user:        aleth <aletheia2@fastmail.fm>
+date:        Sun Aug 05 00:37:17 2012 +0200
+summary:     Bug 1236 - JSON log viewer conversation bubbles should have the same colors as when the conversation happened, r=fqueze.
+
+changeset:   2134:428d3629a9d2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Aug 05 16:57:54 2012 +0200
+summary:     Bug 1618 - Tags are never really removed from contacts, r=clokep.
+
+changeset:   2135:600d4b3e2af9
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Aug 05 17:03:19 2012 +0200
+summary:     Bug 1524 - Moving a JS-XMPP buddy from a tag to another should work and save this change on the server, r=clokep.
+
+changeset:   2136:4133cec9379f
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Aug 05 17:27:54 2012 +0200
+summary:     Bug 1231 - JS-XMPP should display HTML messages.
+
+changeset:   2137:4df52d793c89
+branch:      1.2
+user:        Florian Quèze <florian@instantbird.org>
+date:        Sun Aug 05 17:39:34 2012 +0200
+summary:     Set version number to 1.2, change default revisions in client.py and add shipped-locales.
+
