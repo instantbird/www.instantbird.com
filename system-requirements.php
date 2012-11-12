@@ -41,7 +41,7 @@ __('
           <li>_(libraryVersionOrHigher)</li>
 ', $sr_bundle, array('&libraryAndVersion;' => 'GTK+ 2.10')).
 __('          <li>_(libraryVersionOrHigher)</li>
-', $sr_bundle, array('&libraryAndVersion;' => 'GLib 2.12')).
+', $sr_bundle, array('&libraryAndVersion;' => 'GLib 2.16')).
 __('          <li>_(libraryVersionOrHigher)</li>
 ', $sr_bundle, array('&libraryAndVersion;' => 'Pango 1.14')).
 __('          <li>_(libraryVersionOrHigher)</li>
