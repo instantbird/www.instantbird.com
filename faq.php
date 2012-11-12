@@ -81,7 +81,7 @@ $faq = array(
 
     array('name' => 'supportedprotocols',
           'title' => '_(supportedprotocolsTitle)',
-          'text' => '_(supportedprotocolsText1)</p><p>_(supportedprotocolsText2)'),
+          'text' => '_(supportedprotocolsText3)</p><p>_(supportedprotocolsText2)'),
 
     array('name' => 'facebookusername',
           'title' => '_(facebookusernameTitle)',
@@ -129,7 +129,7 @@ $faq = array(
 
     array('name' => 'license',
           'title' => '_(licenseTitle)',
-          'text' => '_(licenseText)'),
+          'text' => '_(licenseText1)'),
 
     array('name' => 'getthesource',
           'title' => '_(getthesourceTitle)',
@@ -198,7 +198,7 @@ foreach ($faq as $section_name => $section_topics) {
 }
 echo __($page_content, $faq_bundle, array(
 '&systemRequirementsLink;' => '<a href="system-requirements.html">'.$faq_bundle->_('systemRequirementsLink').'</a>',
-'&sysReqWinVersion;' => 'Windows 2000',
+'&sysReqWinVersion;' => 'Windows XP SP2',
 '&sysReqMacVersion;' => 'Mac OS X 10.5',
 '&homePageLink;' => '<a href="/">'.$faq_bundle->_('homePageLink').'</a>',
 '&downloadPageLink;' => '<a href="download-all.html">'.$faq_bundle->_('downloadPageLink').'</a>',
