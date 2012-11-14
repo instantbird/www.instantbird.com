@@ -17,7 +17,7 @@ echo head().__('
 __('
         <h1>_(instantbirdVersionReleaseNotes)</h1>
 
-        <h2>_(checkoutWhatsNewAndKnownIssues).</h2>
+        <h2>_(checkoutWhatsNewAndKnownIssues)</h2>
 
 ', $rn_bundle, array('&versionNumber;' => $latest_minor_version,
                      '&givingFeedbackLink;' => '<a href="about.html#get_in_touch">'.$rn_bundle->_('givingFeedbackLink').'</a>',

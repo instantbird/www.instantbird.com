@@ -1,7 +1,7 @@
 <?php
-$latest_major_version = '1.2';
-$latest_minor_version = '1.2';
-$latest_minor_version_locales = array('cs', 'de', 'en-US', 'es-ES', 'et', 'fr', 'it', 'nl', 'sk', 'sv-SE', 'uk');
+$latest_major_version = '1.3';
+$latest_minor_version = '1.3';
+$latest_minor_version_locales = array('cs', 'de', 'en-US', 'es-ES', 'et', 'fr', 'it', 'nl', 'pt-BR', 'ru', 'sk', 'sv-SE', 'uk');
 
 function get_preferred_locale_from_array($locales)
 {
@@ -154,8 +154,8 @@ function download_button()
 {
   global $latest_minor_version;
   $os_info = array('windows' => array('name' => 'Windows', 'size' => '12'),
-                   'linux' => array('name' => 'Linux', 'size' => '15'),
-                   'mac' => array('name' => 'Mac OS X', 'size' => '29'));
+                   'linux' => array('name' => 'Linux', 'size' => '16'),
+                   'mac' => array('name' => 'Mac OS X', 'size' => '31'));
   $version = $latest_minor_version;
   $locale = get_preferred_download_locale();
   $os = get_preferred_os();
