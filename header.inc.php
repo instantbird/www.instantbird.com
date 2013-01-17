@@ -215,7 +215,7 @@ function footer()
 
   <div id="footer-shadow">
     <div id="footer">
-      <p>&copy; 2007-2012 - <a href="about.html">'.$bundle->_('theInstantbirdTeam').'</a>.</p>
+      <p>&copy; 2007-2013 - <a href="about.html">'.$bundle->_('theInstantbirdTeam').'</a>.</p>
       <p class="small-text">'.$bundle->_('namesAndTrademarksPropertyOfTheirOwner').'</p>
     </div>
   </div>
