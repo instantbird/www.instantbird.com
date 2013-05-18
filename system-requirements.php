@@ -20,7 +20,7 @@ __('
 
         <h2 class="borderbottom icowin clear-float">Windows</h2>
         <ul>
-          <li>_(operatingSystems): Microsoft Windows XP SP 2, Windows Server 2003, Windows Vista, Windows 7</li>
+          <li>_(operatingSystems): Microsoft Windows XP SP 2, Windows Server 2003, Windows Vista, Windows 7, Windows 8</li>
           <li>_(MBofRAM)</li>
           <li>_(MBofHardDiskSpace)</li>
         </ul>', $sr_bundle, array('&memorySize;' => '128',
@@ -31,7 +31,7 @@ __('
           <li>_(operatingSystems): _(OSXVersionAndLater)</li>
           <li>_(MBofRAM)</li>
           <li>_(MBofHardDiskSpace)</li>
-        </ul>', $sr_bundle, array('&macOSXVersion;' => 'Mac OS X 10.5 (Leopard)',
+        </ul>', $sr_bundle, array('&macOSXVersion;' => 'Mac OS X 10.6 (Snow Leopard)',
                                   '&memorySize;' => '256',
                                   '&diskSize;' => '100')).
 __('
