@@ -4,6 +4,7 @@ echo __(' <div id="page">
 
   <h1>_(imageResources)</h1>
   <p style="margin-left: -20px">_(useThese)</p>
+  <p style="margin-left: -20px">_(screenshotLicense) Creative Commons Attribution ShareAlike (CC-2.0-BY-SA).</p>
 
   <h2 class="borderbottom">_(lookAndFeel)</h2>
   <img src="press/screenshots/1.0-winaero-screenshot-homepage-big.png" alt="_(instantbirdScreenshot)" />
