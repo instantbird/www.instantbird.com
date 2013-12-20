@@ -18,29 +18,31 @@ echo __('<h2 class="borderbottom">_(whatsNew)</h2>
  <li>_(improvedMUCsHighlightedNicks)</li>
 </ul></li>
 
-<li>_(retinaSupport)</li>
-
-<li>_(improvedRTLSupport)</li>
-
 <li>_(autojoinToHold)</li>
 
 <li>_(ircAlternateNicks)</li>
 
 <li>_(aboutPagesInTabs)</li>
 
+<li>_(retinaSupport)</li>
+
 <li>_(hangoutMobileStatus)</li>
 
 <li>_(hangoutTypingFix)</li>
 
-<li>_(mozilla25)</li>
+<li>_(improvedRTLSupport)</li>
 
 <li>_(vkontakteDropped)</li>
 
 <li>_(tabbrowserAPI)</li>
 
+<li>_(mozilla25)</li>
+
 <li>_(variousFixes)</li>
 
 <li>_(andMore)</li>
+
+</ul>
 
 <h2 class="borderbottom">_(knownIssues)</h2>
 
