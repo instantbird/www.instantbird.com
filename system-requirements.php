@@ -39,13 +39,15 @@ __('
         <p>_(librariesLinux)</p>
         <ul>
           <li>_(libraryVersionOrHigher)</li>
-', $sr_bundle, array('&libraryAndVersion;' => 'GTK+ 2.10')).
+', $sr_bundle, array('&libraryAndVersion;' => 'GTK+ 2.18')).
 __('          <li>_(libraryVersionOrHigher)</li>
-', $sr_bundle, array('&libraryAndVersion;' => 'GLib 2.16')).
+', $sr_bundle, array('&libraryAndVersion;' => 'GLib 2.22')).
 __('          <li>_(libraryVersionOrHigher)</li>
 ', $sr_bundle, array('&libraryAndVersion;' => 'Pango 1.14')).
 __('          <li>_(libraryVersionOrHigher)</li>
 ', $sr_bundle, array('&libraryAndVersion;' => 'X.Org 1.0')).
+__('          <li>_(libraryVersionOrHigher)</li>
+', $sr_bundle, array('&libraryAndVersion;' => 'libstdc++ 4.3')).
 __('        </ul>
         <p>_(distributionPackages)</p>
       </div>
