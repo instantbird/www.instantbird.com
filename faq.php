@@ -42,7 +42,7 @@ $faq = array(
 
     array('name' => 'installlinux',
           'title' => '_(installlinuxTitle)',
-          'text' => '_(installlinuxText1)</p><p>_(installlinuxText2)'),
+          'text' => '_(installlinuxText1)</p><p>_(installlinuxText3)</p><p>_(installlinuxText4)</p><p>_(installlinuxText5)'),
 
     array('name' => 'portable',
           'title' => '_(portableTitle)',
