@@ -1,0 +1,6 @@
+\.htaccess$
+
+# Editor files.
+.idea/
+~$
+\#
